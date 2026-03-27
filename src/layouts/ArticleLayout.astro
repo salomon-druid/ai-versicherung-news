@@ -27,6 +27,7 @@ const formattedDate = new Intl.DateTimeFormat('de-DE', {
 }).format(pubDate);
 
 const isoDate = pubDate.toISOString();
+const heroImage = image || `/images/${category}.jpg`;
 
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -35,6 +36,7 @@ const articleSchema = {
   description: description,
   datePublished: isoDate,
   dateModified: isoDate,
+  image: `https://ai-versicherung-news.vercel.app${heroImage}`,
   author: {
     '@type': 'Organization',
     name: 'ai.versicherung',
@@ -63,79 +65,90 @@ const articleSchema = {
 };
 ---
 
-<BaseLayout title={title} description={description} type="article" image={image}>
+<BaseLayout title={title} description={description} type="article" image={heroImage}>
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 
-  <article class="max-w-4xl mx-auto px-4 py-12">
-    <header class="mb-10">
-      <div class="flex items-center gap-3 mb-4">
-        <CategoryBadge category={category} />
-        <time datetime={isoDate} class="text-sm text-gray-500">
-          {formattedDate}
-        </time>
-      </div>
-      <h1 class="text-4xl md:text-5xl font-extrabold text-dark leading-tight mb-6">
-        {title}
-      </h1>
-      <p class="text-xl text-gray-600 leading-relaxed">{description}</p>
-      {
-        tags && tags.length > 0 && (
-          <div class="flex flex-wrap gap-2 mt-6">
-            {tags.map((tag) => (
-              <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
-                #{tag}
-              </span>
-            ))}
-          </div>
-        )
-      }
-    </header>
-
-    <div class="prose prose-lg prose-headings:text-dark prose-a:text-primary-500 prose-a:no-underline hover:prose-a:underline max-w-none">
-      <slot />
+  <article>
+    <!-- Hero Image -->
+    <div class="w-full aspect-video max-h-[400px] overflow-hidden">
+      <img
+        src={heroImage}
+        alt={title}
+        class="w-full h-full object-cover"
+      />
     </div>
 
-    {
-      sources && sources.length > 0 && (
-        <footer class="mt-12 pt-8 border-t border-gray-200">
-          <h2 class="text-lg font-bold text-dark mb-4">Quellen</h2>
-          <ul class="space-y-3">
-            {sources.map((source) => (
-              <li class="flex items-start gap-2">
-                <svg
-                  class="w-5 h-5 text-primary-500 mt-0.5 shrink-0"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                  />
-                </svg>
-                <div>
-                  <a
-                    href={source.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-primary-500 hover:text-primary-700 font-medium"
+    <div class="max-w-4xl mx-auto px-4 py-10">
+      <header class="mb-10">
+        <div class="flex items-center gap-3 mb-4">
+          <CategoryBadge category={category} size="md" />
+          <time datetime={isoDate} class="text-sm text-gray-500">
+            {formattedDate}
+          </time>
+        </div>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-dark leading-tight mb-6">
+          {title}
+        </h1>
+        <p class="text-xl text-gray-600 leading-relaxed">{description}</p>
+        {
+          tags && tags.length > 0 && (
+            <div class="flex flex-wrap gap-2 mt-6">
+              {tags.map((tag) => (
+                <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          )
+        }
+      </header>
+
+      <div class="prose prose-lg prose-headings:text-dark prose-a:text-primary-500 prose-a:no-underline hover:prose-a:underline max-w-none">
+        <slot />
+      </div>
+
+      {
+        sources && sources.length > 0 && (
+          <footer class="mt-12 pt-8 border-t border-gray-200">
+            <h2 class="text-lg font-bold text-dark mb-4">Quellen</h2>
+            <ul class="space-y-3">
+              {sources.map((source) => (
+                <li class="flex items-start gap-2">
+                  <svg
+                    class="w-5 h-5 text-primary-500 mt-0.5 shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
                   >
-                    {source.title}
-                  </a>
-                  {source.outlet && (
-                    <span class="text-gray-400 text-sm ml-2">({source.outlet})</span>
-                  )}
-                  {source.date && (
-                    <span class="text-gray-400 text-sm ml-2">– {source.date}</span>
-                  )}
-                </div>
-              </li>
-            ))}
-          </ul>
-        </footer>
-      )
-    }
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                  <div>
+                    <a
+                      href={source.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-primary-500 hover:text-gold font-medium transition-colors"
+                    >
+                      {source.title}
+                    </a>
+                    {source.outlet && (
+                      <span class="text-gray-400 text-sm ml-2">({source.outlet})</span>
+                    )}
+                    {source.date && (
+                      <span class="text-gray-400 text-sm ml-2">– {source.date}</span>
+                    )}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </footer>
+        )
+      }
+    </div>
   </article>
 </BaseLayout>
