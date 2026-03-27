@@ -74,7 +74,7 @@ const articleSchema = {
           {formattedDate}
         </time>
       </div>
-      <h1 class="text-4xl md:text-5xl font-extrabold text-navy leading-tight mb-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-dark leading-tight mb-6">
         {title}
       </h1>
       <p class="text-xl text-gray-600 leading-relaxed">{description}</p>
@@ -91,19 +91,19 @@ const articleSchema = {
       }
     </header>
 
-    <div class="prose prose-lg prose-headings:text-navy prose-a:text-cyan prose-a:no-underline hover:prose-a:underline max-w-none">
+    <div class="prose prose-lg prose-headings:text-dark prose-a:text-primary-500 prose-a:no-underline hover:prose-a:underline max-w-none">
       <slot />
     </div>
 
     {
       sources && sources.length > 0 && (
         <footer class="mt-12 pt-8 border-t border-gray-200">
-          <h2 class="text-lg font-bold text-navy mb-4">Quellen</h2>
+          <h2 class="text-lg font-bold text-dark mb-4">Quellen</h2>
           <ul class="space-y-3">
             {sources.map((source) => (
               <li class="flex items-start gap-2">
                 <svg
-                  class="w-5 h-5 text-cyan mt-0.5 shrink-0"
+                  class="w-5 h-5 text-primary-500 mt-0.5 shrink-0"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -120,7 +120,7 @@ const articleSchema = {
                     href={source.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-cyan hover:text-primary-700 font-medium"
+                    class="text-primary-500 hover:text-primary-700 font-medium"
                   >
                     {source.title}
                   </a>

@@ -8,19 +8,19 @@ const navLinks = [
 ];
 ---
 
-<header class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+<header class="bg-dark text-white sticky top-0 z-50 shadow-lg">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <a href="/" class="flex items-center gap-3 group">
         <div class="relative">
           <div class="w-10 h-10 rounded-full overflow-hidden flex">
-            <div class="w-1/2 h-full bg-cyan"></div>
-            <div class="w-1/2 h-full bg-navy border border-white/20"></div>
+            <div class="w-1/2 h-full bg-primary-500"></div>
+            <div class="w-1/2 h-full bg-dark border border-white/20"></div>
           </div>
           <div class="absolute -top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-gold rounded-full"></div>
         </div>
         <span class="text-xl font-bold tracking-tight">
-          ai.<span class="text-cyan">versicherung</span>
+          ai.<span class="text-primary-500">versicherung</span>
         </span>
       </a>
 
@@ -29,7 +29,7 @@ const navLinks = [
           navLinks.map((link) => (
             <a
               href={link.href}
-              class="text-sm font-medium text-white/80 hover:text-cyan transition-colors"
+              class="text-sm font-medium text-white/80 hover:text-primary-500 transition-colors"
             >
               {link.label}
             </a>
@@ -55,7 +55,7 @@ const navLinks = [
     <nav id="mobile-menu" class="hidden md:hidden pb-4 space-y-2">
       {
         navLinks.map((link) => (
-          <a href={link.href} class="block px-3 py-2 text-sm text-white/80 hover:text-cyan">
+          <a href={link.href} class="block px-3 py-2 text-sm text-white/80 hover:text-primary-500">
             {link.label}
           </a>
         ))

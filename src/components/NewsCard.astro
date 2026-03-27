@@ -23,7 +23,7 @@ const href = `/news/${slug}`;
 ---
 
 <article
-  class={`bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cyan/20 transition-all duration-200 overflow-hidden group ${
+  class={`bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-primary-500/20 transition-all duration-200 overflow-hidden group ${
     featured ? 'ring-2 ring-accent-400' : ''
   }`}
 >
@@ -43,7 +43,7 @@ const href = `/news/${slug}`;
     </div>
 
     <h2
-      class="text-xl font-bold text-navy group-hover:text-cyan transition-colors mb-3 leading-snug"
+      class="text-xl font-bold text-dark group-hover:text-primary-500 transition-colors mb-3 leading-snug"
     >
       {title}
     </h2>
@@ -57,7 +57,7 @@ const href = `/news/${slug}`;
         {sourcesCount} {sourcesCount === 1 ? 'Quelle' : 'Quellen'}
       </span>
       <span
-        class="text-sm font-medium text-cyan group-hover:translate-x-1 transition-transform inline-flex items-center gap-1"
+        class="text-sm font-medium text-primary-500 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1"
       >
         Weiterlesen
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

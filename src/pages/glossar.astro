@@ -68,7 +68,7 @@ const categories = [...new Set(terms.map((t) => t.category))];
 ---
 
 <BaseLayout title="Glossar" description="Wichtige Begriffe zu KI in der Versicherung einfach erklärt. Von Machine Learning bis EU-KI-Verordnung.">
-  <section class="bg-navy text-white py-12">
+  <section class="bg-dark text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-4xl font-extrabold mb-3">Glossar</h1>
       <p class="text-white/70 text-lg max-w-2xl">Wichtige Begriffe zu KI in der Versicherung einfach erklärt.</p>
@@ -78,11 +78,11 @@ const categories = [...new Set(terms.map((t) => t.category))];
   <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     {categories.map((cat) => (
       <div class="mb-12">
-        <h2 class="text-2xl font-bold text-navy mb-6 pb-2 border-b border-gray-200">{cat}</h2>
+        <h2 class="text-2xl font-bold text-dark mb-6 pb-2 border-b border-gray-200">{cat}</h2>
         <dl class="space-y-6">
           {terms.filter((t) => t.category === cat).map((entry) => (
             <div class="bg-white rounded-lg p-5 border border-gray-100">
-              <dt class="text-lg font-bold text-navy mb-2">{entry.term}</dt>
+              <dt class="text-lg font-bold text-dark mb-2">{entry.term}</dt>
               <dd class="text-gray-600 leading-relaxed">{entry.definition}</dd>
             </div>
           ))}

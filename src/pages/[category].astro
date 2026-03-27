@@ -34,7 +34,7 @@ const categories = [
 ---
 
 <BaseLayout title={`${label} – KI-News`} description={description}>
-  <section class="bg-navy text-white py-12">
+  <section class="bg-dark text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="text-4xl mb-4 block">{icon}</span>
       <h1 class="text-4xl font-extrabold mb-3">{label}</h1>
@@ -52,7 +52,7 @@ const categories = [
           href={`/${cat.slug}`}
           class={`px-3 py-1.5 text-sm rounded-full border transition-colors ${
             cat.slug === category
-              ? 'bg-navy text-white border-navy'
+              ? 'bg-dark text-white border-navy'
               : 'bg-white text-gray-600 border-gray-200 hover:border-navy'
           }`}
         >
@@ -64,7 +64,7 @@ const categories = [
     {filteredNews.length === 0 ? (
       <div class="text-center py-16">
         <p class="text-xl text-gray-400 mb-4">Noch keine Artikel in dieser Kategorie.</p>
-        <a href="/news" class="text-cyan hover:underline font-medium">← Zurück zu allen News</a>
+        <a href="/news" class="text-primary-500 hover:underline font-medium">← Zurück zu allen News</a>
       </div>
     ) : (
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -9,6 +9,7 @@
 
   body {
     font-family: 'Inter', system-ui, sans-serif;
+    background-color: #F5F4F1;
   }
 }
 
@@ -19,7 +20,7 @@
   }
 
   .prose h2 {
-    color: #0f2b46;
+    color: #1F2933;
     font-weight: 700;
     font-size: 1.5rem;
     margin-top: 2rem;
@@ -27,7 +28,7 @@
   }
 
   .prose h3 {
-    color: #0f2b46;
+    color: #1F2933;
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 1.5rem;
@@ -39,12 +40,13 @@
   }
 
   .prose a {
-    color: #38bdf8;
+    color: #39D12C;
     text-decoration: none;
   }
 
   .prose a:hover {
     text-decoration: underline;
+    color: #D4AF37;
   }
 
   .prose ul,
@@ -58,7 +60,7 @@
   }
 
   .prose blockquote {
-    border-left: 4px solid #38bdf8;
+    border-left: 4px solid #39D12C;
     padding-left: 1rem;
     margin: 1.5rem 0;
     color: #6b7280;
@@ -66,7 +68,7 @@
   }
 
   .prose strong {
-    color: #0f2b46;
+    color: #1F2933;
     font-weight: 600;
   }
 
