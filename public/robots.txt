@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ai-versicherung-news.vercel.app/sitemap-index.xml
