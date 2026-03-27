@@ -1,0 +1,141 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import CategoryBadge from '../components/CategoryBadge.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  category: string;
+  tags?: string[];
+  sources?: Array<{
+    title: string;
+    url: string;
+    date?: string;
+    outlet?: string;
+  }>;
+  image?: string;
+}
+
+const { title, description, pubDate, category, tags, sources, image } = Astro.props;
+
+const formattedDate = new Intl.DateTimeFormat('de-DE', {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}).format(pubDate);
+
+const isoDate = pubDate.toISOString();
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: title,
+  description: description,
+  datePublished: isoDate,
+  dateModified: isoDate,
+  author: {
+    '@type': 'Organization',
+    name: 'ai.versicherung',
+    url: 'https://ai-versicherung-news.de',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'ai.versicherung',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://ai-versicherung-news.de/favicon.svg',
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': Astro.url.href,
+  },
+  ...(sources &&
+    sources.length > 0 && {
+      citation: sources.map((s) => ({
+        '@type': 'CreativeWork',
+        name: s.title,
+        url: s.url,
+      })),
+    }),
+};
+---
+
+<BaseLayout title={title} description={description} type="article" image={image}>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <article class="max-w-4xl mx-auto px-4 py-12">
+    <header class="mb-10">
+      <div class="flex items-center gap-3 mb-4">
+        <CategoryBadge category={category} />
+        <time datetime={isoDate} class="text-sm text-gray-500">
+          {formattedDate}
+        </time>
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-navy leading-tight mb-6">
+        {title}
+      </h1>
+      <p class="text-xl text-gray-600 leading-relaxed">{description}</p>
+      {
+        tags && tags.length > 0 && (
+          <div class="flex flex-wrap gap-2 mt-6">
+            {tags.map((tag) => (
+              <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
+                #{tag}
+              </span>
+            ))}
+          </div>
+        )
+      }
+    </header>
+
+    <div class="prose prose-lg prose-headings:text-navy prose-a:text-cyan prose-a:no-underline hover:prose-a:underline max-w-none">
+      <slot />
+    </div>
+
+    {
+      sources && sources.length > 0 && (
+        <footer class="mt-12 pt-8 border-t border-gray-200">
+          <h2 class="text-lg font-bold text-navy mb-4">Quellen</h2>
+          <ul class="space-y-3">
+            {sources.map((source) => (
+              <li class="flex items-start gap-2">
+                <svg
+                  class="w-5 h-5 text-cyan mt-0.5 shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+                <div>
+                  <a
+                    href={source.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-cyan hover:text-primary-700 font-medium"
+                  >
+                    {source.title}
+                  </a>
+                  {source.outlet && (
+                    <span class="text-gray-400 text-sm ml-2">({source.outlet})</span>
+                  )}
+                  {source.date && (
+                    <span class="text-gray-400 text-sm ml-2">– {source.date}</span>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </footer>
+      )
+    }
+  </article>
+</BaseLayout>

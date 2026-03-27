@@ -1,0 +1,92 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  type?: string;
+  canonicalURL?: string;
+}
+
+const {
+  title,
+  description = 'Tägliche KI-News für die Versicherungsbranche. Aktuelle Entwicklungen, Regulierung, Innovation und Märkte rund um künstliche Intelligenz in der Versicherungswirtschaft.',
+  image = '/og-default.png',
+  type = 'website',
+  canonicalURL,
+} = Astro.props;
+
+const siteURL = Astro.site?.toString() || 'https://ai-versicherung-news.de';
+const fullImageURL = image.startsWith('http') ? image : `${siteURL}${image}`;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary Meta Tags -->
+    <title>{title} | ai.versicherung</title>
+    <meta name="title" content={`${title} | ai.versicherung`} />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL || Astro.url.href} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullImageURL} />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="ai.versicherung" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url.href} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={fullImageURL} />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "ai.versicherung",
+          description: description,
+          url: siteURL,
+          potentialAction: {
+            "@type": "SearchAction",
+            target: `${siteURL}/news?q={search_term_string}`,
+            "query-input": "required name=search_term_string"
+          }
+        })
+      }
+    </script>
+  </head>
+  <body class="min-h-screen bg-gray-50 text-gray-900 flex flex-col">
+    <Header />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,70 @@
+---
+import CategoryBadge from './CategoryBadge.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  category: string;
+  slug: string;
+  sourcesCount: number;
+  featured?: boolean;
+}
+
+const { title, description, pubDate, category, slug, sourcesCount, featured } = Astro.props;
+
+const formattedDate = new Intl.DateTimeFormat('de-DE', {
+  day: 'numeric',
+  month: 'short',
+  year: 'numeric',
+}).format(pubDate);
+
+const href = `/news/${slug}`;
+---
+
+<article
+  class={`bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md hover:border-cyan/20 transition-all duration-200 overflow-hidden group ${
+    featured ? 'ring-2 ring-accent-400' : ''
+  }`}
+>
+  <a href={href} class="block p-6">
+    <div class="flex items-center gap-3 mb-3">
+      <CategoryBadge category={category} />
+      <time datetime={pubDate.toISOString()} class="text-sm text-gray-400">
+        {formattedDate}
+      </time>
+      {
+        featured && (
+          <span class="px-2 py-0.5 bg-accent-100 text-accent-800 text-xs font-medium rounded-full">
+            ⭐ Top-Story
+          </span>
+        )
+      }
+    </div>
+
+    <h2
+      class="text-xl font-bold text-navy group-hover:text-cyan transition-colors mb-3 leading-snug"
+    >
+      {title}
+    </h2>
+
+    <p class="text-gray-600 text-sm leading-relaxed line-clamp-3">
+      {description}
+    </p>
+
+    <div class="mt-4 flex items-center justify-between">
+      <span class="text-xs text-gray-400">
+        {sourcesCount} {sourcesCount === 1 ? 'Quelle' : 'Quellen'}
+      </span>
+      <span
+        class="text-sm font-medium text-cyan group-hover:translate-x-1 transition-transform inline-flex items-center gap-1"
+      >
+        Weiterlesen
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"
+          ></path>
+        </svg>
+      </span>
+    </div>
+  </a>
+</article>

@@ -1,0 +1,53 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-navy text-white/70 mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="relative">
+            <div class="w-8 h-8 rounded-full overflow-hidden flex">
+              <div class="w-1/2 h-full bg-cyan"></div>
+              <div class="w-1/2 h-full bg-navy border border-white/20"></div>
+            </div>
+            <div class="absolute -top-0.5 left-1/2 -translate-x-1/2 w-2.5 h-2.5 bg-gold rounded-full"></div>
+          </div>
+          <span class="text-lg font-bold text-white">
+            ai.<span class="text-cyan">versicherung</span>
+          </span>
+        </div>
+        <p class="text-sm leading-relaxed">
+          Tägliche KI-News für die Versicherungsbranche. Aktuelle Entwicklungen,
+          Regulierung, Innovation und Märkte rund um künstliche Intelligenz.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Kategorien</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/news?cat=ki-anwendungen" class="hover:text-cyan transition-colors">KI-Anwendungen</a></li>
+          <li><a href="/news?cat=regulierung" class="hover:text-cyan transition-colors">Regulierung</a></li>
+          <li><a href="/news?cat=makler" class="hover:text-cyan transition-colors">Makler</a></li>
+          <li><a href="/news?cat=maerkte" class="hover:text-cyan transition-colors">Märkte</a></li>
+          <li><a href="/news?cat=innovation" class="hover:text-cyan transition-colors">Innovation</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4">Informationen</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/about" class="hover:text-cyan transition-colors">Über uns</a></li>
+          <li><a href="/datenschutz" class="hover:text-cyan transition-colors">Datenschutz</a></li>
+          <li><a href="/impressum" class="hover:text-cyan transition-colors">Impressum</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 mt-8 pt-8 text-center text-xs">
+      <p>© {currentYear} ai.versicherung. Alle Rechte vorbehalten.</p>
+      <p class="mt-1">Nachrichten werden mit KI-Unterstützung generiert und redaktionell geprüft.</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,34 @@
+---
+interface Props {
+  category: string;
+  size?: 'sm' | 'md';
+}
+
+const { category, size = 'sm' } = Astro.props;
+
+const categoryLabels: Record<string, string> = {
+  'ki-anwendungen': 'KI-Anwendungen',
+  regulierung: 'Regulierung',
+  makler: 'Makler',
+  maerkte: 'Märkte',
+  innovation: 'Innovation',
+  risikomanagement: 'Risikomanagement',
+};
+
+const categoryColors: Record<string, string> = {
+  'ki-anwendungen': 'bg-cyan/10 text-cyan border-cyan/20',
+  regulierung: 'bg-accent-100 text-accent-800 border-accent-200',
+  makler: 'bg-primary-100 text-primary-800 border-primary-200',
+  maerkte: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+  innovation: 'bg-purple-100 text-purple-800 border-purple-200',
+  risikomanagement: 'bg-rose-100 text-rose-800 border-rose-200',
+};
+
+const label = categoryLabels[category] || category;
+const colors = categoryColors[category] || 'bg-gray-100 text-gray-800 border-gray-200';
+const sizeClasses = size === 'md' ? 'px-3 py-1 text-sm' : 'px-2 py-0.5 text-xs';
+---
+
+<span class={`inline-block font-medium rounded-full border ${colors} ${sizeClasses}`}>
+  {label}
+</span>

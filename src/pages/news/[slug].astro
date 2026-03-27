@@ -1,0 +1,66 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const news = await getCollection('news');
+  return news.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+
+const allNews = await getCollection('news');
+const relatedArticles = allNews
+  .filter(
+    (n) =>
+      n.slug !== article.slug &&
+      (n.data.category === article.data.category ||
+        n.data.tags?.some((t) => article.data.tags?.includes(t)))
+  )
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const formattedDate = (date: Date) =>
+  new Intl.DateTimeFormat('de-DE', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  }).format(date);
+---
+
+<ArticleLayout
+  title={article.data.title}
+  description={article.data.description}
+  pubDate={article.data.pubDate}
+  category={article.data.category}
+  tags={article.data.tags}
+  sources={article.data.sources}
+  image={article.data.image}
+>
+  <Content />
+
+  {
+    relatedArticles.length > 0 && (
+      <section class="mt-16 pt-8 border-t border-gray-200">
+        <h2 class="text-2xl font-bold text-navy mb-6">Verwandte Artikel</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {relatedArticles.map((related) => (
+            <a
+              href={`/news/${related.slug}`}
+              class="block bg-white rounded-lg border border-gray-100 p-4 hover:shadow-md hover:border-cyan/20 transition-all"
+            >
+              <span class="text-xs text-gray-400">{formattedDate(related.data.pubDate)}</span>
+              <h3 class="text-sm font-semibold text-navy mt-1 line-clamp-2">
+                {related.data.title}
+              </h3>
+            </a>
+          ))}
+        </div>
+      </section>
+    )
+  }
+</ArticleLayout>
