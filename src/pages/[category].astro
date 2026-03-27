@@ -1,17 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import NewsCard from '../components/NewsCard.astro';
-import CategoryBadge from '../components/CategoryBadge.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   return [
-    { params: { category: 'ki-anwendungen' }, props: { label: 'KI-Anwendungen', icon: '🤖', description: 'Einsatz von künstlicher Intelligenz in der Versicherungsbranche – von Risikobewertung bis Schadensbearbeitung.' } },
-    { params: { category: 'regulierung' }, props: { label: 'Regulierung', icon: '⚖️', description: 'EU-KI-Verordnung, DSGVO, Aufsicht und regulatorische Anforderungen für Versicherer und Makler.' } },
-    { params: { category: 'makler' }, props: { label: 'Makler', icon: '🏢', description: 'Vertrieb, Vergütung, Wettbewerb und digitale Transformation im Versicherungsmakler-Bereich.' } },
-    { params: { category: 'maerkte' }, props: { label: 'Märkte', icon: '📈', description: 'Aktienbewegungen, Fusionen, Investitionen und Marktentwicklungen in der Versicherungsbranche.' } },
-    { params: { category: 'innovation' }, props: { label: 'Innovation', icon: '💡', description: 'InsurTechs, neue Geschäftsmodelle und technologische Durchbrüche.' } },
-    { params: { category: 'risikomanagement' }, props: { label: 'Risikomanagement', icon: '🛡️', description: 'Cyber-Risiken, Naturgefahren und neue Risikokategorien.' } },
+    { params: { category: 'ki-digitalisierung' }, props: { label: 'KI & Digitalisierung', icon: '🤖', description: 'Künstliche Intelligenz, InsurTech, digitale Transformation und neue Technologien in der Versicherungsbranche.' } },
+    { params: { category: 'versicherer' }, props: { label: 'Versicherer', icon: '🏢', description: 'Unternehmensnews, Quartalszahlen, Fusionen, Strategiewechsel und Personalien bei Versicherungsunternehmen.' } },
+    { params: { category: 'versicherungsprodukte' }, props: { label: 'Versicherungsprodukte', icon: '📦', description: 'Neue Tarife, Produktinnovationen, Vergleiche und Marktanalysen zu Versicherungsprodukten.' } },
+    { params: { category: 'versicherungsumfeld' }, props: { label: 'Umfeld & Regulierung', icon: '🌍', description: 'EU-Regulierung, Aufsicht, Marktentwicklung, Zinsen und wirtschaftliche Rahmenbedingungen.' } },
+    { params: { category: 'makler' }, props: { label: 'Makler', icon: '🏠', description: 'Vertrieb, Vergütung, Verbände, rechtliche Änderungen und digitale Transformation im Maklerbereich.' } },
+    { params: { category: 'risiken-schaeden' }, props: { label: 'Risiken & Schäden', icon: '⚡', description: 'Naturkatastrophen, Cyber-Risiken, Haftungsfälle und aktuelle Schadensereignisse.' } },
   ];
 }
 
@@ -24,16 +23,16 @@ const filteredNews = allNews
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const categories = [
-  { slug: 'ki-anwendungen', label: 'KI-Anwendungen' },
-  { slug: 'regulierung', label: 'Regulierung' },
+  { slug: 'ki-digitalisierung', label: 'KI & Digitalisierung' },
+  { slug: 'versicherer', label: 'Versicherer' },
+  { slug: 'versicherungsprodukte', label: 'Produkte' },
+  { slug: 'versicherungsumfeld', label: 'Umfeld' },
   { slug: 'makler', label: 'Makler' },
-  { slug: 'maerkte', label: 'Märkte' },
-  { slug: 'innovation', label: 'Innovation' },
-  { slug: 'risikomanagement', label: 'Risikomanagement' },
+  { slug: 'risiken-schaeden', label: 'Risiken' },
 ];
 ---
 
-<BaseLayout title={`${label} – KI-News`} description={description}>
+<BaseLayout title={`${label} – News`} description={description}>
   <section class="bg-dark text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <span class="text-4xl mb-4 block">{icon}</span>
@@ -44,7 +43,7 @@ const categories = [
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <div class="flex flex-wrap gap-2 mb-8">
-      <a href="/news" class="px-3 py-1.5 text-sm rounded-full border border-gray-200 bg-white text-gray-600 hover:border-navy transition-colors">
+      <a href="/news" class="px-3 py-1.5 text-sm rounded-full border border-gray-200 bg-white text-gray-600 hover:border-primary-500 transition-colors">
         Alle
       </a>
       {categories.map((cat) => (
@@ -52,8 +51,8 @@ const categories = [
           href={`/${cat.slug}`}
           class={`px-3 py-1.5 text-sm rounded-full border transition-colors ${
             cat.slug === category
-              ? 'bg-dark text-white border-navy'
-              : 'bg-white text-gray-600 border-gray-200 hover:border-navy'
+              ? 'bg-dark text-white border-dark'
+              : 'bg-white text-gray-600 border-gray-200 hover:border-primary-500'
           }`}
         >
           {cat.label}
@@ -77,6 +76,8 @@ const categories = [
             slug={article.slug}
             sourcesCount={article.data.sources?.length || 0}
             featured={article.data.featured}
+            company={article.data.company}
+            companyDomain={article.data.companyDomain}
           />
         ))}
       </div>

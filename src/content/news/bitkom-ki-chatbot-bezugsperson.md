@@ -2,7 +2,7 @@
 title: "Bitkom-Umfrage: 26 Prozent empfinden KI-Chatbots als digitale Bezugsperson"
 description: "Eine aktuelle Bitkom-Umfrage zeigt, dass über ein Viertel der KI-Nutzer in Deutschland Chatbots als digitale Bezugsperson empfinden. Bei den unter 30-Jährigen ist der Anteil sogar noch höher."
 pubDate: 2026-03-25
-category: "ki-anwendungen"
+category: "ki-digitalisierung"
 tags: ["bitkom", "chatbot", "umfrage", "nutzerverhalten", "deutschland"]
 sources:
   - title: "Zahl des Tages - 26 Prozent sehen KI als digitale Bezugsperson"

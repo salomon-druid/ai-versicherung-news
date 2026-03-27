@@ -9,19 +9,16 @@ const sortedNews = allNews.sort(
 );
 
 const categories = [
-  { slug: 'ki-anwendungen', label: 'KI-Anwendungen' },
-  { slug: 'regulierung', label: 'Regulierung' },
+  { slug: 'ki-digitalisierung', label: 'KI & Digital' },
+  { slug: 'versicherer', label: 'Versicherer' },
+  { slug: 'versicherungsprodukte', label: 'Produkte' },
+  { slug: 'versicherungsumfeld', label: 'Umfeld' },
   { slug: 'makler', label: 'Makler' },
-  { slug: 'maerkte', label: 'Märkte' },
-  { slug: 'innovation', label: 'Innovation' },
-  { slug: 'risikomanagement', label: 'Risikomanagement' },
+  { slug: 'risiken-schaeden', label: 'Risiken' },
 ];
 ---
 
-<BaseLayout
-  title="Alle News"
-  description={`Alle KI-News für die Versicherungsbranche. ${sortedNews.length} Artikel mit Quellenangaben.`}
->
+<BaseLayout title="Alle News" description={`Alle Versicherungs-News. ${sortedNews.length} Artikel mit Quellenangaben.`}>
   <section class="bg-dark text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-4xl font-extrabold mb-3">Alle News</h1>
@@ -31,22 +28,17 @@ const categories = [
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <div class="flex flex-wrap gap-2 mb-8">
-      <a
-        href="/news"
-        class="px-3 py-1.5 text-sm rounded-full border border-navy bg-dark text-white"
-      >
+      <a href="/news" class="px-3 py-1.5 text-sm rounded-full border border-dark bg-dark text-white">
         Alle
       </a>
-      {
-        categories.map((cat) => (
-          <a
-            href={`/${cat.slug}`}
-            class="px-3 py-1.5 text-sm rounded-full border border-gray-200 bg-white text-gray-600 hover:border-navy transition-colors"
-          >
-            {cat.label}
-          </a>
-        ))
-      }
+      {categories.map((cat) => (
+        <a
+          href={`/${cat.slug}`}
+          class="px-3 py-1.5 text-sm rounded-full border border-gray-200 bg-white text-gray-600 hover:border-primary-500 transition-colors"
+        >
+          {cat.label}
+        </a>
+      ))}
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -59,6 +51,8 @@ const categories = [
           slug={article.slug}
           sourcesCount={article.data.sources?.length || 0}
           featured={article.data.featured}
+          company={article.data.company}
+          companyDomain={article.data.companyDomain}
         />
       ))}
     </div>

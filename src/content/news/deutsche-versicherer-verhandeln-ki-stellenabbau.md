@@ -2,7 +2,7 @@
 title: "Deutsche Versicherer verhandeln über KI-bedingten Stellenabbau"
 description: "Tarifverhandlungen zwischen Versicherern und Verdi starten heute in München. Im Fokus: Wie die Branche den durch KI ausgelösten Strukturwandel gestaltet und Arbeitsplätze sichert."
 pubDate: 2026-03-26
-category: "ki-anwendungen"
+category: "ki-digitalisierung"
 tags: ["tarifverhandlungen", "verdi", "stellenabbau", "ergo", "münchen"]
 featured: true
 sources:

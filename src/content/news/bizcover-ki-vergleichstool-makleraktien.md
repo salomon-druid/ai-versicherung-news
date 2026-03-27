@@ -2,7 +2,7 @@
 title: "BizCover lanciert KI-gestütztes Vergleichstool – Makleraktien unter Druck"
 description: "Das australische InsurTech BizCover hat ein vollständig in eine generative KI-Umgebung eingebettetes Vergleichstool gestartet. Die Reaktion: Makleraktien fielen deutlich."
 pubDate: 2026-03-26
-category: "maerkte"
+category: "versicherer"
 tags: ["bizcover", "insurtech", "vergleichstool", "aktien", "australien"]
 sources:
   - title: "BizCover's AI comparison tool up and running"

@@ -1,6 +1,5 @@
 #!/bin/bash
-# Fetch unique images from Unsplash for AI insurance news articles
-# Each article gets its own image based on slug
+# Fetch unique images from Unsplash for insurance news articles
 # Usage: ./scripts/fetch-article-image.sh <slug> <category>
 
 set -e
@@ -15,12 +14,12 @@ mkdir -p "$IMAGES_DIR"
 
 # Category to search query mapping
 declare -A QUERIES=(
-  ["ki-anwendungen"]="artificial-intelligence,neural-network,technology"
-  ["regulierung"]="law,legal-documents,gavel,court"
-  ["makler"]="business-meeting,office,handshake,corporate"
-  ["maerkte"]="stock-exchange,trading,finance,wall-street"
-  ["innovation"]="startup,lightbulb,brainstorm,future-tech"
-  ["risikomanagement"]="cybersecurity,shield,protection,data-center"
+  ["ki-digitalisierung"]="artificial-intelligence,neural-network,technology"
+  ["versicherer"]="insurance-company,corporate,skyscraper,business-tower"
+  ["versicherungsprodukte"]="contract,document,agreement,insurance-policy"
+  ["versicherungsumfeld"]="parliament,law,regulation,eu-flag"
+  ["makler"]="business-meeting,handshake,office,consulting"
+  ["risiken-schaeden"]="storm,flood,cyberattack,disaster,fire"
 )
 
 query="${QUERIES[$CATEGORY]:-insurance,digital,technology}"

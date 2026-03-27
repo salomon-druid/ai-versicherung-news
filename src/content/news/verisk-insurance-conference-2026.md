@@ -2,7 +2,7 @@
 title: "Verisk Insurance Conference 2026: KI und Daten formen die Zukunft der Versicherung"
 description: "Die Verisk Insurance Conference in Las Vegas bringt Branchenführer zusammen, um über die Rolle von Daten, Analysen und KI-Technologien für die Zukunft der Versicherungsbranche zu diskutieren."
 pubDate: 2026-03-25
-category: "innovation"
+category: "ki-digitalisierung"
 tags: ["verisk", "konferenz", "las-vegas", "daten", "analysen"]
 sources:
   - title: "Flagship Verisk Insurance Conference Convenes Leaders to Explore the Future of Insurance Data and AI"

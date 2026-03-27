@@ -9,16 +9,16 @@ const sortedNews = allNews.sort(
 );
 
 const categories = [
-  { slug: 'ki-anwendungen', label: 'KI-Anwendungen', icon: '🤖', count: allNews.filter(n => n.data.category === 'ki-anwendungen').length },
-  { slug: 'regulierung', label: 'Regulierung', icon: '⚖️', count: allNews.filter(n => n.data.category === 'regulierung').length },
-  { slug: 'makler', label: 'Makler', icon: '🏢', count: allNews.filter(n => n.data.category === 'makler').length },
-  { slug: 'maerkte', label: 'Märkte', icon: '📈', count: allNews.filter(n => n.data.category === 'maerkte').length },
-  { slug: 'innovation', label: 'Innovation', icon: '💡', count: allNews.filter(n => n.data.category === 'innovation').length },
-  { slug: 'risikomanagement', label: 'Risikomanagement', icon: '🛡️', count: allNews.filter(n => n.data.category === 'risikomanagement').length },
+  { slug: 'ki-digitalisierung', label: 'KI & Digitalisierung', icon: '🤖', count: allNews.filter(n => n.data.category === 'ki-digitalisierung').length },
+  { slug: 'versicherer', label: 'Versicherer', icon: '🏢', count: allNews.filter(n => n.data.category === 'versicherer').length },
+  { slug: 'versicherungsprodukte', label: 'Produkte', icon: '📦', count: allNews.filter(n => n.data.category === 'versicherungsprodukte').length },
+  { slug: 'versicherungsumfeld', label: 'Umfeld', icon: '🌍', count: allNews.filter(n => n.data.category === 'versicherungsumfeld').length },
+  { slug: 'makler', label: 'Makler', icon: '🏠', count: allNews.filter(n => n.data.category === 'makler').length },
+  { slug: 'risiken-schaeden', label: 'Risiken', icon: '⚡', count: allNews.filter(n => n.data.category === 'risiken-schaeden').length },
 ];
 ---
 
-<BaseLayout title="Tägliche KI-News für die Versicherungsbranche">
+<BaseLayout title="Versicherungsnews – KI, Versicherer, Makler & mehr">
   <!-- Hero Section -->
   <section class="bg-dark text-white py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,12 +27,12 @@ const categories = [
           Täglich aktualisiert
         </span>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-          KI transformiert die<br />
+          News für die<br />
           <span class="text-primary-500">Versicherungsbranche</span>
         </h1>
         <p class="text-xl text-white/70 leading-relaxed mb-8">
-          Nachrichten, Analysen und Einblicke zu künstlicher Intelligenz in der
-          Versicherungswirtschaft. Täglich kuratiert mit Quellenangaben.
+          KI, Versicherer, Makler, Produkte und Risiken – täglich kuratierte Nachrichten
+          mit Quellenangaben aus der Versicherungswirtschaft.
         </p>
         <div class="flex flex-wrap gap-4">
           <a
@@ -62,15 +62,15 @@ const categories = [
         </div>
         <div>
           <p class="text-3xl font-bold text-dark">6</p>
-          <p class="text-sm text-gray-500">Kategorien</p>
+          <p class="text-sm text-gray-500">Themenfelder</p>
         </div>
         <div>
           <p class="text-3xl font-bold text-dark">{allNews.reduce((acc, n) => acc + (n.data.sources?.length || 0), 0)}</p>
           <p class="text-sm text-gray-500">Quellen</p>
         </div>
         <div>
-          <p class="text-3xl font-bold text-dark">100%</p>
-          <p class="text-sm text-gray-500">Quellenangaben</p>
+          <p class="text-3xl font-bold text-dark">4</p>
+          <p class="text-sm text-gray-500">CronJobs / Tag</p>
         </div>
       </div>
     </div>
@@ -96,6 +96,8 @@ const categories = [
             slug={article.slug}
             sourcesCount={article.data.sources?.length || 0}
             featured={article.data.featured}
+            company={article.data.company}
+            companyDomain={article.data.companyDomain}
           />
         ))
       }
@@ -105,7 +107,7 @@ const categories = [
   <!-- Categories -->
   <section id="kategorien" class="bg-white py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold text-dark mb-8 text-center">Kategorien</h2>
+      <h2 class="text-2xl font-bold text-dark mb-8 text-center">Themenfelder</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         {
           categories.map((cat) => (
@@ -131,7 +133,7 @@ const categories = [
       <span class="text-4xl mb-4 block">📬</span>
       <h2 class="text-3xl font-bold text-white mb-4">Keine News verpassen</h2>
       <p class="text-white/70 mb-8">
-        Erhalte die wichtigsten KI-Versicherungs-News direkt in dein Postfach. Kostenlos und unverbindlich.
+        Erhalte die wichtigsten Versicherungs-News direkt in dein Postfach.
       </p>
       <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
         <input

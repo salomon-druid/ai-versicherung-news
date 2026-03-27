@@ -2,9 +2,10 @@
 const navLinks = [
   { href: '/', label: 'Startseite' },
   { href: '/news', label: 'News' },
-  { href: '/ki-anwendungen', label: 'KI-Anwendungen' },
-  { href: '/regulierung', label: 'Regulierung' },
+  { href: '/ki-digitalisierung', label: 'KI & Digital' },
+  { href: '/versicherer', label: 'Versicherer' },
   { href: '/makler', label: 'Makler' },
+  { href: '/glossar', label: 'Glossar' },
 ];
 ---
 
@@ -24,7 +25,7 @@ const navLinks = [
         </span>
       </a>
 
-      <nav class="hidden md:flex items-center gap-6">
+      <nav class="hidden md:flex items-center gap-5">
         {
           navLinks.map((link) => (
             <a

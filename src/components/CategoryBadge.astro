@@ -7,21 +7,21 @@ interface Props {
 const { category, size = 'sm' } = Astro.props;
 
 const categoryLabels: Record<string, string> = {
-  'ki-anwendungen': 'KI-Anwendungen',
-  regulierung: 'Regulierung',
+  'ki-digitalisierung': 'KI & Digital',
+  versicherer: 'Versicherer',
+  versicherungsprodukte: 'Produkte',
+  versicherungsumfeld: 'Umfeld',
   makler: 'Makler',
-  maerkte: 'Märkte',
-  innovation: 'Innovation',
-  risikomanagement: 'Risikomanagement',
+  'risiken-schaeden': 'Risiken',
 };
 
 const categoryColors: Record<string, string> = {
-  'ki-anwendungen': 'bg-primary-500/10 text-primary-700 border-primary-500/20',
-  regulierung: 'bg-amber-100 text-amber-800 border-amber-200',
-  makler: 'bg-blue-100 text-blue-800 border-blue-200',
-  maerkte: 'bg-emerald-100 text-emerald-800 border-emerald-200',
-  innovation: 'bg-purple-100 text-purple-800 border-purple-200',
-  risikomanagement: 'bg-rose-100 text-rose-800 border-rose-200',
+  'ki-digitalisierung': 'bg-primary-500/10 text-primary-700 border-primary-500/20',
+  versicherer: 'bg-blue-100 text-blue-800 border-blue-200',
+  versicherungsprodukte: 'bg-purple-100 text-purple-800 border-purple-200',
+  versicherungsumfeld: 'bg-amber-100 text-amber-800 border-amber-200',
+  makler: 'bg-teal-100 text-teal-800 border-teal-200',
+  'risiken-schaeden': 'bg-rose-100 text-rose-800 border-rose-200',
 };
 
 const label = categoryLabels[category] || category;

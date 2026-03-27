@@ -2,7 +2,7 @@
 title: "EU-KI-Verordnung: Was Versicherungsmakler jetzt beachten müssen"
 description: "Ab August 2026 drohen bei Verstößen gegen die EU-KI-Verordnung empfindliche Sanktionen. Der AfW hat eine Orientierungshilfe für Versicherungsmakler veröffentlicht."
 pubDate: 2026-03-26
-category: "regulierung"
+category: "versicherungsumfeld"
 tags: ["eu-ki-verordnung", "regulierung", "makler", "datenschutz", "afw"]
 sources:
   - title: "EU-KI-Verordnung: Was Versicherungsmakler beachten müssen"

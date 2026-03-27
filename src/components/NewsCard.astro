@@ -9,9 +9,11 @@ interface Props {
   slug: string;
   sourcesCount: number;
   featured?: boolean;
+  company?: string;
+  companyDomain?: string;
 }
 
-const { title, description, pubDate, category, slug, sourcesCount, featured } = Astro.props;
+const { title, description, pubDate, category, slug, sourcesCount, featured, company, companyDomain } = Astro.props;
 
 const formattedDate = new Intl.DateTimeFormat('de-DE', {
   day: 'numeric',
@@ -22,6 +24,7 @@ const formattedDate = new Intl.DateTimeFormat('de-DE', {
 const href = `/news/${slug}`;
 const imageUrl = `/images/articles/${slug}.jpg`;
 const fallbackImage = `/images/${category}.jpg`;
+const companyLogo = companyDomain ? `https://logo.clearbit.com/${companyDomain}` : null;
 ---
 
 <article
@@ -49,13 +52,32 @@ const fallbackImage = `/images/${category}.jpg`;
           )
         }
       </div>
+      {
+        companyLogo && (
+          <div class="absolute top-3 right-3 w-8 h-8 bg-white rounded-lg shadow-md p-1 flex items-center justify-center">
+            <img
+              src={companyLogo}
+              alt={company}
+              class="w-6 h-6 object-contain"
+              onerror="this.parentElement.style.display='none'"
+            />
+          </div>
+        )
+      }
     </div>
 
     <!-- Content -->
     <div class="p-5">
-      <time datetime={pubDate.toISOString()} class="text-xs text-gray-400 block mb-2">
-        {formattedDate}
-      </time>
+      <div class="flex items-center gap-2 mb-2">
+        <time datetime={pubDate.toISOString()} class="text-xs text-gray-400">
+          {formattedDate}
+        </time>
+        {
+          company && (
+            <span class="text-xs text-primary-500 font-medium">· {company}</span>
+          )
+        }
+      </div>
 
       <h2
         class="text-lg font-bold text-dark group-hover:text-primary-500 transition-colors mb-2 leading-snug"

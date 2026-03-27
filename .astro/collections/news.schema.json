@@ -29,12 +29,12 @@
         "category": {
           "type": "string",
           "enum": [
-            "ki-anwendungen",
-            "regulierung",
+            "ki-digitalisierung",
+            "versicherer",
+            "versicherungsprodukte",
+            "versicherungsumfeld",
             "makler",
-            "maerkte",
-            "innovation",
-            "risikomanagement"
+            "risiken-schaeden"
           ]
         },
         "tags": {
@@ -48,6 +48,12 @@
           "default": "ai-versicherung-news"
         },
         "image": {
+          "type": "string"
+        },
+        "company": {
+          "type": "string"
+        },
+        "companyDomain": {
           "type": "string"
         },
         "sources": {

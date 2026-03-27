@@ -2,7 +2,7 @@
 title: "CMT Commercial Insurance Summit: KI und Telematik verändern die Flottenversicherung"
 description: "Cambridge Mobile Telematics veranstaltet heute den Commercial Insurance Summit in Boston. Im Fokus: Wie Telematik- und KI-Daten die Unterzeichnung und Preisgestaltung in der Flottenversicherung revolutionieren."
 pubDate: 2026-03-26
-category: "ki-anwendungen"
+category: "ki-digitalisierung"
 tags: ["cmt", "telematik", "flottenversicherung", "summit", "boston"]
 sources:
   - title: "CMT to Host Summit on the Future of Commercial Auto Insurance"

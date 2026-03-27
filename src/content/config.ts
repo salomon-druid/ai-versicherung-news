@@ -7,16 +7,18 @@ const news = defineCollection({
     description: z.string(),
     pubDate: z.date(),
     category: z.enum([
-      'ki-anwendungen',
-      'regulierung',
+      'ki-digitalisierung',
+      'versicherer',
+      'versicherungsprodukte',
+      'versicherungsumfeld',
       'makler',
-      'maerkte',
-      'innovation',
-      'risikomanagement',
+      'risiken-schaeden',
     ]),
     tags: z.array(z.string()).optional(),
     author: z.string().default('ai-versicherung-news'),
     image: z.string().optional(),
+    company: z.string().optional(),
+    companyDomain: z.string().optional(),
     sources: z.array(
       z.object({
         title: z.string(),
