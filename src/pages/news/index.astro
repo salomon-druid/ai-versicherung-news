@@ -1,20 +1,12 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import NewsCard from '../../components/NewsCard.astro';
-import CategoryBadge from '../../components/CategoryBadge.astro';
 import { getCollection } from 'astro:content';
 
 const allNews = await getCollection('news');
 const sortedNews = allNews.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-
-const url = Astro.url;
-const categoryFilter = url.searchParams.get('cat');
-
-const filteredNews = categoryFilter
-  ? sortedNews.filter((n) => n.data.category === categoryFilter)
-  : sortedNews;
 
 const categories = [
   { slug: 'ki-anwendungen', label: 'KI-Anwendungen' },
@@ -24,83 +16,51 @@ const categories = [
   { slug: 'innovation', label: 'Innovation' },
   { slug: 'risikomanagement', label: 'Risikomanagement' },
 ];
-
-const categoryLabel = categoryFilter
-  ? categories.find((c) => c.slug === categoryFilter)?.label || categoryFilter
-  : null;
 ---
 
 <BaseLayout
-  title={categoryFilter ? `News: ${categoryLabel}` : 'Alle News'}
-  description={`${categoryLabel || 'Alle'} KI-News für die Versicherungsbranche. ${filteredNews.length} Artikel mit Quellenangaben.`}
+  title="Alle News"
+  description={`Alle KI-News für die Versicherungsbranche. ${sortedNews.length} Artikel mit Quellenangaben.`}
 >
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-10">
-      <div>
-        <h1 class="text-3xl font-bold text-navy">
-          {categoryFilter ? (
-            <>
-              <CategoryBadge category={categoryFilter} size="md" />
-              <span class="ml-3">{categoryLabel}</span>
-            </>
-          ) : (
-            'Alle News'
-          )}
-        </h1>
-        <p class="text-gray-500 mt-2">{filteredNews.length} Artikel</p>
-      </div>
+  <section class="bg-navy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-extrabold mb-3">Alle News</h1>
+      <p class="text-white/70 text-lg">{sortedNews.length} Artikel mit Quellenangaben</p>
+    </div>
+  </section>
 
-      <div class="flex flex-wrap gap-2">
-        <a
-          href="/news"
-          class={`px-3 py-1.5 text-sm rounded-full border transition-colors ${
-            !categoryFilter
-              ? 'bg-navy text-white border-navy'
-              : 'bg-white text-gray-600 border-gray-200 hover:border-navy'
-          }`}
-        >
-          Alle
-        </a>
-        {
-          categories.map((cat) => (
-            <a
-              href={`/news?cat=${cat.slug}`}
-              class={`px-3 py-1.5 text-sm rounded-full border transition-colors ${
-                categoryFilter === cat.slug
-                  ? 'bg-navy text-white border-navy'
-                  : 'bg-white text-gray-600 border-gray-200 hover:border-navy'
-              }`}
-            >
-              {cat.label}
-            </a>
-          ))
-        }
-      </div>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="flex flex-wrap gap-2 mb-8">
+      <a
+        href="/news"
+        class="px-3 py-1.5 text-sm rounded-full border border-navy bg-navy text-white"
+      >
+        Alle
+      </a>
+      {
+        categories.map((cat) => (
+          <a
+            href={`/${cat.slug}`}
+            class="px-3 py-1.5 text-sm rounded-full border border-gray-200 bg-white text-gray-600 hover:border-navy transition-colors"
+          >
+            {cat.label}
+          </a>
+        ))
+      }
     </div>
 
-    {
-      filteredNews.length === 0 ? (
-        <div class="text-center py-16">
-          <p class="text-xl text-gray-400">Keine Artikel in dieser Kategorie gefunden.</p>
-          <a href="/news" class="text-cyan hover:underline mt-4 inline-block">
-            Alle News anzeigen
-          </a>
-        </div>
-      ) : (
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredNews.map((article) => (
-            <NewsCard
-              title={article.data.title}
-              description={article.data.description}
-              pubDate={article.data.pubDate}
-              category={article.data.category}
-              slug={article.slug}
-              sourcesCount={article.data.sources?.length || 0}
-              featured={article.data.featured}
-            />
-          ))}
-        </div>
-      )
-    }
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {sortedNews.map((article) => (
+        <NewsCard
+          title={article.data.title}
+          description={article.data.description}
+          pubDate={article.data.pubDate}
+          category={article.data.category}
+          slug={article.slug}
+          sourcesCount={article.data.sources?.length || 0}
+          featured={article.data.featured}
+        />
+      ))}
+    </div>
   </section>
 </BaseLayout>

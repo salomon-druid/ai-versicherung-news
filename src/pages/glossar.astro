@@ -1,0 +1,93 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const terms = [
+  {
+    term: 'Künstliche Intelligenz (KI)',
+    definition: 'Technologien, die menschenähnliche Intelligenz simulieren – von maschinellem Lernen bis zu generativen Modellen. In der Versicherung eingesetzt für Risikobewertung, Schadensbearbeitung und Kundenservice.',
+    category: 'Grundlagen',
+  },
+  {
+    term: 'Maschinelles Lernen (ML)',
+    definition: 'Ein Teilbereich der KI, bei dem Systeme aus Daten lernen und Vorhersagen treffen, ohne explizit programmiert zu werden. Grundlage für Predictive Analytics in der Versicherung.',
+    category: 'Grundlagen',
+  },
+  {
+    term: 'Generative KI',
+    definition: 'KI-Systeme, die neue Inhalte (Text, Bilder, Code) erzeugen können. Bekannte Beispiele: ChatGPT, Claude, Gemini. Im Versicherungsbereich genutzt für Angebotserstellung und Dokumentation.',
+    category: 'Grundlagen',
+  },
+  {
+    term: 'Predictive Analytics',
+    definition: 'Der Einsatz von statistischen Modellen und ML-Algorithmen, um zukünftige Ereignisse vorherzusagen. In der Versicherung genutzt für Risikoprognose und Betrugserkennung.',
+    category: 'Anwendung',
+  },
+  {
+    term: 'Underwriting',
+    definition: 'Der Prozess der Risikobewertung und Policengestaltung. KI automatisiert zunehmend die Risikoeinschätzung und Tarifierung.',
+    category: 'Anwendung',
+  },
+  {
+    term: 'InsurTech',
+    definition: 'Technologieunternehmen, die innovative Lösungen für die Versicherungsbranche entwickeln. Oft Start-ups mit Fokus auf digitale Distribution und KI-gestützte Prozesse.',
+    category: 'Branche',
+  },
+  {
+    term: 'EU-KI-Verordnung',
+    definition: 'EU-Verordnung 2024/1689, die erstmals einheitliche Regeln für den Einsatz von KI-Systemen in der EU festlegt. Ab August 2026 mit empfindlichen Sanktionen bei Verstößen.',
+    category: 'Regulierung',
+  },
+  {
+    term: 'Telematik',
+    definition: 'Die Kombination von Telekommunikation und Informatik zur Datenerfassung. In der Versicherung genutzt für fahrerbezogene Tarife und Risikoanalyse.',
+    category: 'Technologie',
+  },
+  {
+    term: 'Risikomodellierung',
+    definition: 'Die mathematische Darstellung von Risiken zur Kalkulation von Prämien und Rückstellungen. KI verbessert die Modellgenauigkeit durch Mustererkennung in großen Datenmengen.',
+    category: 'Anwendung',
+  },
+  {
+    term: 'Natural Language Processing (NLP)',
+    definition: 'Ein KI-Bereich, der Maschinen das Verstehen und Generieren menschlicher Sprache ermöglicht. Eingesetzt in Chatbots, Vertragsanalyse und Schadensbearbeitung.',
+    category: 'Technologie',
+  },
+  {
+    term: 'Automatisierte Schadensbearbeitung',
+    definition: 'Der Einsatz von KI zur schnellen und effizienten Abwicklung von Versicherungsschäden – von der Erstbearbeitung bis zur Zahlungsanweisung.',
+    category: 'Anwendung',
+  },
+  {
+    term: 'Fraud Detection',
+    definition: 'KI-gestützte Systeme zur Erkennung von Versicherungsbetrug durch Mustererkennung in Schadensmeldungen und Anträgen.',
+    category: 'Anwendung',
+  },
+];
+
+const categories = [...new Set(terms.map((t) => t.category))];
+---
+
+<BaseLayout title="Glossar" description="Wichtige Begriffe zu KI in der Versicherung einfach erklärt. Von Machine Learning bis EU-KI-Verordnung.">
+  <section class="bg-navy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl font-extrabold mb-3">Glossar</h1>
+      <p class="text-white/70 text-lg max-w-2xl">Wichtige Begriffe zu KI in der Versicherung einfach erklärt.</p>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    {categories.map((cat) => (
+      <div class="mb-12">
+        <h2 class="text-2xl font-bold text-navy mb-6 pb-2 border-b border-gray-200">{cat}</h2>
+        <dl class="space-y-6">
+          {terms.filter((t) => t.category === cat).map((entry) => (
+            <div class="bg-white rounded-lg p-5 border border-gray-100">
+              <dt class="text-lg font-bold text-navy mb-2">{entry.term}</dt>
+              <dd class="text-gray-600 leading-relaxed">{entry.definition}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    ))}
+  </section>
+</BaseLayout>

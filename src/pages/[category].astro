@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsCard from '../components/NewsCard.astro';
+import CategoryBadge from '../components/CategoryBadge.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  return [
+    { params: { category: 'ki-anwendungen' }, props: { label: 'KI-Anwendungen', icon: '🤖', description: 'Einsatz von künstlicher Intelligenz in der Versicherungsbranche – von Risikobewertung bis Schadensbearbeitung.' } },
+    { params: { category: 'regulierung' }, props: { label: 'Regulierung', icon: '⚖️', description: 'EU-KI-Verordnung, DSGVO, Aufsicht und regulatorische Anforderungen für Versicherer und Makler.' } },
+    { params: { category: 'makler' }, props: { label: 'Makler', icon: '🏢', description: 'Vertrieb, Vergütung, Wettbewerb und digitale Transformation im Versicherungsmakler-Bereich.' } },
+    { params: { category: 'maerkte' }, props: { label: 'Märkte', icon: '📈', description: 'Aktienbewegungen, Fusionen, Investitionen und Marktentwicklungen in der Versicherungsbranche.' } },
+    { params: { category: 'innovation' }, props: { label: 'Innovation', icon: '💡', description: 'InsurTechs, neue Geschäftsmodelle und technologische Durchbrüche.' } },
+    { params: { category: 'risikomanagement' }, props: { label: 'Risikomanagement', icon: '🛡️', description: 'Cyber-Risiken, Naturgefahren und neue Risikokategorien.' } },
+  ];
+}
+
+const { category } = Astro.params;
+const { label, icon, description } = Astro.props;
+
+const allNews = await getCollection('news');
+const filteredNews = allNews
+  .filter((n) => n.data.category === category)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const categories = [
+  { slug: 'ki-anwendungen', label: 'KI-Anwendungen' },
+  { slug: 'regulierung', label: 'Regulierung' },
+  { slug: 'makler', label: 'Makler' },
+  { slug: 'maerkte', label: 'Märkte' },
+  { slug: 'innovation', label: 'Innovation' },
+  { slug: 'risikomanagement', label: 'Risikomanagement' },
+];
+---
+
+<BaseLayout title={`${label} – KI-News`} description={description}>
+  <section class="bg-navy text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <span class="text-4xl mb-4 block">{icon}</span>
+      <h1 class="text-4xl font-extrabold mb-3">{label}</h1>
+      <p class="text-white/70 text-lg max-w-2xl">{description}</p>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="flex flex-wrap gap-2 mb-8">
+      <a href="/news" class="px-3 py-1.5 text-sm rounded-full border border-gray-200 bg-white text-gray-600 hover:border-navy transition-colors">
+        Alle
+      </a>
+      {categories.map((cat) => (
+        <a
+          href={`/${cat.slug}`}
+          class={`px-3 py-1.5 text-sm rounded-full border transition-colors ${
+            cat.slug === category
+              ? 'bg-navy text-white border-navy'
+              : 'bg-white text-gray-600 border-gray-200 hover:border-navy'
+          }`}
+        >
+          {cat.label}
+        </a>
+      ))}
+    </div>
+
+    {filteredNews.length === 0 ? (
+      <div class="text-center py-16">
+        <p class="text-xl text-gray-400 mb-4">Noch keine Artikel in dieser Kategorie.</p>
+        <a href="/news" class="text-cyan hover:underline font-medium">← Zurück zu allen News</a>
+      </div>
+    ) : (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filteredNews.map((article) => (
+          <NewsCard
+            title={article.data.title}
+            description={article.data.description}
+            pubDate={article.data.pubDate}
+            category={article.data.category}
+            slug={article.slug}
+            sourcesCount={article.data.sources?.length || 0}
+            featured={article.data.featured}
+          />
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>
