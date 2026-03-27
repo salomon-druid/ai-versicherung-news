@@ -3,7 +3,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://ai-versicherung-news.de',
+  site: 'https://ai-versicherung-news.vercel.app',
   integrations: [
     sitemap({
       changefreq: 'daily',

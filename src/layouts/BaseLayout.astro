@@ -19,7 +19,7 @@ const {
   canonicalURL,
 } = Astro.props;
 
-const siteURL = Astro.site?.toString() || 'https://ai-versicherung-news.de';
+const siteURL = Astro.site?.toString() || 'https://ai-versicherung-news.vercel.app';
 const fullImageURL = image.startsWith('http') ? image : `${siteURL}${image}`;
 ---
 
