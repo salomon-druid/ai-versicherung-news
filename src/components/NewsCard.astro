@@ -20,7 +20,8 @@ const formattedDate = new Intl.DateTimeFormat('de-DE', {
 }).format(pubDate);
 
 const href = `/news/${slug}`;
-const imageUrl = `/images/${category}.jpg`;
+const imageUrl = `/images/articles/${slug}.jpg`;
+const fallbackImage = `/images/${category}.jpg`;
 ---
 
 <article
@@ -36,6 +37,7 @@ const imageUrl = `/images/${category}.jpg`;
         alt={title}
         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         loading="lazy"
+        onerror={`this.src='${fallbackImage}'`}
       />
       <div class="absolute top-3 left-3 flex gap-2">
         <CategoryBadge category={category} />

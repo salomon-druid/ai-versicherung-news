@@ -15,9 +15,10 @@ interface Props {
     outlet?: string;
   }>;
   image?: string;
+  slug?: string;
 }
 
-const { title, description, pubDate, category, tags, sources, image } = Astro.props;
+const { title, description, pubDate, category, tags, sources, image, slug } = Astro.props;
 
 const formattedDate = new Intl.DateTimeFormat('de-DE', {
   weekday: 'long',
@@ -27,7 +28,7 @@ const formattedDate = new Intl.DateTimeFormat('de-DE', {
 }).format(pubDate);
 
 const isoDate = pubDate.toISOString();
-const heroImage = image || `/images/${category}.jpg`;
+const heroImage = image || (slug ? `/images/articles/${slug}.jpg` : `/images/${category}.jpg`);
 
 const articleSchema = {
   '@context': 'https://schema.org',

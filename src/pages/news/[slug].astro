@@ -10,16 +10,17 @@ export async function getStaticPaths() {
   }));
 }
 
-const { article } = Astro.props;
-const { Content } = await render(article);
+const { article } = Astro.params;
+const { article: articleData } = Astro.props;
+const { Content } = await render(articleData);
 
 const allNews = await getCollection('news');
 const relatedArticles = allNews
   .filter(
     (n) =>
-      n.slug !== article.slug &&
-      (n.data.category === article.data.category ||
-        n.data.tags?.some((t) => article.data.tags?.includes(t)))
+      n.slug !== articleData.slug &&
+      (n.data.category === articleData.category ||
+        n.data.tags?.some((t) => articleData.tags?.includes(t)))
   )
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
@@ -33,13 +34,14 @@ const formattedDate = (date: Date) =>
 ---
 
 <ArticleLayout
-  title={article.data.title}
-  description={article.data.description}
-  pubDate={article.data.pubDate}
-  category={article.data.category}
-  tags={article.data.tags}
-  sources={article.data.sources}
-  image={article.data.image}
+  title={articleData.data.title}
+  description={articleData.data.description}
+  pubDate={articleData.data.pubDate}
+  category={articleData.data.category}
+  tags={articleData.data.tags}
+  sources={articleData.data.sources}
+  image={articleData.data.image || `/images/articles/${article}.jpg`}
+  slug={article}
 >
   <Content />
 
