@@ -40,7 +40,7 @@
   }
 
   .prose a {
-    color: #39D12C;
+    color: #3e7339;
     text-decoration: none;
   }
 
@@ -60,7 +60,7 @@
   }
 
   .prose blockquote {
-    border-left: 4px solid #39D12C;
+    border-left: 4px solid #3e7339;
     padding-left: 1rem;
     margin: 1.5rem 0;
     color: #6b7280;
