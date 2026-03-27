@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const terms = [
+  // Grundlagen
   {
     term: 'Künstliche Intelligenz (KI)',
     definition: 'Technologien, die menschenähnliche Intelligenz simulieren – von maschinellem Lernen bis zu generativen Modellen. In der Versicherung eingesetzt für Risikobewertung, Schadensbearbeitung und Kundenservice.',
@@ -13,10 +14,27 @@ const terms = [
     category: 'Grundlagen',
   },
   {
+    term: 'Deep Learning',
+    definition: 'Eine Fortgeschrittene Form des maschinellen Lernens mit neuronalen Netzwerken, die viele Schichten (Layer) besitzen. Ermöglicht komplexe Mustererkennung in Bildern, Texten und Daten.',
+    category: 'Grundlagen',
+  },
+  {
     term: 'Generative KI',
     definition: 'KI-Systeme, die neue Inhalte (Text, Bilder, Code) erzeugen können. Bekannte Beispiele: ChatGPT, Claude, Gemini. Im Versicherungsbereich genutzt für Angebotserstellung und Dokumentation.',
     category: 'Grundlagen',
   },
+  {
+    term: 'Large Language Model (LLM)',
+    definition: 'Große Sprachmodelle, die auf riesigen Textmengen trainiert wurden und menschenähnliche Sprache verstehen und erzeugen können. Grundlage für Chatbots und Textassistenten.',
+    category: 'Grundlagen',
+  },
+  {
+    term: 'Neuronales Netzwerk',
+    definition: 'Ein Computing-Modell, inspiriert vom menschlichen Gehirn, bestehend aus mite verbundenen Knoten (Neuronen). Grundlage für Deep Learning und moderne KI-Systeme.',
+    category: 'Grundlagen',
+  },
+
+  // Anwendung
   {
     term: 'Predictive Analytics',
     definition: 'Der Einsatz von statistischen Modellen und ML-Algorithmen, um zukünftige Ereignisse vorherzusagen. In der Versicherung genutzt für Risikoprognose und Betrugserkennung.',
@@ -28,14 +46,46 @@ const terms = [
     category: 'Anwendung',
   },
   {
-    term: 'InsurTech',
-    definition: 'Technologieunternehmen, die innovative Lösungen für die Versicherungsbranche entwickeln. Oft Start-ups mit Fokus auf digitale Distribution und KI-gestützte Prozesse.',
-    category: 'Branche',
+    term: 'Claims Management',
+    definition: 'Die Verwaltung und Bearbeitung von Versicherungsschäden. KI beschleunigt die Erstbearbeitung, Dokumentenprüfung und Schadensregulierung.',
+    category: 'Anwendung',
   },
   {
-    term: 'EU-KI-Verordnung',
-    definition: 'EU-Verordnung 2024/1689, die erstmals einheitliche Regeln für den Einsatz von KI-Systemen in der EU festlegt. Ab August 2026 mit empfindlichen Sanktionen bei Verstößen.',
-    category: 'Regulierung',
+    term: 'Dynamic Pricing',
+    definition: 'Die automatische Anpassung von Versicherungsprämien in Echtzeit basierend auf individuellen Risikofaktoren. Ermöglicht durch KI und Echtzeitdaten.',
+    category: 'Anwendung',
+  },
+  {
+    term: 'Betrugserkennung (Fraud Detection)',
+    definition: 'KI-gestützte Systeme zur Erkennung von Versicherungsbetrug durch Mustererkennung in Schadensmeldungen und Anträgen.',
+    category: 'Anwendung',
+  },
+  {
+    term: 'Chatbot / Conversational AI',
+    definition: 'KI-gestützte Dialogsysteme, die Kundenanfragen in natürlicher Sprache beantworten. In der Versicherung für Erstberatung, Schadensmeldung und Vertragsfragen eingesetzt.',
+    category: 'Anwendung',
+  },
+  {
+    term: 'Hyperpersonalisierung',
+    definition: 'Die Nutzung von KI und Datenanalysen, um individuell zugeschnittene Versicherungsprodukte, Kommunikation und Services für jeden Kunden zu erstellen.',
+    category: 'Anwendung',
+  },
+  {
+    term: 'Automatisierte Schadensbearbeitung',
+    definition: 'Der Einsatz von KI zur schnellen und effizienten Abwicklung von Versicherungsschäden – von der Erstbearbeitung bis zur Zahlungsanweisung.',
+    category: 'Anwendung',
+  },
+
+  // Technologie
+  {
+    term: 'Natural Language Processing (NLP)',
+    definition: 'Ein KI-Bereich, der Maschinen das Verstehen und Generieren menschlicher Sprache ermöglicht. Eingesetzt in Chatbots, Vertragsanalyse und Schadensbearbeitung.',
+    category: 'Technologie',
+  },
+  {
+    term: 'Computer Vision',
+    definition: 'KI-Technologie, die Maschinen das Interpretieren von Bildern und Videos ermöglicht. In der Versicherung genutzt für Schadensfotografie-Analyse und Fahrzeuginspektion.',
+    category: 'Technologie',
   },
   {
     term: 'Telematik',
@@ -43,45 +93,148 @@ const terms = [
     category: 'Technologie',
   },
   {
-    term: 'Risikomodellierung',
-    definition: 'Die mathematische Darstellung von Risiken zur Kalkulation von Prämien und Rückstellungen. KI verbessert die Modellgenauigkeit durch Mustererkennung in großen Datenmengen.',
-    category: 'Anwendung',
-  },
-  {
-    term: 'Natural Language Processing (NLP)',
-    definition: 'Ein KI-Bereich, der Maschinen das Verstehen und Generieren menschlicher Sprache ermöglicht. Eingesetzt in Chatbots, Vertragsanalyse und Schadensbearbeitung.',
+    term: 'Internet of Things (IoT)',
+    definition: 'Ein Netzwerk verbundener Geräte, die Daten sammeln und austauschen. In der Versicherung relevant für Smart-Home-Risikobewertung und Wearables in der Krankenversicherung.',
     category: 'Technologie',
   },
   {
-    term: 'Automatisierte Schadensbearbeitung',
-    definition: 'Der Einsatz von KI zur schnellen und effizienten Abwicklung von Versicherungsschäden – von der Erstbearbeitung bis zur Zahlungsanweisung.',
-    category: 'Anwendung',
+    term: 'Robotic Process Automation (RPA)',
+    definition: 'Software-Roboter, die repetitive Aufgaben automatisieren. In der Versicherung eingesetzt für Datenerfassung, Policenausstellung und Schadensbearbeitung.',
+    category: 'Technologie',
   },
   {
-    term: 'Fraud Detection',
-    definition: 'KI-gestützte Systeme zur Erkennung von Versicherungsbetrug durch Mustererkennung in Schadensmeldungen und Anträgen.',
-    category: 'Anwendung',
+    term: 'Blockchain / Distributed Ledger',
+    definition: 'Eine dezentrale Datenbank-Technologie für fälschungssichere Aufzeichnungen. Potenzial für automatisierte Smart Contracts in der Versicherung.',
+    category: 'Technologie',
+  },
+  {
+    term: 'API (Application Programming Interface)',
+    definition: 'Schnittstellen, die es verschiedenen Systemen ermöglichen, miteinander zu kommunizieren. Grundlage für digitale Versicherungsplattformen und Maklerintegration.',
+    category: 'Technologie',
+  },
+
+  // Regulierung
+  {
+    term: 'EU-KI-Verordnung',
+    definition: 'EU-Verordnung 2024/1689, die erstmals einheitliche Regeln für den Einsatz von KI-Systemen in der EU festlegt. Ab August 2026 mit empfindlichen Sanktionen bei Verstößen.',
+    category: 'Regulierung',
+  },
+  {
+    term: 'DSGVO (Datenschutz-Grundverordnung)',
+    definition: 'EU-Verordnung zum Schutz personenbezogener Daten. Beeinflusst maßgeblich, wie Versicherer KI einsetzen und Kundendaten verarbeiten dürfen.',
+    category: 'Regulierung',
+  },
+  {
+    term: 'KI-Risikoklassen',
+    definition: 'Die EU-KI-Verordnung klassifiziert KI-Systeme nach Risikostufen: inakzeptabel, hoch, begrenzt und minimal. Versicherungsanwendungen fallen oft unter „hohes Risiko".',
+    category: 'Regulierung',
+  },
+  {
+    term: 'Erklärbare KI (Explainable AI / XAI)',
+    definition: 'KI-Systeme, deren Entscheidungen für Menschen nachvollziehbar sind. Besonders wichtig in der Versicherung, wo Kunden ein Recht auf Begründung von Entscheidungen haben.',
+    category: 'Regulierung',
+  },
+
+  // Branche
+  {
+    term: 'InsurTech',
+    definition: 'Technologieunternehmen, die innovative Lösungen für die Versicherungsbranche entwickeln. Oft Start-ups mit Fokus auf digitale Distribution und KI-gestützte Prozesse.',
+    category: 'Branche',
+  },
+  {
+    term: 'Embedded Insurance',
+    definition: 'Versicherungsschutz, der nahtlos in andere Produkte oder Dienstleistungen integriert wird – z.B. Reiseversicherung beim Flugkauf. Ermöglicht durch KI und APIs.',
+    category: 'Branche',
+  },
+  {
+    term: 'Parametrische Versicherung',
+    definition: 'Versicherungsprodukte, die auf Basis objektiver Parameter (z.B. Wetterdaten) automatisch auszahlen, ohne klassischen Schadensprozess. KI optimiert die Parametermodellierung.',
+    category: 'Branche',
+  },
+  {
+    term: 'Peer-to-Peer-Versicherung',
+    definition: 'Ein Versicherungsmodell, bei dem sich Privatpersonen zusammenschließen, um Risiken gemeinsam zu tragen. KI ermöglicht Risikobewertung und Schadensabwicklung ohne klassischen Versicherer.',
+    category: 'Branche',
+  },
+  {
+    term: 'On-Demand-Versicherung',
+    definition: 'Versicherungsschutz, der flexibel und bedarfsgerecht gebucht werden kann – stunden- oder tageweise. KI ermöglicht Echtzeit-Tarifierung und Risikobewertung.',
+    category: 'Branche',
+  },
+
+  // Risikomanagement
+  {
+    term: 'Risikomodellierung',
+    definition: 'Die mathematische Darstellung von Risiken zur Kalkulation von Prämien und Rückstellungen. KI verbessert die Modellgenauigkeit durch Mustererkennung in großen Datenmengen.',
+    category: 'Risikomanagement',
+  },
+  {
+    term: 'Cyberversicherung',
+    definition: 'Versicherungsschutz gegen Schäden durch Cyberangriffe, Datenverlust und IT-Sicherheitsvorfälle. Eines der am schnellsten wachsenden Versicherungssegmente.',
+    category: 'Risikomanagement',
+  },
+  {
+    term: 'Klimarisiko-Modellierung',
+    definition: 'Die Nutzung von KI und Klimadaten, um zukünftige Naturgefahren und deren finanzielle Auswirkungen auf Versicherungsportfolios vorherzusagen.',
+    category: 'Risikomanagement',
+  },
+  {
+    term: 'Catastrophe Modeling',
+    definition: 'Computersimulationen zur Abschätzung von Schäden durch Naturkatastrophen. KI verbessert die Vorhersagegenauigkeit für Überschwemmungen, Stürme und Erdbeben.',
+    category: 'Risikomanagement',
   },
 ];
 
 const categories = [...new Set(terms.map((t) => t.category))];
+const categoryIcons: Record<string, string> = {
+  Grundlagen: '🧠',
+  Anwendung: '⚙️',
+  Technologie: '💻',
+  Regulierung: '📜',
+  Branche: '🏢',
+  Risikomanagement: '🛡️',
+};
 ---
 
 <BaseLayout title="Glossar" description="Wichtige Begriffe zu KI in der Versicherung einfach erklärt. Von Machine Learning bis EU-KI-Verordnung.">
   <section class="bg-dark text-white py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h1 class="text-4xl font-extrabold mb-3">Glossar</h1>
-      <p class="text-white/70 text-lg max-w-2xl">Wichtige Begriffe zu KI in der Versicherung einfach erklärt.</p>
+      <p class="text-white/70 text-lg max-w-2xl">
+        {terms.length} Begriffe zu KI in der Versicherung – einfach erklärt.
+      </p>
+    </div>
+  </section>
+
+  <!-- Quick Navigation -->
+  <section class="bg-white border-b border-gray-100 sticky top-16 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div class="flex flex-wrap gap-2">
+        {categories.map((cat) => (
+          <a
+            href={`#${cat.toLowerCase()}`}
+            class="px-3 py-1.5 text-sm rounded-full border border-gray-200 bg-white text-gray-600 hover:border-primary-500 hover:text-primary-500 transition-colors"
+          >
+            {categoryIcons[cat]} {cat}
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 
   <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     {categories.map((cat) => (
-      <div class="mb-12">
-        <h2 class="text-2xl font-bold text-dark mb-6 pb-2 border-b border-gray-200">{cat}</h2>
-        <dl class="space-y-6">
+      <div id={cat.toLowerCase()} class="mb-12 scroll-mt-32">
+        <h2 class="text-2xl font-bold text-dark mb-6 pb-2 border-b border-gray-200 flex items-center gap-2">
+          <span class="text-2xl">{categoryIcons[cat]}</span>
+          {cat}
+          <span class="text-sm font-normal text-gray-400 ml-2">
+            ({terms.filter((t) => t.category === cat).length} Begriffe)
+          </span>
+        </h2>
+        <dl class="space-y-4">
           {terms.filter((t) => t.category === cat).map((entry) => (
-            <div class="bg-white rounded-lg p-5 border border-gray-100">
+            <div class="bg-white rounded-lg p-5 border border-gray-100 hover:border-primary-500/20 hover:shadow-sm transition-all">
               <dt class="text-lg font-bold text-dark mb-2">{entry.term}</dt>
               <dd class="text-gray-600 leading-relaxed">{entry.definition}</dd>
             </div>
@@ -89,5 +242,21 @@ const categories = [...new Set(terms.map((t) => t.category))];
         </dl>
       </div>
     ))}
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-dark py-12">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl font-bold text-white mb-3">Begriff fehlt?</h2>
+      <p class="text-white/70 mb-6">
+        Wir erweitern das Glossar regelmäßig. Schlag uns Themen vor!
+      </p>
+      <a
+        href="mailto:redaktion@ai-versicherung-news.vercel.app"
+        class="inline-block px-6 py-3 bg-gold text-dark font-semibold rounded-lg hover:bg-gold/90 transition-colors"
+      >
+        Vorschlag senden
+      </a>
+    </div>
   </section>
 </BaseLayout>
