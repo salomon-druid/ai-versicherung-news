@@ -1,19 +1,19 @@
 ---
-title: "BaFin verschärft Versicherungsaufsicht 2026: Cyberrisiken und operative Resilienz im Fokus"
-description: "Die BaFin hat mit dem Bericht „Risiken im Fokus 2026" die Aufsichtsprioritäten für das laufende Jahr veröffentlicht. Versicherer müssen sich auf intensivere Prüfungen bei IT-Risiken, DORA-Compliance und Kostentransparenz einstellen."
+title: "BaFin verschaerft Versicherungsaufsicht 2026: Cyberrisiken und operative Resilienz im Fokus"
+description: "Die BaFin hat mit dem Bericht Risiken im Fokus 2026 die Aufsichtsprioritaeten fuer das laufende Jahr veroeffentlicht. Versicherer muessen sich auf intensivere Pruefungen bei IT-Risiken, DORA-Compliance und Kostentransparenz einstellen."
 pubDate: 2026-03-28
 category: versicherungsumfeld
-tags: [BaFin, Regulierung, Cyberrisiken, DORA, Versicherungsaufsicht, Solvency II]
+tags: ["BaFin", "Regulierung", "Cyberrisiken", "DORA", "Versicherungsaufsicht"]
 sources:
-  - title: "BaFin „Risiken im Fokus 2026": Worauf sich Versicherungen jetzt vorbereiten müssen"
+  - title: "BaFin Risiken im Fokus 2026: Worauf sich Versicherungen jetzt vorbereiten muessen"
     url: "https://blogs.pwc.de/de/insurance-news/article/253036/bafin-risiken-im-fokus-2026-worauf-sich-versicherungen-jetzt-vorbereiten-muessen/"
     outlet: "PwC Insurance News Blog"
     date: "28.01.2026"
-  - title: "Regulierung 2026: Versicherer unter verschärfter Aufsicht"
+  - title: "Regulierung 2026: Versicherer unter verschaerfter Aufsicht"
     url: "https://brief.platow.de/versicherungen/regulierung-2026-versicherer-unter-verschaerfter-aufsicht/"
     outlet: "PLATOW Brief"
     date: "2026"
-  - title: "Das sind die Prioritäten für Versicherer im neuen Jahr"
+  - title: "Das sind die Prioritaeten fuer Versicherer im neuen Jahr"
     url: "https://klardenker.kpmg.de/financialservices-hub/das-sind-die-prioritaeten-fuer-versicherer-im-neuen-jahr/"
     outlet: "KPMG Klardenker"
     date: "2026"
