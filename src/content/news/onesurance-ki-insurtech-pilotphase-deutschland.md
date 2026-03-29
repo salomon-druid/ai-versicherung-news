@@ -1,46 +1,35 @@
 ---
-title: "Niederländisches KI-InsurTech Onesurance startet Pilotphase in Deutschland"
-description: "Das InsurTech Onesurance bringt seine KI-gestützte Datenanalyse in den deutschen Versicherungsmarkt und will Maklerhäusern helfen, Bestände datenbasiert zu steuern und Kundenabwanderung zu senken."
-pubDate: 2026-03-28
-category: ki-digitalisierung
-tags: [InsurTech, KI, Bestandssteuerung, Makler, Niederlande, Datenanalyse]
+title: "Niederländisches KI-Insurtech Onesurance startet Pilotphase in Deutschland"
+description: "Nach fünf Jahren im Heimatmarkt bringt Onesurance seine KI-gestützte Datenanalyse-Lösung für Versicherungsmakler nach Deutschland – mit vielversprechenden Ergebnissen zur Senkung der Kundenabwanderung."
+pubDate: 2026-03-29
+category: versicherungsprodukte
+tags: [Onesurance, Insurtech, KI, Künstliche Intelligenz, Makler, Bestandssteuerung]
 company: "Onesurance"
 companyDomain: "onesurance.ai"
 sources:
-  - title: "KI-Insurtech Onesurance startet Pilotphase in Deutschland"
-    url: "https://www.asscompact.de/nachrichten/ki-insurtech-onesurance-startet-pilotphase-deutschland"
-    outlet: "AssCompact"
-    date: "27.03.2026"
   - title: "KI-gestützte Datenanalyse: Onesurance startet Pilotphase in Deutschland"
     url: "https://www.dfpa.info/index.php/versicherungen-news/ki-gestuetzte-datenanalyse-onesurance-startet-pilotphase-in-deutschland.html"
     outlet: "DFPA"
     date: "27.03.2026"
-  - title: "KI-Insurtech Onesurance startet in Deutschland"
-    url: "https://versicherungsmonitor.de/2026/03/26/ki-insurtech-onesurance-startet-in-deutschland/"
-    outlet: "Versicherungsmonitor"
-    date: "26.03.2026"
+  - title: "Niederländisches Insurtech Onesurance startet Pilotphase in Deutschland"
+    url: "https://versicherungswirtschaft-heute.de/maerkte-und-vertrieb/2026-03-27/niederlaendisches-insurtech-onesurance-startet-pilotphase-in-deutschland/"
+    outlet: "Versicherungswirtschaft-heute"
+    date: "27.03.2026"
 ---
+Das niederländische Insurtech Onesurance betritt den deutschen Versicherungsmarkt. Nach fünf Jahren erfolgreichen Betriebs in den Niederlanden startet das Unternehmen nun eine Pilotphase mit zwei namhaften deutschen Partnern – einem Assekuradeur und einem Maklerpool. Im Fokus steht eine KI-gestützte Lösung zur Datenanalyse, die Versicherungsunternehmen und Makler bei der Verwaltung ihrer Bestände unterstützen soll.
 
-## Niederländischer InsurTech-Akteur will deutschen Markt erobern
+## Bestandssteuerung mit KI als Kernidee
 
-Ein neuer internationaler Akteur betritt die deutsche Versicherungslandschaft: Das niederländische InsurTech-Unternehmen Onesurance hat seine Pilotphase im deutschen Markt offiziell gestartet. Seit über fünf Jahren ist das Unternehmen in den Niederlanden aktiv und arbeitet dort mit internationalen Großkunden aus der Versicherungsbranche zusammen. Nun will Onesurance seine bewährten KI-Lösungen auch hierzulande etablieren.
+„Der deutsche Versicherungsmarkt steht vor ähnlichen strukturellen Fragen wie der niederländische vor einigen Jahren", erklärt Jack Vos, Gründer und CEO von Onesurance. Wachstum, Konsolidierung und steigende Kundenerwartungen erfordern neue Ansätze in der Bestandssteuerung. Viele Makler haben wertvolle Bestände, können diese jedoch im Tagesgeschäft nur begrenzt systematisch steuern. Entscheidungen basieren oft auf Erfahrung und Intuition, weniger auf belastbaren Daten.
 
-Der Markteintritt erfolgt gemeinsam mit zwei namhaften Partnern – einem Assekuradeur und einem Pool – in einer strukturierten Pilotphase. Das Unternehmen positioniert sich dabei bewusst als Enablement- und Infrastrukturmodell und nicht als disruptiver Marktbrecher.
+Onesurance setzt hier mit einer datenbasierten Steuerung an, die Maklerbetrieben helfen soll, Ressourcen gezielt einzusetzen und Kunden gezielt anzusprechen – und das ohne Einbußen bei der Beratungsqualität. Die KI analysiert Bestandsdaten und identifiziert Kontaktanlässe, die den größten Einfluss auf Kundenbindung und Umsatz haben.
 
-## KI-gestützte Bestandssteuerung im Fokus
+## Messbare Erfolge in den Niederlanden
 
-Im Kern bietet Onesurance eine KI-basierte Datenanalyse-Lösung, die bestehende Kunden- und Vertragsdaten kontinuierlich auswertet und daraus konkrete Handlungsempfehlungen ableitet. Maklerbetriebe erhalten auf diese Weise Hinweise darauf, bei welchen Kunden erhöhte Abwanderungsrisiken bestehen, wo sich Cross-Selling-Potenziale ergeben und zu welchem Zeitpunkt eine Kontaktaufnahme sinnvoll ist.
+Die bisherigen Ergebnisse aus dem niederländischen Markt belegen laut Unternehmen den Erfolg des Ansatzes. Ein Maklerhaus konnte die Kundenabwanderung um 26 Prozent senken, indem es die Kontaktanlässe mithilfe der KI-gestützten Lösung gezielt priorisierte. Dieses Ergebnis zeigt, welches Potenzial in datenbasierter Bestandssteuerung steckt.
 
-Die datenbasierte Priorisierung soll es Vermittlern ermöglichen, Beratungsaufwände besser zu strukturieren und den Fokus auf die jeweils relevantesten Kundenbeziehungen zu legen – ohne Einbußen bei der Beratungsqualität. Erste belastbare Erkenntnisse sollen laut Onesurance je nach Datenlage typischerweise innerhalb von vier bis sechs Wochen vorliegen.
+Walter Capellmann, langjähriger Branchenexperte, hebt hervor: Der Ansatz sei praxisnah und nachvollziehbar – kein Black-Box-System, sondern ein Werkzeug, das Maklern bei ihren täglichen Entscheidungen unterstützt.
 
-## Erfolge aus den Niederlanden
+## Ausblick: KI als Wettbewerbsfaktor
 
-Die bisherigen Ergebnisse aus dem niederländischen Markt sprechen eine deutliche Sprache: Ein Maklerhaus konnte die Kundenabwanderung um 26 Prozent senken, indem es die Kontaktanlässe mithilfe der KI-gestützten Lösung gezielt priorisierte. „Der deutsche Versicherungsmarkt steht vor ähnlichen strukturellen Fragen wie der niederländische vor einigen Jahren", erläutert Jack Vos, Gründer und CEO von Onesurance. „Wachstum, Konsolidierung und steigende Kundenerwartungen erfordern neue Ansätze in der Bestandssteuerung."
-
-Begleitet wird der Markteintritt von Erik de Voogd, ehemaliger CEO von Voogd & Voogd, was die strategische Bedeutung des Schritts unterstreicht.
-
-## Bestandssteuerung als Wettbewerbsvorteil
-
-Branchenexperte Walter Capellmann betont die Relevanz des Ansatzes: Viele Makler verfügten über wertvolle Bestände, könnten diese jedoch im Tagesgeschäft nur begrenzt systematisch steuern. Entscheidungen basierten oft auf Erfahrung und Intuition, weniger auf belastbaren Daten. Onesurance bietet hier eine datenbasierte Alternative, die es Maklerbetrieben ermöglicht, Ressourcen gezielt einzusetzen und Kunden proaktiv anzusprechen.
-
-Der Markteintritt unterstreicht den wachsenden Trend im deutschen Versicherungsmarkt: KI-gestützte Lösungen dringen zunehmend in die Kernprozesse vor und werden zum Wettbewerbsfaktor – besonders für Maklerhäuser, die in Zeiten der Konsolidierung ihre Bestände effizienter steuern möchten.
+Der Markteintritt von Onesurance unterstreicht den wachsenden Einfluss von KI-Technologien im deutschen Versicherungsmarkt. Branchenexperten rechnen damit, dass KI-Agenten in den kommenden Jahren eigenständig Aufgaben übernehmen und den Erstkontakt mit Kunden prägen werden. Für Makler wird es zunehmend wichtig, solche Werkzeuge zu nutzen, um im Wettbewerb zu bestehen. Onesurance bietet nun eine konkrete Lösung für genau diese Herausforderung.
