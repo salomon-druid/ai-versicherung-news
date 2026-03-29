@@ -1,0 +1,701 @@
+{
+  "generated": "2026-03-29T22:08:33.640278",
+  "count": 37,
+  "categories": {
+    "versicherer": 8,
+    "makler": 5,
+    "versicherungsumfeld": 11,
+    "ki-digitalisierung": 4,
+    "versicherungsprodukte": 4,
+    "risiken-schaeden": 5
+  },
+  "articles": [
+    {
+      "slug": "allianz-cambridge-mobile-telematics-investment-350-millionen",
+      "title": "Allianz investiert 350 Millionen Dollar in KI-Telematik-Anbieter Cambridge Mobile Telematics",
+      "description": "Allianz X und TPG führen eine 350-Millionen-Dollar-Investition in Cambridge Mobile Telematics an – mit dem Ziel, Kfz-Versicherungen durch KI und Echtzeit-Daten grundlegend zu verändern.",
+      "pubDate": "2026-03-29",
+      "category": "versicherer",
+      "tags": [
+        "Allianz",
+        "Cambridge Mobile Telematics",
+        "KI",
+        "Telematik",
+        "Kfz-Versicherung",
+        "Allianz X"
+      ],
+      "company": "Allianz",
+      "companyDomain": "allianz.com",
+      "sourceCount": 2,
+      "file": "allianz-cambridge-mobile-telematics-investment-350-millionen.md"
+    },
+    {
+      "slug": "allianz-jio-rueckversicherung-indien-start",
+      "title": "Allianz startet Rückversicherungs-Joint-Venture mit Jio in Indien",
+      "description": "Allianz und Jio Financial Services haben ihr gemeinsames Rückversicherungsunternehmen Allianz Jio Reinsurance in Indien gestartet. Das Joint-Venture soll den wachsenden indischen Versicherungsmarkt mit globaler Expertise bedienen.",
+      "pubDate": "2026-03-28",
+      "category": "versicherer",
+      "tags": [
+        "Allianz",
+        "Rückversicherung",
+        "Indien",
+        "Joint-Venture",
+        "Internationalisierung"
+      ],
+      "company": "Allianz SE",
+      "companyDomain": "allianz.com",
+      "sourceCount": 3,
+      "file": "allianz-jio-rueckversicherung-indien-start.md"
+    },
+    {
+      "slug": "allianz-talanx-investition-stromnetz-amprion",
+      "title": "Allianz und Talanx investieren gemeinsam in deutsches Stromnetz",
+      "description": "Die Allianz und die Talanx-Gruppe bauen ihre Infrastrukturinvestitionen aus und steigen gemeinsam in den Übertragungsnetzbetreiber Amprion ein. Damit setzen die Versicherer auf langfristige Erträge im Zuge der Energiewende.",
+      "pubDate": "2026-03-29",
+      "category": "versicherer",
+      "tags": [
+        "Allianz",
+        "Talanx",
+        "Amprion",
+        "Infrastruktur",
+        "Energiewende",
+        "Stromnetz",
+        "Investment"
+      ],
+      "company": "Allianz",
+      "companyDomain": "allianz.com",
+      "sourceCount": 1,
+      "file": "allianz-talanx-investition-stromnetz-amprion.md"
+    },
+    {
+      "slug": "altersvorsorgereform-vertrieb-kritik-makler",
+      "title": "Altersvorsorgereform: Verbände warnen – ",
+      "description": "Die Reform der privaten Altersvorsorge spaltet die Branche. Der Kostendeckel von einem Prozent und ein staatlicher Anbieter sorgen für scharfe Kritik von Makler- und Vermittlerverbänden.",
+      "pubDate": "2026-03-29",
+      "category": "makler",
+      "tags": [
+        "Altersvorsorge",
+        "Riester-Reform",
+        "Makler",
+        "Vertrieb",
+        "Bundestag",
+        "Vergütung"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "altersvorsorgereform-vertrieb-kritik-makler.md"
+    },
+    {
+      "slug": "bafin-risiken-im-fokus-2026-versicherungsaufsicht",
+      "title": "BaFin verschaerft Versicherungsaufsicht 2026: Cyberrisiken und operative Resilienz im Fokus",
+      "description": "Die BaFin hat mit dem Bericht Risiken im Fokus 2026 die Aufsichtsprioritaeten fuer das laufende Jahr veroeffentlicht. Versicherer muessen sich auf intensivere Pruefungen bei IT-Risiken, DORA-Compliance und Kostentransparenz einstellen.",
+      "pubDate": "2026-03-28",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "BaFin",
+        "Regulierung",
+        "Cyberrisiken",
+        "DORA",
+        "Versicherungsaufsicht"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "bafin-risiken-im-fokus-2026-versicherungsaufsicht.md"
+    },
+    {
+      "slug": "bitkom-ki-chatbot-bezugsperson",
+      "title": "Bitkom-Umfrage: 26 Prozent empfinden KI-Chatbots als digitale Bezugsperson",
+      "description": "Eine aktuelle Bitkom-Umfrage zeigt, dass über ein Viertel der KI-Nutzer in Deutschland Chatbots als digitale Bezugsperson empfinden. Bei den unter 30-Jährigen ist der Anteil sogar noch höher.",
+      "pubDate": "2026-03-25",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "bitkom",
+        "chatbot",
+        "umfrage",
+        "nutzerverhalten",
+        "deutschland"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "bitkom-ki-chatbot-bezugsperson.md"
+    },
+    {
+      "slug": "bizcover-ki-vergleichstool-makleraktien",
+      "title": "BizCover lanciert KI-gestütztes Vergleichstool – Makleraktien unter Druck",
+      "description": "Das australische InsurTech BizCover hat ein vollständig in eine generative KI-Umgebung eingebettetes Vergleichstool gestartet. Die Reaktion: Makleraktien fielen deutlich.",
+      "pubDate": "2026-03-26",
+      "category": "versicherer",
+      "tags": [
+        "bizcover",
+        "insurtech",
+        "vergleichstool",
+        "aktien",
+        "australien"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "bizcover-ki-vergleichstool-makleraktien.md"
+    },
+    {
+      "slug": "bundestag-altersvorsorgedepot-riester-reform",
+      "title": "Bundestag beschließt Altersvorsorgedepot – Riester-Reform rückt näher",
+      "description": "Der Bundestag hat die Reform der steuerlich geförderten Altersvorsorge beschlossen. Das neue Altersvorsorgedepot soll ab 2027 auch über einen staatlichen Fonds angeboten werden – die Versicherungsbranche übt Kritik.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsprodukte",
+      "tags": [
+        "Altersvorsorge",
+        "Riester-Reform",
+        "Altersvorsorgedepot",
+        "Bundestag",
+        "Frühstartrente",
+        "Gesetzgebung"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "bundestag-altersvorsorgedepot-riester-reform.md"
+    },
+    {
+      "slug": "cmt-commercial-insurance-summit-2026",
+      "title": "CMT Commercial Insurance Summit: KI und Telematik verändern die Flottenversicherung",
+      "description": "Cambridge Mobile Telematics veranstaltet heute den Commercial Insurance Summit in Boston. Im Fokus: Wie Telematik- und KI-Daten die Unterzeichnung und Preisgestaltung in der Flottenversicherung revolutionieren.",
+      "pubDate": "2026-03-26",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "cmt",
+        "telematik",
+        "flottenversicherung",
+        "summit",
+        "boston"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "cmt-commercial-insurance-summit-2026.md"
+    },
+    {
+      "slug": "cyberversicherung-schadenfrequenz-verdoppelt-2025",
+      "title": "Cyberversicherung: Schadenfrequenz mehr als verdoppelt – Ransomware und Betrug dominieren",
+      "description": "Der aktuelle Schadensreport 2025 des Cyberversicherers Stoïk zeigt eine dramatische Zunahme der Cybervorfälle. Die Schadenfrequenz hat sich innerhalb von zwei Jahren mehr als verdoppelt.",
+      "pubDate": "2026-03-29",
+      "category": "risiken-schaeden",
+      "tags": [
+        "Cyberversicherung",
+        "Ransomware",
+        "Betrug",
+        "Schadenreport",
+        "KI-Risiken"
+      ],
+      "company": "Stoïk",
+      "companyDomain": "stoik.com",
+      "sourceCount": 1,
+      "file": "cyberversicherung-schadenfrequenz-verdoppelt-2025.md"
+    },
+    {
+      "slug": "cyberversicherung-schadenreport-2025-frequenz-verdoppelt",
+      "title": "Cyberversicherung: Schadenfrequenz hat sich innerhalb von zwei Jahren verdoppelt",
+      "description": "Der Stoïk Schadenreport 2025 zeigt: Die Schadenfrequenz in der Cyberversicherung stieg von 3,87 auf 10,56 Prozent. Ransomware und KI-gestützter Betrug dominieren die Bedrohungslandschaft.",
+      "pubDate": "2026-03-29",
+      "category": "risiken-schaeden",
+      "tags": [
+        "cyberversicherung",
+        "ransomware",
+        "cyberangriff",
+        "schadenreport",
+        "ki",
+        "betrug"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "cyberversicherung-schadenreport-2025-frequenz-verdoppelt.md"
+    },
+    {
+      "slug": "deutsche-versicherer-verhandeln-ki-stellenabbau",
+      "title": "Deutsche Versicherer verhandeln über KI-bedingten Stellenabbau",
+      "description": "Tarifverhandlungen zwischen Versicherern und Verdi starten heute in München. Im Fokus: Wie die Branche den durch KI ausgelösten Strukturwandel gestaltet und Arbeitsplätze sichert.",
+      "pubDate": "2026-03-26",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "tarifverhandlungen",
+        "verdi",
+        "stellenabbau",
+        "ergo",
+        "münchen"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "deutsche-versicherer-verhandeln-ki-stellenabbau.md"
+    },
+    {
+      "slug": "elementarschadenversicherung-pflicht-koalitionsplaene",
+      "title": "Elementarschadenversicherung: Koalitionspläne für Pflichtversicherung konkretisieren sich",
+      "description": "Die schwarz-rote Koalition plant eine verpflichtende Elementarschadenversicherung. Rund die Hälfte aller Wohngebäude ist bisher nicht gegen Naturgefahren abgesichert – die Debatte gewinnt an Dynamik.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Elementarschadenversicherung",
+        "Naturgefahren",
+        "Pflichtversicherung",
+        "Wohngebäudeversicherung",
+        "Klimawandel",
+        "Koalition"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "elementarschadenversicherung-pflicht-koalitionsplaene.md"
+    },
+    {
+      "slug": "eu-ki-verordnung-versicherungsmakler",
+      "title": "EU-KI-Verordnung: Was Versicherungsmakler jetzt beachten müssen",
+      "description": "Ab August 2026 drohen bei Verstößen gegen die EU-KI-Verordnung empfindliche Sanktionen. Der AfW hat eine Orientierungshilfe für Versicherungsmakler veröffentlicht.",
+      "pubDate": "2026-03-26",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "eu-ki-verordnung",
+        "regulierung",
+        "makler",
+        "datenschutz",
+        "afw"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "eu-ki-verordnung-versicherungsmakler.md"
+    },
+    {
+      "slug": "fma-solvency-ii-transparenzplattform",
+      "title": "FMA bündelt Solvency-II-Informationen auf neuer Transparenzplattform",
+      "description": "Die österreichische Finanzmarktaufsicht FMA hat eine neue Webseite zum europäischen Aufsichtsregime Solvency II veröffentlicht und damit die komplexen regulatorischen Vorgaben übersichtlich aufbereitet.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Solvency II",
+        "FMA",
+        "Transparenz",
+        "Aufsichtsregime",
+        "Österreich",
+        "Versicherungsaufsicht"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "fma-solvency-ii-transparenzplattform.md"
+    },
+    {
+      "slug": "fondspolicen-wachstum-komplexitaet-beratung",
+      "title": "Fondspolicen: Wachstumstreiber mit versteckter Komplexität",
+      "description": "Fondsgebundene Policen dominieren das Neugeschäft in der Lebensversicherung. Experten warnen jedoch vor steigender Komplexität und wachsendem Beratungsbedarf.",
+      "pubDate": "2026-03-29",
+      "category": "makler",
+      "tags": [
+        "Fondspolicen",
+        "Lebensversicherung",
+        "Altersvorsorge",
+        "Beratung",
+        "Makler",
+        "Assekurata"
+      ],
+      "company": "Assekurata",
+      "companyDomain": "assekurata.de",
+      "sourceCount": 1,
+      "file": "fondspolicen-wachstum-komplexitaet-beratung.md"
+    },
+    {
+      "slug": "gdv-financial-services-omnibus-eu-regulierung",
+      "title": "GDV fordert Financial-Services-Omnibus für EU-Regulierung",
+      "description": "Die deutsche Versicherungswirtschaft dringt vor dem EU-Gipfel auf eine grundlegende Vereinfachung der Regulierung und warnt vor dem Verlust der globalen Führungsrolle.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "GDV",
+        "EU-Regulierung",
+        "Solvency II",
+        "Omnibus",
+        "Wettbewerbsfähigkeit"
+      ],
+      "company": "GDV",
+      "companyDomain": "gdv.de",
+      "sourceCount": 2,
+      "file": "gdv-financial-services-omnibus-eu-regulierung.md"
+    },
+    {
+      "slug": "gdv-versicherungswirtschaft-wachstum-2025-ausblick-2026",
+      "title": "GDV: Versicherungswirtschaft wächst 2025 deutlich – Ausblick auf 2026 gedämpft",
+      "description": "Trotz schwierigem Wirtschaftsumfeld stiegen die Beitragseinnahmen 2025 um 6,6 Prozent auf 254 Milliarden Euro. Für 2026 erwartet der GDV ein Wachstum von nur noch 4,7 Prozent.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "GDV",
+        "Beitragswachstum",
+        "Versicherungsmarkt",
+        "Konjunktur",
+        "Schadenversicherung",
+        "Lebensversicherung"
+      ],
+      "company": "GDV",
+      "companyDomain": "gdv.de",
+      "sourceCount": 2,
+      "file": "gdv-versicherungswirtschaft-wachstum-2025-ausblick-2026.md"
+    },
+    {
+      "slug": "gkv-mitgliederschwund-krankenkassen-zusatzbeitrag-2025",
+      "title": "GKV-Mitgliederschwund 2025: Zwei Drittel der Krankenkassen verlieren Versicherte",
+      "description": "60 von 93 gesetzlichen Krankenkassen verzeichneten 2025 Mitgliederverluste – getrieben durch kräftige Zusatzbeitragserhöhungen. Besonders betroffen: Barmer, IKKen und Knappschaft.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "GKV",
+        "Krankenkassen",
+        "Mitgliederschwund",
+        "Zusatzbeitrag",
+        "Wettbewerb"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "gkv-mitgliederschwund-krankenkassen-zusatzbeitrag-2025.md"
+    },
+    {
+      "slug": "huk-coburg-rekordjahr-gewinnsprung-2025",
+      "title": "HUK-Coburg erzielt Rekordjahr 2025 – Gewinn springt um 78 Prozent",
+      "description": "Die HUK-Coburg blickt auf das erfolgreichste Jahr ihrer Geschichte zurück. Mit einem Gewinnsprung von 78 Prozent und einer wieder profitablen Kfz-Versicherung überzeugt der Versicherer auf der ganzen Linie.",
+      "pubDate": "2026-03-29",
+      "category": "versicherer",
+      "tags": [
+        "HUK-Coburg",
+        "Gewinn",
+        "Kfz-Versicherung",
+        "Jahresergebnis",
+        "Marktführerschaft"
+      ],
+      "company": "HUK-Coburg",
+      "companyDomain": "huk-coburg.de",
+      "sourceCount": 1,
+      "file": "huk-coburg-rekordjahr-gewinnsprung-2025.md"
+    },
+    {
+      "slug": "kfz-versicherer-profitabel-2026-beitraege-steigen",
+      "title": "Kfz-Versicherer 2026 erneut profitabel – doch Beiträge steigen weiter",
+      "description": "Die Schaden-Kosten-Quote in der Kfz-Versicherung fällt 2026 zum zweiten Mal unter 100 Prozent. Experten erwarten trotz Profitabilität weitere Beitragssteigerungen – getrieben durch den Iran-Krieg und steigende Reparaturkosten.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsprodukte",
+      "tags": [
+        "Kfz-Versicherung",
+        "Combined Ratio",
+        "Beitragsanpassung",
+        "Schadenkostenquote",
+        "Iran-Krieg"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "kfz-versicherer-profitabel-2026-beitraege-steigen.md"
+    },
+    {
+      "slug": "klingbeil-rentenreform-beitragsjahre-betriebsrente",
+      "title": "Klingbeil plant Rentenreform: Altersrente soll an Beitragsjahre statt Alter gekoppelt werden",
+      "description": "Finanzminister Lars Klingbeil will die gesetzliche Rente grundlegend umbauen – mit Kopplung an Beitragsjahre und verpflichtender kapitalgedeckter Betriebsrente.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Rentenreform",
+        "Klingbeil",
+        "Beitragsjahre",
+        "Betriebsrente",
+        "Sozialversicherung"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "klingbeil-rentenreform-beitragsjahre-betriebsrente.md"
+    },
+    {
+      "slug": "m-a-rekord-dach-region-versicherungsmarkt-2025",
+      "title": "M&A-Record: DACH-Region treibt europäischen Versicherungsmarkt an",
+      "description": "Der europäische Versicherungs-M&A-Markt erreicht 789 Transaktionen – ein Plus von 14 Prozent. Die DACH-Region springt um 35 Prozent nach oben und wird zum Konsolidierungstreiber.",
+      "pubDate": "2026-03-29",
+      "category": "makler",
+      "tags": [
+        "makler",
+        "m-a",
+        "konsolidierung",
+        "dach-region",
+        "maklermarkt",
+        "transaktionen"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "m-a-rekord-dach-region-versicherungsmarkt-2025.md"
+    },
+    {
+      "slug": "makler-champions-2026-bayerische-dominanz",
+      "title": "Makler-Champions 2026: Die Bayerische dominiert die Rangliste",
+      "description": "Zum 16. Mal wurden die Makler-Champions gekürt. Die Bayerische sicherte sich mehrfach Gold und den Allsparten-Sieg. ServiceValue und Versicherungsmagazin werteten 1.124 Maklerurteile aus.",
+      "pubDate": "2026-03-29",
+      "category": "makler",
+      "tags": [
+        "makler-champions",
+        "bayerische",
+        "servicequalität",
+        "versicherungsmagazin",
+        "servicevalue",
+        "vertrieb"
+      ],
+      "company": "Die Bayerische",
+      "companyDomain": "bayerische.de",
+      "sourceCount": 3,
+      "file": "makler-champions-2026-bayerische-dominanz.md"
+    },
+    {
+      "slug": "munich-re-naturkatastrophen-bilanz-2025-rekordschaeden",
+      "title": "Munich Re warnt: Naturkatastrophen-Schäden bleiben auf Rekordniveau",
+      "description": "Die Naturkatastrophenbilanz 2025 zeigt versicherte Schäden von 108 Milliarden US-Dollar. Waldbrände und Schwergewitter prägen den Trend – Swiss Re prognostiziert weiter steigende Kosten für 2026.",
+      "pubDate": "2026-03-28",
+      "category": "risiken-schaeden",
+      "tags": [
+        "munich-re",
+        "naturkatastrophen",
+        "klimawandel",
+        "schäden",
+        "swiss-re",
+        "waldbrand"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "munich-re-naturkatastrophen-bilanz-2025-rekordschaeden.md"
+    },
+    {
+      "slug": "nuernberger-versicherung-turnaround-2025",
+      "title": "Nürnberger Versicherung schafft Turnaround nach Verlustjahr 2024",
+      "description": "Die Nürnberger Versicherung kehrt mit 46,8 Millionen Euro Gewinn in die Gewinnzone zurück. Die Sanierung der Schaden-/Unfallsparte zeigt erste Wirkung, bleibt aber eine Baustelle.",
+      "pubDate": "2026-03-29",
+      "category": "risiken-schaeden",
+      "tags": [
+        "Nürnberger",
+        "Schadenentwicklung",
+        "Turnaround",
+        "Versicherungskennzahlen",
+        "Naturgefahren"
+      ],
+      "company": "Nürnberger Versicherung",
+      "companyDomain": "nuernberger.de",
+      "sourceCount": 1,
+      "file": "nuernberger-versicherung-turnaround-2025.md"
+    },
+    {
+      "slug": "nuernberger-versicherung-turnaround-gewinnzone-2025",
+      "title": "Nürnberger Versicherung schafft Turnaround – Rückkehr in die Gewinnzone",
+      "description": "Nach dem Verlustjahr 2024 gelingt der Nürnberger Versicherung ein eindrucksvoller Turnaround. Das Konzernergebnis verbessert sich von minus 77 auf plus 47 Millionen Euro – getrieben von der Sanierung der Schaden-/Unfallsparte.",
+      "pubDate": "2026-03-29",
+      "category": "versicherer",
+      "tags": [
+        "Nürnberger Versicherung",
+        "Turnaround",
+        "Sanierung",
+        "Jahresergebnis",
+        "Schadenversicherung"
+      ],
+      "company": "Nürnberger Versicherung",
+      "companyDomain": "nuernberger.de",
+      "sourceCount": 1,
+      "file": "nuernberger-versicherung-turnaround-gewinnzone-2025.md"
+    },
+    {
+      "slug": "olg-koeln-makler-unabhaengigkeit-werbung-untersagt",
+      "title": "OLG Köln: Versicherungsmakler dürfen nicht mehr mit Unabhängigkeit werben",
+      "description": "Das OLG Köln hat einem Makler die Werbung mit ‚unabhängigem Versicherungsmakler‘ untersagt. Das Urteil hat weitreichende Folgen für die gesamte Branche – Branchenvertreter fordern eine gesetzliche Klarstellung.",
+      "pubDate": "2026-03-29",
+      "category": "makler",
+      "tags": [
+        "maklerrecht",
+        "olg-koeln",
+        "unabhaengigkeit",
+        "werbung",
+        "uwg",
+        "gerichtsurteil"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "olg-koeln-makler-unabhaengigkeit-werbung-untersagt.md"
+    },
+    {
+      "slug": "onesurance-ki-insurtech-pilotphase-deutschland",
+      "title": "Niederländisches KI-Insurtech Onesurance startet Pilotphase in Deutschland",
+      "description": "Nach fünf Jahren im Heimatmarkt bringt Onesurance seine KI-gestützte Datenanalyse-Lösung für Versicherungsmakler nach Deutschland – mit vielversprechenden Ergebnissen zur Senkung der Kundenabwanderung.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsprodukte",
+      "tags": [
+        "Onesurance",
+        "Insurtech",
+        "KI",
+        "Künstliche Intelligenz",
+        "Makler",
+        "Bestandssteuerung"
+      ],
+      "company": "Onesurance",
+      "companyDomain": "onesurance.ai",
+      "sourceCount": 2,
+      "file": "onesurance-ki-insurtech-pilotphase-deutschland.md"
+    },
+    {
+      "slug": "pflegebeduerftigkeit-eintritt-frueher-aok-analyse",
+      "title": "Pflegebedürftigkeit tritt immer früher auf – AOK-Analyse zeigt alarmierende Verschiebung",
+      "description": "Laut einer neuen WIdO-Analyse wird das Durchschnittsalter beim Eintritt in die Pflegebedürftigkeit deutlich jünger – mit Folgen für Pflegeversicherung und Zusatzversicherungen.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Pflegeversicherung",
+        "Pflegebedürftigkeit",
+        "Demografie",
+        "AOK",
+        "WIdO"
+      ],
+      "company": "AOK",
+      "companyDomain": "aok.de",
+      "sourceCount": 1,
+      "file": "pflegebeduerftigkeit-eintritt-frueher-aok-analyse.md"
+    },
+    {
+      "slug": "rechenzentren-versicherungsbedarf-steigt-2030",
+      "title": "Rechenzentren-Boom: Versicherungsbedarf steigt bis 2030 auf über 24 Milliarden Dollar",
+      "description": "Eine Studie von Swiss Re prognostiziert einen rasant steigenden Versicherungsbedarf für Rechenzentren. Die weltweiten Versicherungsprämien sollen sich bis 2030 mehr als verdoppeln – doch die Branche stößt an Kapazitätsgrenzen.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsprodukte",
+      "tags": [
+        "Rechenzentren",
+        "Swiss Re",
+        "KI",
+        "Digitalisierung",
+        "Risiken",
+        "Rückversicherung",
+        "Infrastruktur"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "rechenzentren-versicherungsbedarf-steigt-2030.md"
+    },
+    {
+      "slug": "stuttgarter-standardprodukt-maklermarkt-altersvorsorge",
+      "title": "Stuttgarter-Vorstandschef zum Standardprodukt: ",
+      "description": "Das neue Standardprodukt in der geförderten Altersvorsorge dürfte Versicherungsmakler kaum ansprechen – zu eingeschränkt in Gestaltung und Vergütung, urteilt Stuttgarter-Chef Bader.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Altersvorsorge",
+        "Standardprodukt",
+        "Makler",
+        "Stuttgarter",
+        "Vertrieb",
+        "Kostenregulierung"
+      ],
+      "company": "Stuttgarter Versicherungsgruppe",
+      "companyDomain": "stuttgarter.de",
+      "sourceCount": 1,
+      "file": "stuttgarter-standardprodukt-maklermarkt-altersvorsorge.md"
+    },
+    {
+      "slug": "verisk-insurance-conference-2026",
+      "title": "Verisk Insurance Conference 2026: KI und Daten formen die Zukunft der Versicherung",
+      "description": "Die Verisk Insurance Conference in Las Vegas bringt Branchenführer zusammen, um über die Rolle von Daten, Analysen und KI-Technologien für die Zukunft der Versicherungsbranche zu diskutieren.",
+      "pubDate": "2026-03-25",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "verisk",
+        "konferenz",
+        "las-vegas",
+        "daten",
+        "analysen"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "verisk-insurance-conference-2026.md"
+    },
+    {
+      "slug": "versicherungsbetrug-sechs-milliarden-schaden-gdv",
+      "title": "Versicherungsbetrug kostet Branche jährlich sechs Milliarden Euro",
+      "description": "Der GDV schätzt den jährlichen Schaden durch Versicherungsbetrug auf über sechs Milliarden Euro. Zehn Prozent aller Schadensmeldungen weisen Auffälligkeiten auf. KI-gestützte Erkennung wird zum Schlüssel.",
+      "pubDate": "2026-03-29",
+      "category": "risiken-schaeden",
+      "tags": [
+        "versicherungsbetrug",
+        "gdv",
+        "schaden",
+        "betrugserkennung",
+        "ki",
+        "kfz-versicherung"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "versicherungsbetrug-sechs-milliarden-schaden-gdv.md"
+    },
+    {
+      "slug": "vsaag-solvency-ii-reform-nationale-umsetzung",
+      "title": "Solvency-II-Reform: Referentenentwurf VSAAG bringt nationale Umsetzung ab 2027",
+      "description": "Das BMF hat den Referentenentwurf für das VSAAG veröffentlicht, das die Solvency-II-Reform und die IRRD in deutsches Recht überführt. Die neuen Regelungen gelten ab Januar 2027.",
+      "pubDate": "2026-03-29",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Solvency II",
+        "VSAAG",
+        "IRRD",
+        "Gruppenaufsicht",
+        "BaFin",
+        "BMF"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "vsaag-solvency-ii-reform-nationale-umsetzung.md"
+    },
+    {
+      "slug": "wefox-notfallfinanzierung-15-millionen",
+      "title": "Insurtech Wefox benötigt erneut Notfallfinanzierung über 15 Millionen Euro",
+      "description": "Das Berliner Insurtech Wefox führt eine Notfallfinanzierung über 15 Millionen Euro durch, um kurzfristige Liquiditätslücken zu schließen. Trotz operativer Fortschritte bleibt der Druck auf das Unternehmen hoch.",
+      "pubDate": "2026-03-29",
+      "category": "versicherer",
+      "tags": [
+        "Wefox",
+        "Insurtech",
+        "Notfallfinanzierung",
+        "Finanzierung",
+        "Digitalisierung"
+      ],
+      "company": "Wefox",
+      "companyDomain": "wefox.com",
+      "sourceCount": 2,
+      "file": "wefox-notfallfinanzierung-15-millionen.md"
+    },
+    {
+      "slug": "ww-gruppe-ergebniswende-kostendisziplin-2025",
+      "title": "W&W-Gruppe erzielt Ergebniswende – setzt aber auf Kostendisziplin und Neueinstellungsstopp",
+      "description": "Der Stuttgarter Finanzkonzern Wüstenrot & Württembergische hat das Konzernergebnis mehr als verdreifacht, bremst aber bei Neueinstellungen und setzt auf KI-gestützte Effizienz.",
+      "pubDate": "2026-03-29",
+      "category": "versicherer",
+      "tags": [
+        "W&W",
+        "Wüstenrot",
+        "Württembergische",
+        "Kostendisziplin",
+        "KI",
+        "Digitalisierung"
+      ],
+      "company": "W&W Gruppe",
+      "companyDomain": "ww-ag.com",
+      "sourceCount": 1,
+      "file": "ww-gruppe-ergebniswende-kostendisziplin-2025.md"
+    }
+  ]
+}
