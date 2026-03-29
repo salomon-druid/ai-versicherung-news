@@ -15,6 +15,7 @@ sources:
     url: "https://www.handelsblatt.com/finanzen/banken-versicherungen/versicherer/gdv-versicherer-rechnen-2026-mit-niedrigerem-beitragswachstum/100195054.html"
     outlet: "Handelsblatt"
     date: "04.02.2026"
+featured: true
 ---
 
 ## Solides Ergebnis trotz schwierigem Umfeld

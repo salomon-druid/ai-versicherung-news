@@ -52,6 +52,49 @@ const categories = [
     </div>
   </section>
 
+  <!-- Featured Top Story -->
+  {
+    sortedNews.find((n) => n.data.featured) && (() => {
+      const topStory = sortedNews.find((n) => n.data.featured)!;
+      return (
+        <section class="bg-dark text-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="px-3 py-1 bg-gold text-dark text-sm font-bold rounded-full">⭐ Top-Story des Tages</span>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4">
+                  <a href={`/news/${topStory.slug}`} class="hover:text-primary-500 transition-colors">
+                    {topStory.data.title}
+                  </a>
+                </h2>
+                <p class="text-white/70 text-lg leading-relaxed mb-6">{topStory.data.description}</p>
+                <a
+                  href={`/news/${topStory.slug}`}
+                  class="inline-flex items-center gap-2 px-6 py-3 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors"
+                >
+                  Artikel lesen
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+              <div class="rounded-xl overflow-hidden">
+                <img
+                  src={`/images/articles/${topStory.slug}.jpg`}
+                  alt={topStory.data.title}
+                  class="w-full h-64 lg:h-80 object-cover"
+                  onerror={`this.src='/images/${topStory.data.category}.jpg'`}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      );
+    })()
+  }
+
   <!-- Stats -->
   <section class="bg-white border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">

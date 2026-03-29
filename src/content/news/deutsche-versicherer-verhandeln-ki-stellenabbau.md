@@ -4,7 +4,6 @@ description: "Tarifverhandlungen zwischen Versicherern und Verdi starten heute i
 pubDate: 2026-03-26
 category: "ki-digitalisierung"
 tags: ["tarifverhandlungen", "verdi", "stellenabbau", "ergo", "münchen"]
-featured: true
 sources:
   - title: "Deutsche Versicherer verhandeln mit Gewerkschaft zu KI"
     url: "https://www.handelsblatt.com/finanzen/banken-versicherungen/versicherer/stellenabbau-deutsche-versicherer-verhandeln-mit-gewerkschaft-zu-ki/100211146.html"
