@@ -1,38 +1,30 @@
 ---
-title: "Bundestag beschließt Altersvorsorgedepot: Was die Riester-Reform für Versicherer bedeutet"
-description: "Der Bundestag hat das Altersvorsorgereformgesetz verabschiedet – mit verschärftem Kostendeckel und einem staatlichen Standarddepot als Wettbewerber für private Anbieter."
+title: "Bundestag beschließt Altersvorsorgedepot – Riester-Reform rückt näher"
+description: "Der Bundestag hat die Reform der steuerlich geförderten Altersvorsorge beschlossen. Das neue Altersvorsorgedepot soll ab 2027 auch über einen staatlichen Fonds angeboten werden – die Versicherungsbranche übt Kritik."
 pubDate: 2026-03-29
-category: versicherungsumfeld
-tags: [Altersvorsorge, Riester-Reform, Bundestag, Altersvorsorgedepot, Regulierung]
-company: ""
-companyDomain: ""
+category: versicherungsprodukte
+tags: [Altersvorsorge, Riester-Reform, Altersvorsorgedepot, Bundestag, Frühstartrente, Gesetzgebung]
 sources:
   - title: "Riester-Reform: Bundestag beschließt Altersvorsorgedepot"
     url: "https://www.versicherungsjournal.de/markt-und-politik/riester-reform-bundestag-beschliesst-altersvorsorgedepot-155482.php"
     outlet: "VersicherungsJournal"
     date: "27.03.2026"
-  - title: "Altersvorsorge-Reform: Vermittlerverbände wettern gegen ordnungspolitischen Sündenfall"
-    url: "https://www.versicherungsjournal.de/vertrieb-und-marketing/altersvorsorge-reform-vermittlerverbaende-wettern-gegen-ordnungspolitischen-suendenfall-155449.php"
-    outlet: "VersicherungsJournal"
-    date: "26.03.2026"
 ---
 
-## Bundestag stimmt für tiefgreifende Reform der privaten Altersvorsorge
+Der Bundestag hat am Freitag die Reform der steuerlichen Förderung der privaten Altersvorsorge beschlossen. Das Altersvorsorgereformgesetz passierte mit den Stimmen der Koalitionsfraktionen von CDU/CSU und SPD das Parlament. Damit rückt die Nachfolgeregelung für das bisherige Riester-System ein Stück näher.
 
-Der Deutsche Bundestag hat am Freitag, den 27. März 2026, das Altersvorsorgereformgesetz verabschiedet. Mit den Stimmen der Koalitionsfraktionen von CDU/CSU und SPD wurde der Entwurf der Bundesregierung angenommen. Nur Die Linke stimmte dagegen, während AfD und Bündnis 90/Die Grünen sich enthielten. Das Gesetz soll zum 1. Januar 2027 in Kraft treten und die bisherige Riester-Förderung ablösen.
+## Neues Altersvorsorgedepot mit Staatsfonds-Option
 
-## Kostendeckel auf ein Prozent herabgesetzt
+Ein zentraler Punkt der Reform ist die Einführung eines Altersvorsorgedepots, das künftig auch durch einen öffentlichen Träger angeboten werden kann. Dieses soll als Alternative zu den privat angebotenen Produkten allen Förderberechtigten zur Verfügung stehen – zukünftig auch selbstständig Erwerbstätigen. Im Finanzausschuss wurde zudem der Deckel für die Effektivkosten des neuen Standardprodukts von 1,5 auf ein Prozent gesenkt.
 
-Der federführende Finanzausschuss hatte den Regierungsentwurf in entscheidenden Punkten noch einmal verschärft. So wurde der Deckel für die Effektivkosten des neuen Standardprodukts von ursprünglich 1,5 auf nunmehr ein Prozent gesenkt. Dies stellt Versicherer und Fondsanbieter vor neue Herausforderungen bei der Wirtschaftlichkeit ihrer Produkte. Versicherer seien grundsätzlich in der Lage, das Standardprodukt mit entsprechendem Versicherungsmantel auch mit Effektivkosten von maximal einem Prozent darzustellen, wie Stuttgarter-Vorstandschef Dr. Guido Bader betonte – allerdings werde es im Vertrieb anders vergütet werden müssen.
+## Kritik aus der Versicherungsbranche
 
-## Staatlicher Träger als Konkurrent der Privatwirtschaft
+Mehrere Verbände der Versicherungs-, Finanz- und Vermittlerbranche hatten sich kritisch positioniert. Die Befürchtung: Ein staatlich verwaltetes Depot könnte mit den privatwirtschaftlichen Anbietern in Wettbewerb treten und damit den Markt verzerren. CDU-Finanzexperte Dr. Carsten Brodesser wies diese Bedenken in der Plenardebatte zurück: „Es erhält keine Wettbewerbsvorteile, dafür sorgen wir." Auch das öffentlich verwaltete Standarddepot unterliege den gleichen Anforderungen wie die Privatwirtschaft.
 
-Besonders umstritten ist die vorgesehene Möglichkeit, dass ein öffentlicher Träger das sogenannte Standarddepot anbieten darf – als Alternative zu den privatwirtschaftlichen Angeboten. Der Gesamtverband der Deutschen Versicherungswirtschaft (GDV) befürchtet Wettbewerbsvorteile für den Staat. CDU-Finanzexperte Carsten Brodesser verteidigte die Regelung: „Es erhält keine Wettbewerbsvorteile, dafür sorgen wir." Ob das Vertrauen der Verbraucher in den Staat als Produktgeber und Kapitalanleger ausreicht, bleibt laut Bader „abzuwarten".
+## Frühstartrente als Ergänzung
 
-## Förderberechtigung wird ausgeweitet
+Die Reform ist auch mit Blick auf die geplante Frühstartrente relevant, mit der Kinder und Jugendliche beim Vorsorgesparen finanziell unterstützt werden sollen. Diese soll über das neue Altersvorsorgedepot abgewickelt werden können.
 
-Erstmals sollen auch selbstständig Erwerbstätige in den Genuss der steuerlichen Förderung kommen. Zudem wird die sogenannte Frühstartrente eingeführt, mit der Kinder und Jugendliche beim Vorsorgesparen unterstützt werden sollen. Mehrere Verbände der Versicherungs-, Finanz- und Vermittlerbranche positionierten sich in der vorangegangenen Debatte kritisch und sprachen von einem „ordnungspolitischen Sündenfall".
+## Zustimmung des Bundesrates noch ausstehend
 
-## Nächster Schritt: Bundesrat muss zustimmen
-
-Bevor das Gesetz in Kraft treten kann, muss auch der Bundesrat dem zustimmungsbedürftigen Gesetz grünes Licht geben. Die Versicherungsbranche bereitet sich unterdessen auf die gravierenden Änderungen im Vertrieb und in der Produktgestaltung vor. Insbesondere die gleichmäßige Verteilung der Abschlusskosten auf die gesamte Laufzeit wird die Vermittlervergütung nachhaltig verändern.
+Bevor das Gesetz in Kraft treten kann, muss auch der Bundesrat dem zustimmungsbedürftigen Gesetz grünes Licht geben. Die finale Umsetzung wird für das zweite Halbjahr 2026 erwartet. Für Versicherer und Vermittler bedeutet die Reform einen erheblichen Anpassungsbedarf in Produktgestaltung und Vertriebsstrategien. Insbesondere die gesenkte Kostenobergrenze von einem Prozent dürfte den Wettbewerb verschärfen und die Margen im Riester-Nachfolgegeschäft unter Druck setzen.
