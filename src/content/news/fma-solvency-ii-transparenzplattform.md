@@ -4,8 +4,8 @@ description: "Die österreichische Finanzmarktaufsicht FMA hat eine neue Webseit
 pubDate: 2026-03-29
 category: versicherungsumfeld
 tags: [Solvency II, FMA, Transparenz, Aufsichtsregime, Österreich, Versicherungsaufsicht]
-company: ""
-companyDomain: ""
+company: "
+companyDomain: "
 sources:
   - title: "Mehr Transparenz in der Versicherungsaufsicht: FMA bündelt Solvency-II-Informationen auf neuer Plattform"
     url: "https://verbraucherschutzforum.berlin/2026-03-28/mehr-transparenz-in-der-versicherungsaufsicht-fma-buendelt-solvency-ii-informationen-auf-neuer-plattform-413651/"

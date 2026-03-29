@@ -4,8 +4,8 @@ description: "60 von 93 gesetzlichen Krankenkassen verzeichneten 2025 Mitglieder
 pubDate: 2026-03-29
 category: versicherungsumfeld
 tags: [GKV, Krankenkassen, Mitgliederschwund, Zusatzbeitrag, Wettbewerb]
-company: ""
-companyDomain: ""
+company: "
+companyDomain: "
 sources:
   - title: "Das waren 2025 die Krankenkassen mit dem größten Mitgliederschwund"
     url: "https://www.versicherungsjournal.de/markt-und-politik/das-waren-2025-die-krankenkassen-mit-dem-groessten-mitgliederschwund-155474.php"

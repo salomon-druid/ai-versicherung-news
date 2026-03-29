@@ -1,5 +1,5 @@
 ---
-title: "Altersvorsorgereform: Verbände warnen – „Vertrieb wird strukturell verhindert""
+title: "Altersvorsorgereform: Verbände warnen – 'Vertrieb wird strukturell verhindert"
 description: "Die Reform der privaten Altersvorsorge spaltet die Branche. Der Kostendeckel von einem Prozent und ein staatlicher Anbieter sorgen für scharfe Kritik von Makler- und Vermittlerverbänden."
 pubDate: 2026-03-29
 category: makler

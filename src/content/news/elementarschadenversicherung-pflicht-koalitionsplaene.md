@@ -4,8 +4,8 @@ description: "Die schwarz-rote Koalition plant eine verpflichtende Elementarscha
 pubDate: 2026-03-29
 category: versicherungsumfeld
 tags: [Elementarschadenversicherung, Naturgefahren, Pflichtversicherung, Wohngebäudeversicherung, Klimawandel, Koalition]
-company: ""
-companyDomain: ""
+company: "
+companyDomain: "
 sources:
   - title: "Das ändert sich 2026 für Versicherte"
     url: "https://www.bundderversicherten.de/de/presse/pressemitteilungen/das-aendert-sich-2026-fuer-versicherte-m4456.html"

@@ -1,5 +1,5 @@
 ---
-title: "Stuttgarter-Vorstandschef zum Standardprodukt: „Für den Maklermarkt wenig interessant""
+title: "Stuttgarter-Vorstandschef zum Standardprodukt: 'Für den Maklermarkt wenig interessant"
 description: "Das neue Standardprodukt in der geförderten Altersvorsorge dürfte Versicherungsmakler kaum ansprechen – zu eingeschränkt in Gestaltung und Vergütung, urteilt Stuttgarter-Chef Bader."
 pubDate: 2026-03-29
 category: versicherungsumfeld
@@ -7,7 +7,7 @@ tags: [Altersvorsorge, Standardprodukt, Makler, Stuttgarter, Vertrieb, Kostenreg
 company: "Stuttgarter Versicherungsgruppe"
 companyDomain: "stuttgarter.de"
 sources:
-  - title: "Bader: „Das Standardprodukt dürfte für den Maklermarkt wenig interessant sein""
+  - title: "Bader: 'Das Standardprodukt dürfte für den Maklermarkt wenig interessant sein"
     url: "https://www.versicherungsjournal.de/markt-und-politik/bader-das-standardprodukt-duerfte-fuer-den-maklermarkt-wenig-interessant-sein-155450.php"
     outlet: "VersicherungsJournal"
     date: "26.03.2026"

@@ -4,8 +4,8 @@ description: "Finanzminister Lars Klingbeil will die gesetzliche Rente grundlege
 pubDate: 2026-03-29
 category: versicherungsumfeld
 tags: [Rentenreform, Klingbeil, Beitragsjahre, Betriebsrente, Sozialversicherung]
-company: ""
-companyDomain: ""
+company: "
+companyDomain: "
 sources:
   - title: "Klingbeil will gesetzliche Altersrente an Beitragsjahre koppeln"
     url: "https://www.versicherungsjournal.de/markt-und-politik/klingbeil-will-gesetzliche-altersrente-an-beitragsjahre-koppeln-155457.php"

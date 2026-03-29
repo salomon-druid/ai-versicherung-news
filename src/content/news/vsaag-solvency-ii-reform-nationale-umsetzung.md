@@ -4,8 +4,8 @@ description: "Das BMF hat den Referentenentwurf für das VSAAG veröffentlicht, 
 pubDate: 2026-03-29
 category: versicherungsumfeld
 tags: [Solvency II, VSAAG, IRRD, Gruppenaufsicht, BaFin, BMF]
-company: ""
-companyDomain: ""
+company: "
+companyDomain: "
 sources:
   - title: "Referentenentwurf zum VSAAG: Nationale Umsetzung der Solvency-II-Reform"
     url: "https://www.bdo.de/de-de/insights/aktuelles/assurance/referentenentwurf-zum-vsaag"

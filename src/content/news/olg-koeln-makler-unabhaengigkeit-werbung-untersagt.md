@@ -5,7 +5,7 @@ pubDate: 2026-03-29
 category: makler
 tags: ["maklerrecht", "olg-koeln", "unabhaengigkeit", "werbung", "uwg", "gerichtsurteil"]
 sources:
-  - title: "Versicherungsmakler verlieren „Unabhängig"-Status: angelockt vom Versprechen der Unabhängigkeit"
+  - title: "Versicherungsmakler verlieren 'Unabhängig'-Status: angelockt vom Versprechen der Unabhängigkeit"
     url: "https://www.versicherungsbote.de/id/4948880/Versicherungsmakler-verlieren-Unabhaengig-Status-angelockt-vom-Versprechen-der-Unabhaengigkeit/"
     outlet: "Versicherungsbote"
     date: "25.03.2026"
