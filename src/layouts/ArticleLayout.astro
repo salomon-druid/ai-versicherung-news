@@ -30,6 +30,29 @@ const formattedDate = new Intl.DateTimeFormat('de-DE', {
 const isoDate = pubDate.toISOString();
 const heroImage = image || (slug ? `/images/articles/${slug}.jpg` : `/images/${category}.jpg`);
 
+// Estimate reading time (average 200 words/min for German)
+const wordCount = description.split(/\s+/).length + 200; // +200 for body estimate
+const readingTime = Math.max(3, Math.ceil(wordCount / 200));
+
+const categoryLabels: Record<string, string> = {
+  'ki-digitalisierung': 'KI & Digitalisierung',
+  versicherer: 'Versicherer',
+  versicherungsprodukte: 'Versicherungsprodukte',
+  versicherungsumfeld: 'Umfeld & Regulierung',
+  makler: 'Makler',
+  'risiken-schaeden': 'Risiken & Schäden',
+};
+
+const categoryLabel = categoryLabels[category] || category;
+
+// Get adjacent articles for prev/next navigation
+import { getCollection } from 'astro:content';
+const allNews = await getCollection('news');
+const sortedNews = allNews.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const currentIndex = sortedNews.findIndex((n) => n.slug === slug);
+const prevArticle = currentIndex < sortedNews.length - 1 ? sortedNews[currentIndex + 1] : null;
+const nextArticle = currentIndex > 0 ? sortedNews[currentIndex - 1] : null;
+
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'NewsArticle',
@@ -80,12 +103,31 @@ const articleSchema = {
     </div>
 
     <div class="max-w-4xl mx-auto px-4 py-10">
+      <!-- Breadcrumb -->
+      <nav class="mb-6 text-sm text-gray-400" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-1.5 flex-wrap">
+          <li><a href="/" class="hover:text-primary-500 transition-colors">Home</a></li>
+          <li><span class="text-gray-300">›</span></li>
+          <li><a href="/news" class="hover:text-primary-500 transition-colors">News</a></li>
+          <li><span class="text-gray-300">›</span></li>
+          <li><a href={`/${category}`} class="hover:text-primary-500 transition-colors">{categoryLabel}</a></li>
+          <li><span class="text-gray-300">›</span></li>
+          <li class="text-gray-500 truncate max-w-[200px]">{title}</li>
+        </ol>
+      </nav>
+
       <header class="mb-10">
-        <div class="flex items-center gap-3 mb-4">
+        <div class="flex items-center gap-3 mb-4 flex-wrap">
           <CategoryBadge category={category} size="md" />
           <time datetime={isoDate} class="text-sm text-gray-500">
             {formattedDate}
           </time>
+          <span class="text-sm text-gray-400 flex items-center gap-1">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            {readingTime} Min. Lesezeit
+          </span>
         </div>
         <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-dark leading-tight mb-6">
           {title}
@@ -102,6 +144,33 @@ const articleSchema = {
             </div>
           )
         }
+
+        <!-- Social Sharing -->
+        <div class="flex items-center gap-4 mt-6 pt-4 border-t border-gray-100">
+          <span class="text-xs text-gray-400 uppercase tracking-wide font-medium">Teilen:</span>
+          <a
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(Astro.url.href)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm text-gray-500 hover:text-primary-500 transition-colors"
+          >
+            Twitter/X
+          </a>
+          <a
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(Astro.url.href)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm text-gray-500 hover:text-primary-500 transition-colors"
+          >
+            LinkedIn
+          </a>
+          <a
+            href={`mailto:?subject=${encodeURIComponent(title)}&body=${encodeURIComponent(Astro.url.href)}`}
+            class="text-sm text-gray-500 hover:text-primary-500 transition-colors"
+          >
+            E-Mail
+          </a>
+        </div>
       </header>
 
       <div class="prose prose-lg prose-headings:text-dark prose-a:text-primary-500 prose-a:no-underline hover:prose-a:underline max-w-none">
@@ -150,6 +219,36 @@ const articleSchema = {
           </footer>
         )
       }
+
+      <!-- Article Navigation (Prev/Next) -->
+      <nav class="mt-12 pt-8 border-t border-gray-200 grid grid-cols-1 md:grid-cols-2 gap-4">
+        {prevArticle ? (
+          <a href={`/news/${prevArticle.slug}`} class="group p-4 rounded-xl border border-gray-100 hover:border-primary-500/20 hover:shadow-sm transition-all">
+            <span class="text-xs text-gray-400 uppercase tracking-wide flex items-center gap-1">
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+              Vorheriger Artikel
+            </span>
+            <span class="text-sm font-semibold text-dark group-hover:text-primary-500 transition-colors mt-1 block line-clamp-2">
+              {prevArticle.data.title}
+            </span>
+          </a>
+        ) : <div />}
+        {nextArticle ? (
+          <a href={`/news/${nextArticle.slug}`} class="group p-4 rounded-xl border border-gray-100 hover:border-primary-500/20 hover:shadow-sm transition-all text-right md:col-start-2">
+            <span class="text-xs text-gray-400 uppercase tracking-wide flex items-center gap-1 justify-end">
+              Nächster Artikel
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+            <span class="text-sm font-semibold text-dark group-hover:text-primary-500 transition-colors mt-1 block line-clamp-2">
+              {nextArticle.data.title}
+            </span>
+          </a>
+        ) : <div />}
+      </nav>
     </div>
   </article>
 </BaseLayout>

@@ -1,12 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import NewsCard from '../components/NewsCard.astro';
+import SmallNewsCard from '../components/SmallNewsCard.astro';
 import { getCollection } from 'astro:content';
 
 const allNews = await getCollection('news');
 const sortedNews = allNews.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+
+const featuredArticle = sortedNews.find((n) => n.data.featured) || sortedNews[0];
+const sidebarArticles = sortedNews.filter((n) => n.slug !== featuredArticle?.slug).slice(0, 3);
+const latestArticles = sortedNews.filter((n) => n.slug !== featuredArticle?.slug).slice(3, 9);
+const mostRead = sortedNews.slice(0, 5);
 
 const categories = [
   { slug: 'ki-digitalisierung', label: 'KI & Digitalisierung', icon: '🤖', count: allNews.filter(n => n.data.category === 'ki-digitalisierung').length },
@@ -16,167 +22,208 @@ const categories = [
   { slug: 'makler', label: 'Makler', icon: '🏠', count: allNews.filter(n => n.data.category === 'makler').length },
   { slug: 'risiken-schaeden', label: 'Risiken', icon: '⚡', count: allNews.filter(n => n.data.category === 'risiken-schaeden').length },
 ];
+
+const allTags = [...new Set(allNews.flatMap(n => n.data.tags || []))].slice(0, 15);
 ---
 
 <BaseLayout title="Versicherungsnews – KI, Versicherer, Makler & mehr">
-  <!-- Hero Section -->
-  <section class="bg-dark text-white py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <span class="inline-block px-3 py-1 bg-primary-500/20 text-primary-500 text-sm font-medium rounded-full mb-6">
-          Täglich aktualisiert
-        </span>
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-          News für die<br />
-          <span class="text-primary-500">Versicherungsbranche</span>
-        </h1>
-        <p class="text-xl text-white/70 leading-relaxed mb-8">
-          KI, Versicherer, Makler, Produkte und Risiken – täglich kuratierte Nachrichten
-          mit Quellenangaben aus der Versicherungswirtschaft.
-        </p>
-        <div class="flex flex-wrap gap-4">
-          <a
-            href="/news"
-            class="px-6 py-3 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors"
-          >
-            Alle News lesen
-          </a>
-          <a
-            href="/glossar"
-            class="px-6 py-3 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 transition-colors"
-          >
-            Glossar
+  <!-- HERO: Featured Article + Sidebar Stack (Newspaper Top Section) -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-6">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Featured Article (2/3 width) -->
+      {featuredArticle && (
+        <div class="lg:col-span-2">
+          <a href={`/news/${featuredArticle.slug}`} class="group block">
+            <div class="relative rounded-xl overflow-hidden shadow-md">
+              <img
+                src={`/images/articles/${featuredArticle.slug}.jpg`}
+                alt={featuredArticle.data.title}
+                class="w-full h-[300px] md:h-[400px] object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                onerror={`this.src='/images/${featuredArticle.data.category}.jpg'`}
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                <div class="flex items-center gap-2 mb-3">
+                  <span class="px-2.5 py-0.5 bg-gold text-dark text-xs font-bold rounded-full uppercase tracking-wide">
+                    ⭐ Top-Story
+                  </span>
+                  <span class="text-white/60 text-sm">
+                    {new Intl.DateTimeFormat('de-DE', { day: 'numeric', month: 'long', year: 'numeric' }).format(featuredArticle.data.pubDate)}
+                  </span>
+                </div>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white leading-tight mb-3 group-hover:text-primary-400 transition-colors">
+                  {featuredArticle.data.title}
+                </h2>
+                <p class="text-white/70 text-base md:text-lg leading-relaxed line-clamp-3 hidden sm:block">
+                  {featuredArticle.data.description}
+                </p>
+              </div>
+            </div>
           </a>
         </div>
+      )}
+
+      <!-- Sidebar Stack (1/3 width) -->
+      <div class="lg:col-span-1 flex flex-col gap-4">
+        {sidebarArticles.map((article) => (
+          <a href={`/news/${article.slug}`} class="group block flex-1">
+            <div class="relative rounded-xl overflow-hidden shadow-sm h-full min-h-[150px]">
+              <img
+                src={`/images/articles/${article.slug}.jpg`}
+                alt={article.data.title}
+                class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
+                onerror={`this.src='/images/${article.data.category}.jpg'`}
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4">
+                <span class="text-white/50 text-xs mb-1 block">
+                  {new Intl.DateTimeFormat('de-DE', { day: 'numeric', month: 'short' }).format(article.data.pubDate)}
+                </span>
+                <h3 class="text-sm md:text-base font-bold text-white leading-snug group-hover:text-primary-400 transition-colors line-clamp-2">
+                  {article.data.title}
+                </h3>
+              </div>
+            </div>
+          </a>
+        ))}
       </div>
     </div>
   </section>
 
-  <!-- Featured Top Story -->
-  {
-    sortedNews.find((n) => n.data.featured) && (() => {
-      const topStory = sortedNews.find((n) => n.data.featured)!;
-      return (
-        <section class="bg-dark text-white">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="flex items-center gap-2 mb-4">
-              <span class="px-3 py-1 bg-gold text-dark text-sm font-bold rounded-full">⭐ Top-Story des Tages</span>
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="border-t-2 border-dark/10"></div>
+  </div>
+
+  <!-- MIDDLE: Aktuelle Nachrichten + Sidebar -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Main Content (2/3) -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-6">
+          <h2 class="text-2xl font-extrabold text-dark">Aktuelle Nachrichten</h2>
+          <div class="flex-1 h-px bg-gray-200"></div>
+          <a href="/news" class="text-sm font-medium text-primary-500 hover:text-gold transition-colors whitespace-nowrap">
+            Alle News →
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {latestArticles.map((article) => (
+            <NewsCard
+              title={article.data.title}
+              description={article.data.description}
+              pubDate={article.data.pubDate}
+              category={article.data.category}
+              slug={article.slug}
+              sourcesCount={article.data.sources?.length || 0}
+              featured={article.data.featured}
+              company={article.data.company}
+              companyDomain={article.data.companyDomain}
+            />
+          ))}
+        </div>
+      </div>
+
+      <!-- Sidebar (1/3) -->
+      <aside class="lg:col-span-1 space-y-8">
+        <!-- Meistgelesen -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-1 h-6 bg-primary-500 rounded-full"></div>
+            <h3 class="text-lg font-extrabold text-dark">Meistgelesen</h3>
+          </div>
+          <div>
+            {mostRead.map((article, i) => (
+              <SmallNewsCard
+                title={article.data.title}
+                pubDate={article.data.pubDate}
+                category={article.data.category}
+                slug={article.slug}
+                rank={i + 1}
+              />
+            ))}
+          </div>
+        </div>
+
+        <!-- Themen der Woche -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="w-1 h-6 bg-gold rounded-full"></div>
+            <h3 class="text-lg font-extrabold text-dark">Themen der Woche</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            {allTags.map((tag) => (
+              <span class="px-3 py-1.5 bg-bg text-gray-600 text-xs font-medium rounded-full border border-gray-100 hover:border-primary-500/30 hover:text-primary-500 transition-colors cursor-default">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <!-- Mini Stats -->
+        <div class="bg-dark rounded-xl p-5 text-white">
+          <div class="grid grid-cols-2 gap-4 text-center">
+            <div>
+              <p class="text-2xl font-extrabold text-primary-400">{allNews.length}</p>
+              <p class="text-xs text-white/50">Artikel</p>
             </div>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div>
-                <h2 class="text-3xl md:text-4xl font-extrabold leading-tight mb-4">
-                  <a href={`/news/${topStory.slug}`} class="hover:text-primary-500 transition-colors">
-                    {topStory.data.title}
-                  </a>
-                </h2>
-                <p class="text-white/70 text-lg leading-relaxed mb-6">{topStory.data.description}</p>
-                <a
-                  href={`/news/${topStory.slug}`}
-                  class="inline-flex items-center gap-2 px-6 py-3 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors"
-                >
-                  Artikel lesen
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
-              </div>
-              <div class="rounded-xl overflow-hidden">
-                <img
-                  src={`/images/articles/${topStory.slug}.jpg`}
-                  alt={topStory.data.title}
-                  class="w-full h-64 lg:h-80 object-cover"
-                  onerror={`this.src='/images/${topStory.data.category}.jpg'`}
-                />
-              </div>
+            <div>
+              <p class="text-2xl font-extrabold text-gold">6</p>
+              <p class="text-xs text-white/50">Themen</p>
+            </div>
+            <div>
+              <p class="text-2xl font-extrabold text-primary-400">{allNews.reduce((acc, n) => acc + (n.data.sources?.length || 0), 0)}</p>
+              <p class="text-xs text-white/50">Quellen</p>
+            </div>
+            <div>
+              <p class="text-2xl font-extrabold text-gold">4</p>
+              <p class="text-xs text-white/50">CronJobs/Tag</p>
             </div>
           </div>
-        </section>
-      );
-    })()
-  }
-
-  <!-- Stats -->
-  <section class="bg-white border-b border-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-      <div class="flex flex-wrap justify-center gap-8 md:gap-16 text-center">
-        <div>
-          <p class="text-3xl font-bold text-dark">{allNews.length}</p>
-          <p class="text-sm text-gray-500">Artikel</p>
         </div>
-        <div>
-          <p class="text-3xl font-bold text-dark">6</p>
-          <p class="text-sm text-gray-500">Themenfelder</p>
-        </div>
-        <div>
-          <p class="text-3xl font-bold text-dark">{allNews.reduce((acc, n) => acc + (n.data.sources?.length || 0), 0)}</p>
-          <p class="text-sm text-gray-500">Quellen</p>
-        </div>
-        <div>
-          <p class="text-3xl font-bold text-dark">4</p>
-          <p class="text-sm text-gray-500">CronJobs / Tag</p>
-        </div>
-      </div>
+      </aside>
     </div>
   </section>
 
-  <!-- Latest News - Uniform Grid -->
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="flex items-center justify-between mb-8">
-      <h2 class="text-2xl font-bold text-dark">Aktuelle News</h2>
-      <a href="/news" class="text-sm font-medium text-primary-500 hover:text-gold transition-colors">
-        Alle anzeigen →
-      </a>
-    </div>
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="border-t-2 border-dark/10"></div>
+  </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- Categories -->
+  <section id="kategorien" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="flex items-center gap-3 mb-6">
+      <h2 class="text-2xl font-extrabold text-dark">Themenfelder</h2>
+      <div class="flex-1 h-px bg-gray-200"></div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
       {
-        sortedNews.slice(0, 6).map((article) => (
-          <NewsCard
-            title={article.data.title}
-            description={article.data.description}
-            pubDate={article.data.pubDate}
-            category={article.data.category}
-            slug={article.slug}
-            sourcesCount={article.data.sources?.length || 0}
-            featured={article.data.featured}
-            company={article.data.company}
-            companyDomain={article.data.companyDomain}
-          />
+        categories.map((cat) => (
+          <a
+            href={`/${cat.slug}`}
+            class="bg-white hover:bg-primary-500/5 border border-gray-100 hover:border-primary-500/30 rounded-xl p-5 text-center transition-all group shadow-sm hover:shadow-md"
+          >
+            <span class="text-3xl block mb-2">{cat.icon}</span>
+            <span class="text-sm font-bold text-dark group-hover:text-primary-500 transition-colors block">
+              {cat.label}
+            </span>
+            <span class="text-xs text-gray-400 mt-1 block">{cat.count} Artikel</span>
+          </a>
         ))
       }
     </div>
   </section>
 
-  <!-- Categories -->
-  <section id="kategorien" class="bg-white py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold text-dark mb-8 text-center">Themenfelder</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-        {
-          categories.map((cat) => (
-            <a
-              href={`/${cat.slug}`}
-              class="bg-bg hover:bg-primary-500/5 border border-gray-100 hover:border-primary-500/20 rounded-xl p-4 text-center transition-all group"
-            >
-              <span class="text-3xl block mb-2">{cat.icon}</span>
-              <span class="text-sm font-semibold text-dark group-hover:text-primary-500 transition-colors block">
-                {cat.label}
-              </span>
-              <span class="text-xs text-gray-400">{cat.count} Artikel</span>
-            </a>
-          ))
-        }
-      </div>
-    </div>
-  </section>
-
   <!-- Newsletter CTA -->
-  <section class="bg-dark py-16">
+  <section class="bg-dark py-14 mt-4">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <span class="text-4xl mb-4 block">📬</span>
-      <h2 class="text-3xl font-bold text-white mb-4">Keine News verpassen</h2>
-      <p class="text-white/70 mb-8">
-        Erhalte die wichtigsten Versicherungs-News direkt in dein Postfach.
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-primary-500/20 rounded-full mb-6">
+        <span class="text-primary-400 text-sm font-medium">📬 Newsletter</span>
+      </div>
+      <h2 class="text-3xl font-extrabold text-white mb-3">Keine News verpassen</h2>
+      <p class="text-white/60 mb-8 text-lg">
+        Die wichtigsten Versicherungs-News direkt in dein Postfach.
       </p>
       <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
         <input
@@ -187,12 +234,12 @@ const categories = [
         <button
           type="button"
           onclick="alert('Danke für dein Interesse! Der Newsletter wird bald verfügbar sein.')"
-          class="px-6 py-3 bg-gold text-dark font-semibold rounded-lg hover:bg-gold/90 transition-colors"
+          class="px-6 py-3 bg-gold text-dark font-bold rounded-lg hover:bg-gold/90 transition-colors"
         >
           Anmelden
         </button>
       </div>
-      <p class="text-white/40 text-xs mt-4">Kein Spam. Jederzeit abmeldbar.</p>
+      <p class="text-white/30 text-xs mt-4">Kein Spam. Jederzeit abmeldbar.</p>
     </div>
   </section>
 </BaseLayout>
