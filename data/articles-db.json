@@ -1,11 +1,11 @@
 {
-  "generated": "2026-03-29T22:08:33.640278",
-  "count": 37,
+  "generated": "2026-03-30T07:03:18.570487",
+  "count": 42,
   "categories": {
     "versicherer": 8,
+    "ki-digitalisierung": 9,
     "makler": 5,
     "versicherungsumfeld": 11,
-    "ki-digitalisierung": 4,
     "versicherungsprodukte": 4,
     "risiken-schaeden": 5
   },
@@ -46,6 +46,26 @@
       "companyDomain": "allianz.com",
       "sourceCount": 3,
       "file": "allianz-jio-rueckversicherung-indien-start.md"
+    },
+    {
+      "slug": "allianz-ki-offensive-sprachbot-eric",
+      "title": "Allianz KI-Offensive: Sprachbot Eric und Claude-Integration transformieren Versicherungswesen",
+      "description": "Die Allianz setzt auf KI-basierte Sprachassistenten und das Claude-Modell von Anthropic, um Kundenservice und interne Prozesse grundlegend zu erneuern.",
+      "pubDate": "2026-03-30",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "Allianz",
+        "KI",
+        "Chatbot",
+        "Sprachassistent",
+        "Claude",
+        "Anthropic",
+        "Kundenservice"
+      ],
+      "company": "Allianz",
+      "companyDomain": "allianz.com",
+      "sourceCount": 3,
+      "file": "allianz-ki-offensive-sprachbot-eric.md"
     },
     {
       "slug": "allianz-talanx-investition-stromnetz-amprion",
@@ -103,6 +123,25 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "bafin-risiken-im-fokus-2026-versicherungsaufsicht.md"
+    },
+    {
+      "slug": "bcg-studie-ki-adoption-versicherung-skaliert",
+      "title": "BCG-Studie: Versicherungsbranche führt KI-Adoption – doch Skalierung bleibt zentrale Herausforderung",
+      "description": "Eine neue BCG-Analyse zeigt, dass Versicherer bei der KI-Nutzung andere Branchen überholen. Doch nur wenige haben KI erfolgreich skaliert – Widerstand und fehlende Governance bremsen.",
+      "pubDate": "2026-03-30",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "BCG",
+        "Studie",
+        "KI-Adoption",
+        "Skalierung",
+        "Versicherungsbranche",
+        "Generative AI"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "bcg-studie-ki-adoption-versicherung-skaliert.md"
     },
     {
       "slug": "bitkom-ki-chatbot-bezugsperson",
@@ -215,6 +254,45 @@
       "file": "cyberversicherung-schadenreport-2025-frequenz-verdoppelt.md"
     },
     {
+      "slug": "deloitte-digitale-versicherer-service-defizite",
+      "title": "Deloitte-Studie: Deutsche Versicherer zeigen deutliche Defizite beim digitalen Service",
+      "description": "Die neue Deloitte Digital Insurance Maturity Studie zeigt: Deutsche Versicherer hinken beim Online-Service hinterher, obwohl der durchschnittliche digitale Reifegrad über dem EMEA-Schnitt liegt.",
+      "pubDate": "2026-03-30",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "Deloitte",
+        "Studie",
+        "Digitalisierung",
+        "Customer Journey",
+        "Digital Maturity",
+        "EMEA"
+      ],
+      "company": "Deloitte",
+      "companyDomain": "deloitte.com",
+      "sourceCount": 2,
+      "file": "deloitte-digitale-versicherer-service-defizite.md"
+    },
+    {
+      "slug": "deutsche-insurtech-landschaft-ki-innovation",
+      "title": "Deutsche InsurTech-Landschaft 2025: Konsolidierung und KI-Innovation prägen den Markt",
+      "description": "Weniger Neugründungen, aber mehr technologische Exzellenz: Der deutsche InsurTech-Sektor hat 2025 ein neues Stadium erreicht. KI-Agenten und Spatial Intelligence dominieren den Tech Trend Radar.",
+      "pubDate": "2026-03-30",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "InsurTech",
+        "KI",
+        "Marktkonsolidierung",
+        "Innovation",
+        "Tech Trend Radar",
+        "Munich Re",
+        "ERGO"
+      ],
+      "company": "ERGO, Munich Re",
+      "companyDomain": "ergo.com",
+      "sourceCount": 3,
+      "file": "deutsche-insurtech-landschaft-ki-innovation.md"
+    },
+    {
       "slug": "deutsche-versicherer-verhandeln-ki-stellenabbau",
       "title": "Deutsche Versicherer verhandeln über KI-bedingten Stellenabbau",
       "description": "Tarifverhandlungen zwischen Versicherern und Verdi starten heute in München. Im Fokus: Wie die Branche den durch KI ausgelösten Strukturwandel gestaltet und Arbeitsplätze sichert.",
@@ -250,6 +328,25 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "elementarschadenversicherung-pflicht-koalitionsplaene.md"
+    },
+    {
+      "slug": "eu-ai-act-versicherungen-ki-verordnung",
+      "title": "EU AI Act: Versicherungen vor neuen Herausforderungen mit KI-Verordnung",
+      "description": "Seit Februar 2025 gelten die Verbote des EU AI Act. Versicherer müssen nun ihre KI-gestützten Prozesse überprüfen – insbesondere bei Risiko- und Bonitätsbewertungen.",
+      "pubDate": "2026-03-30",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "EU AI Act",
+        "KI-Verordnung",
+        "Regulierung",
+        "Compliance",
+        "Hochrisiko-KI",
+        "Datenschutz"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "eu-ai-act-versicherungen-ki-verordnung.md"
     },
     {
       "slug": "eu-ki-verordnung-versicherungsmakler",
