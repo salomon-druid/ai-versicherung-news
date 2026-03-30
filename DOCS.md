@@ -1,7 +1,7 @@
 # ai-versicherung-news – Projekt-Dokumentation
 
 **Erstellt:** 2026-03-28  
-**Letzte Aktualisierung:** 2026-03-28  
+**Letzte Aktualisierung:** 2026-03-30  
 **Status:** Aktiv  
 
 ---
@@ -13,6 +13,7 @@
 - **Live-URL:** https://ai-versicherung-news.vercel.app
 - **GitHub:** https://github.com/salomon-druid/ai-versicherung-news
 - **Hosting:** Vercel (automatisches Deployment bei Push zu `main`)
+- **GitHub-Token:** In Keyring, erfordert ggf. `gh auth login` nach Reboot
 
 ---
 
@@ -29,6 +30,7 @@
 | Bilder | Unsplash API (per Artikel-Slug) |
 | Firmenlogos | Clearbit Logo API |
 | SEO | Schema.org (NewsArticle), Sitemap, robots.txt |
+| Datenbank | JSON-Datei (`data/articles-db.json`) |
 
 ---
 
@@ -43,18 +45,13 @@
 
 ---
 
-## Seitenstruktur (22 Seiten)
+## Seitenstruktur (69 Seiten)
 
 ```
-/                           → Startseite
-/news                       → Alle News (10 Artikel)
-/ki-digitalisierung         → Kategorie: KI & Digitalisierung
-/versicherer                → Kategorie: Versicherer
-/versicherungsprodukte      → Kategorie: Produkte
-/versicherungsumfeld        → Kategorie: Umfeld & Regulierung
-/makler                     → Kategorie: Makler
-/risiken-schaeden           → Kategorie: Risiken & Schäden
-/news/{slug}                → Einzelartikel (×10)
+/                           → Startseite (mit Top-Story Hero)
+/news                       → Alle News
+/{category}                 → 6 Kategorie-Seiten
+/news/{slug}                → Einzelartikel (~57)
 /glossar                    → 33 Begriffe in 6 Kategorien
 /about                      → Über uns
 /datenschutz                → Datenschutzerklärung
@@ -63,7 +60,7 @@
 
 ---
 
-## Content-Kategorien
+## Content-Kategorien (6)
 
 | Kategorie | Slug | Beschreibung |
 |-----------|------|--------------|
@@ -99,6 +96,8 @@
 }
 ```
 
+⚠️ **WICHTIG:** YAML-Frontmatter darf KEINE typografischen Anführungszeichen (`„"`) oder doppelte Anführungszeichen innerhalb von Strings enthalten. Siehe Fix-Skripte unten.
+
 ---
 
 ## Bilder-System
@@ -113,38 +112,75 @@ public/images/
 └── default.jpg            ← Letzter Fallback
 ```
 
-### Scripts
+### Unsplash-Zugangsdaten
+- App ID: 908110
+- Access Key: In `.env` Datei (gitignored)
+
+### Skripte
 - `scripts/fetch-article-image.sh <slug> <category>` – Holt einziges Bild pro Artikel
 - `scripts/fetch-unsplash-images.sh` – Holt Kategorie-Fallback-Bilder
 
-### Unsplash-Zugangsdaten
-- Gespeichert in `.env` (gitignored)
-- App ID: 908110
+---
+
+## Artikel-Datenbank
+
+### Datei: `data/articles-db.json`
+Enthält alle Artikel mit Metadaten zur Duplikat-Erkennung.
+
+### Skripte
+- `scripts/rebuild-db.py` – Datenbank aus Markdown-Dateien neu aufbauen
+- `scripts/check-duplicate.py "Titel"` – Prüft ob ähnlicher Artikel existiert (>70% Ähnlichkeit)
+- `scripts/fix-yaml.py` – Fixt typografische Anführungszeichen (v1)
+- `scripts/fix-yaml-v2.py` – Aggressiverer YAML-Fix (doppelte Quotes)
 
 ---
 
 ## CronJobs (Automatisierung)
 
-### News-Generierung (4 Jobs, verteilt 07:00-13:00)
+### Übersicht
 
-| Job | Uhrzeit | Themen |
-|-----|---------|--------|
-| `news-ki-digitalisierung` | 07:00 | KI, InsurTech, Tech |
-| `news-versicherer-produkte` | 09:00 | Versicherer, Produkte |
-| `news-umfeld-regulierung` | 11:00 | Regulierung, Markt |
-| `news-makler-risiken` | 13:00 | Makler, Risiken, Schäden |
+| Job | Uhrzeit | Beschreibung |
+|-----|---------|--------------|
+| 📰 Chefredaktion | 06:30 | Top Story wählen, montags Deep Dive |
+| 🤖 KI & Digitalisierung | 07:00 | 4-6 Artikel |
+| 🏢 Versicherer & Produkte | 09:00 | 4-6 Artikel |
+| 🌍 Umfeld & Regulierung | 11:00 | 4-6 Artikel |
+| 🏠 Makler & Risiken | 13:00 | 4-6 Artikel |
+| 📧 E-Mails | Alle 30 Min | Google Mail prüfen |
 
-### E-Mail-Automatisierung
-| Job | Intervall | Beschreibung |
-|-----|-----------|--------------|
-| `E-Mails` | Alle 30 Min | Google Mail prüfen, Kontakte laden |
+### Konfiguration
+- CronJobs in: `~/.openclaw/cron/jobs.json`
+- **Gateway-Neustart erforderlich** nach Änderungen
+- Alle News-Jobs: `rebuild-db.py` + Duplikat-Check enthalten
 
-### Jeder News-Job:
-1. Sucht Web nach aktuellen Nachrichten
-2. Generiert deutschen Artikel (300-500 Wörter)
-3. Holt einziges Unsplash-Bild
-4. Committet und pusht zu GitHub
-5. Vercel baut automatisch
+### Chefredakteur (06:30)
+- Wählt täglich den besten Artikel als Top Story (`featured: true`)
+- **Montags:** Generiert zusätzlich einen Deep Dive-Artikel (800-1200 Wörter)
+- Nur EIN Artikel darf `featured: true` haben
+
+---
+
+## Layout (Redesign 29.03.2026)
+
+### Header (Masthead)
+- Aktuelles Datum oben
+- Zentriertes Logo mit „News & Analyse"
+- Navigation mit Pipe-Trennzeichen
+- Gold/grün Akzentlinie
+
+### Homepage (Newspaper-Grid)
+- **Top:** Großer Featured-Artikel (2/3) + 3 Sidebar-Karten (1/3)
+- **Mitte:** 2-Spalten-Grid + Sidebar mit Meistgelesen, Themen, Stats
+- **Kategorien:** 6-Karten-Reihe
+- **Newsletter CTA**
+
+### Artikel-Seiten
+- Breadcrumbs (Home > News > Kategorie > Titel)
+- Lesezeit-Anzeige
+- Social-Sharing (X, LinkedIn, E-Mail)
+- Verwandte Artikel mit Bildern
+- „Was könnte Sie sonst noch interessieren?" (andere Kategorien)
+- Vor/Zurück Navigation
 
 ---
 
@@ -152,48 +188,34 @@ public/images/
 
 | Datei | Beschreibung |
 |-------|--------------|
-| `Header.astro` | Navigation mit Kategorie-Links |
-| `Footer.astro` | Links zu Kategorien, Rechtliches |
+| `Header.astro` | Masthead mit Datum, Logo, Navigation |
+| `Footer.astro` | 4-Spalten Footer mit Kategorien, Rechtliches |
 | `NewsCard.astro` | Artikel-Karte mit Bild, Logo, Kategorie |
+| `SmallNewsCard.astro` | Kompakte Karte für „Meistgelesen" Sidebar |
 | `CategoryBadge.astro` | Farbige Kategorie-Badges |
 | `BaseLayout.astro` | Grundlayout mit SEO-Meta |
-| `ArticleLayout.astro` | Artikel-Layout mit Hero-Bild, Quellen |
-
----
-
-## SEO
-
-- **Schema.org:** `NewsArticle` pro Artikel, `WebSite` global
-- **Sitemap:** Automatisch generiert (`sitemap-index.xml`)
-- **robots.txt:** Erlaubt alles, verweist auf Sitemap
-- **Meta-Tags:** Open Graph, Twitter Cards, Canonical URLs
-- **Google News:** Noch nicht angemeldet (TODO)
-
----
-
-## Konfiguration
-
-### openclaw.json (relevant)
-- Primary Model: `openrouter/xiaomi/mimo-v2-pro`
-- Fallbacks: arcee-ai/trinity-mini, step-3.5-flash, nvidia/nemotron
-
-### astro.config.mjs
-- Site: `https://ai-versicherung-news.vercel.app`
-- Integrations: Sitemap, Tailwind
-- Output: Static
-
-### vercel.json
-- Framework: Astro
-- trailingSlash: true
-- cleanUrls: true
+| `ArticleLayout.astro` | Artikel-Layout mit Hero, Quellen, Navigation |
 
 ---
 
 ## Bekannte Issues
 
-1. **YAML-Sonderzeichen:** Artikel-Frontmatter darf keine `„"` (typografische Anführungszeichen) enthalten – bricht den Build
-2. **CronJob-Neustart:** Neue CronJobs erfordern Gateway-Restart
-3. **Bild-Wiederverwendung:** Aktuell pro Artikel einzig, aber Kategorie-Fallback kann sich wiederholen
+1. **YAML-Sonderzeichen:** CronJobs produzieren manchmal kaputtes YAML (typografische Quotes). Fix: `scripts/fix-yaml-v2.py`
+2. **GitHub-Auth:** Token kann nach Reboot/Keyring-Unlock verfallen. Fix: `gh auth setup-git` + Remote-URL mit Token setzen
+3. **Gateway-Restart:** Neue/veränderte CronJobs erfordern Gateway-Restart
+4. **Bild-Wiederverwendung:** Kategorie-Fallback kann sich wiederholen (Artikel-Bilder sind einzig)
+
+---
+
+## Git-Auth Fix (falls Push nicht klappt)
+
+```bash
+# Token aus gh holen und in Remote-URL setzen
+gh auth setup-git
+cd ~/.openclaw/workspace/ai-versicherung-news
+git remote set-url origin https://salomon-druid:$(gh auth token)@github.com/salomon-druid/ai-versicherung-news.git
+git push
+```
 
 ---
 
@@ -203,10 +225,14 @@ public/images/
 - [ ] RSS Feed einrichten
 - [ ] Newsletter-Funktion (Mailchimp/Brevo)
 - [ ] Web Push-Benachrichtigungen
-- [ ] LinkedIn-Integration
+- [ ] LinkedIn-Integration (automatische Posts)
 - [ ] Premium-Newsletter testen
 - [ ] Google AdSense
 - [ ] Impressum/Datenschutz mit echten Daten füllen
+- [ ] YAML-Validierung in CronJob-Prompts verbessern (präventiv)
+- [ ] Memory Search mit Gemini (Key konfiguriert, Index ggf. noch aufzubauen)
+- [ ] Deep Dive am Montag testen (Chefredakteur-CronJob)
+- [ ] Meta-Tags für Artikel-Bilder (OG Image) prüfen
 
 ---
 
@@ -214,11 +240,11 @@ public/images/
 
 | Datum | Meilenstein |
 |-------|-------------|
-| 27.03.2026 | Projekt gestartet, Astro-Setup, 6 erste Artikel |
-| 27.03.2026 | GitHub + Vercel Deployment |
-| 27.03.2026 | Farbschema angepasst (#3e7339 Primary) |
-| 27.03.2026 | Glossar hinzugefügt (33 Begriffe) |
-| 27.03.2026 | Unsplash-Bilder pro Artikel |
-| 28.03.2026 | Scope erweitert (6 Themenfelder, Firmenlogos) |
-| 28.03.2026 | 4 CronJobs eingerichtet (07:00-13:00) |
-| 28.03.2026 | 10 Artikel, 22 Seiten live |
+| 27.03.2026 | Projekt gestartet, 6 erste Artikel, GitHub + Vercel |
+| 27.03.2026 | Farbschema (#3e7339), Glossar (33 Begriffe), Unsplash-Bilder |
+| 28.03.2026 | Scope erweitert (6 Themenfelder, Firmenlogos, 4 CronJobs) |
+| 28.03.2026 | 10 Artikel, 22 Seiten, Sub-Agenten für News-Generierung |
+| 29.03.2026 | 28 Artikel an einem Tag, YAML-Fixes, Artikel-Datenbank |
+| 29.03.2026 | Top-Story, Verwandte Artikel, Chefredakteur-CronJob |
+| 29.03.2026 | News-Portal Redesign (Masthead, Newspaper-Grid) |
+| 30.03.2026 | 57 Artikel, 69 Seiten, YAML-Fix, Git-Auth Fix |
