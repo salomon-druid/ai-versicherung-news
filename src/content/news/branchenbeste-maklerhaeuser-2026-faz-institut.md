@@ -5,7 +5,7 @@ pubDate: 2026-03-30
 category: makler
 tags: [Maklerhäuser, Studie, F.A.Z.-Institut, ServiceValue, Branchenbeste]
 sources:
-  - title: "Maklerhäuser: „Branchenbeste" des Jahres 2026"
+  - title: "Maklerhäuser: 'Branchenbeste' des Jahres 2026"
     url: "https://www.versicherungsbote.de/id/4949023/Maklerhaeuser-Branchenbeste-des-Jahres-2026/"
     outlet: "Versicherungsbote"
     date: "26.03.2026"
