@@ -1,12 +1,12 @@
 {
-  "generated": "2026-03-30T07:03:18.570487",
-  "count": 42,
+  "generated": "2026-03-30T09:05:25.680049",
+  "count": 47,
   "categories": {
-    "versicherer": 8,
+    "versicherer": 12,
     "ki-digitalisierung": 9,
     "makler": 5,
     "versicherungsumfeld": 11,
-    "versicherungsprodukte": 4,
+    "versicherungsprodukte": 5,
     "risiken-schaeden": 5
   },
   "articles": [
@@ -217,6 +217,25 @@
       "file": "cmt-commercial-insurance-summit-2026.md"
     },
     {
+      "slug": "corebridge-equitable-fusion-22-milliarden",
+      "title": "Corebridge und Equitable fusionieren zum 22-Milliarden-Dollar-Versicherer",
+      "description": "Die US-Versicherer Corebridge Financial und Equitable Holdings haben sich auf eine reine Aktientausch-Fusion geeinigt. Das neue Unternehmen soll zu den führenden Akteuren in Altersvorsorge und Lebensversicherung aufsteigen.",
+      "pubDate": "2026-03-30",
+      "category": "versicherer",
+      "tags": [
+        "Corebridge",
+        "Equitable",
+        "Fusion",
+        "USA",
+        "Lebensversicherung",
+        "Altersvorsorge"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "corebridge-equitable-fusion-22-milliarden.md"
+    },
+    {
       "slug": "cyberversicherung-schadenfrequenz-verdoppelt-2025",
       "title": "Cyberversicherung: Schadenfrequenz mehr als verdoppelt – Ransomware und Betrug dominieren",
       "description": "Der aktuelle Schadensreport 2025 des Cyberversicherers Stoïk zeigt eine dramatische Zunahme der Cybervorfälle. Die Schadenfrequenz hat sich innerhalb von zwei Jahren mehr als verdoppelt.",
@@ -328,6 +347,25 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "elementarschadenversicherung-pflicht-koalitionsplaene.md"
+    },
+    {
+      "slug": "elementarschadenversicherung-pflichtversicherung-debatte-2026",
+      "title": "Elementarschadenversicherung: Kommt die Pflichtversicherung 2026?",
+      "description": "Die Bundesregierung prüft die Einführung einer Pflichtversicherung gegen Elementarschäden. Neue Analysen zeigen, was das für Hausbesitzer kosten könnte – und warum die Umsetzung komplexer ist als gedacht.",
+      "pubDate": "2026-03-30",
+      "category": "versicherungsprodukte",
+      "tags": [
+        "Elementarschadenversicherung",
+        "Pflichtversicherung",
+        "Hochwasser",
+        "Klimawandel",
+        "GDV",
+        "Wohngebäudeversicherung"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "elementarschadenversicherung-pflichtversicherung-debatte-2026.md"
     },
     {
       "slug": "eu-ai-act-versicherungen-ki-verordnung",
@@ -702,6 +740,24 @@
       "file": "stuttgarter-standardprodukt-maklermarkt-altersvorsorge.md"
     },
     {
+      "slug": "talanx-gewinnziel-steigerung-2026",
+      "title": "Talanx steigert Gewinnziel und will Prognose ein Jahr früher erreichen",
+      "description": "Der HDI-Konzern Talanx peilt für 2026 einen Überschuss von rund 2,7 Milliarden Euro an – das ursprüngliche Ziel für 2027 soll damit ein Jahr früher übertroffen werden.",
+      "pubDate": "2026-03-30",
+      "category": "versicherer",
+      "tags": [
+        "Talanx",
+        "HDI",
+        "Hannover Rück",
+        "Gewinnprognose",
+        "Quartalszahlen"
+      ],
+      "company": "Talanx AG",
+      "companyDomain": "talanc.com",
+      "sourceCount": 2,
+      "file": "talanx-gewinnziel-steigerung-2026.md"
+    },
+    {
       "slug": "verisk-insurance-conference-2026",
       "title": "Verisk Insurance Conference 2026: KI und Daten formen die Zukunft der Versicherung",
       "description": "Die Verisk Insurance Conference in Las Vegas bringt Branchenführer zusammen, um über die Rolle von Daten, Analysen und KI-Technologien für die Zukunft der Versicherungsbranche zu diskutieren.",
@@ -737,6 +793,25 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "versicherungsbetrug-sechs-milliarden-schaden-gdv.md"
+    },
+    {
+      "slug": "vsaag-aktuare-kritik-krisengesetz-versicherer",
+      "title": "Aktuare warnen vor Fehlanreizen im neuen Versicherungs-Krisengesetz VSAAG",
+      "description": "Die Deutsche Aktuarvereinigung kritisiert den Entwurf des VSAAG: Zu starke Orientierung an Bankenregeln, wettbewerbliche Fehlanreize und bedrohte Spartentrennung gefährden den Versicherungssektor.",
+      "pubDate": "2026-03-30",
+      "category": "versicherer",
+      "tags": [
+        "Solvency II",
+        "VSAAG",
+        "Regulierung",
+        "Krisengesetz",
+        "DAV",
+        "BaFin"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "vsaag-aktuare-kritik-krisengesetz-versicherer.md"
     },
     {
       "slug": "vsaag-solvency-ii-reform-nationale-umsetzung",
@@ -793,6 +868,25 @@
       "companyDomain": "ww-ag.com",
       "sourceCount": 1,
       "file": "ww-gruppe-ergebniswende-kostendisziplin-2025.md"
+    },
+    {
+      "slug": "ww-gruppe-gewinnsprung-comeback-2025",
+      "title": "W&W-Gruppe verdreifacht Gewinn und kehrt auf Wachstumskurs zurück",
+      "description": "Die Wüstenrot & Württembergische AG erzielt 2025 ein IFRS-Konzernergebnis von 121 Millionen Euro – mehr als das Dreifache des Vorjahres. Combined Ratio deutlich verbessert.",
+      "pubDate": "2026-03-30",
+      "category": "versicherer",
+      "tags": [
+        "W&W-Gruppe",
+        "Wüstenrot",
+        "Württembergische",
+        "Jahresergebnis",
+        "Schadenversicherung",
+        "Bausparen"
+      ],
+      "company": "Wüstenrot & Württembergische AG",
+      "companyDomain": "ww-ag.com",
+      "sourceCount": 3,
+      "file": "ww-gruppe-gewinnsprung-comeback-2025.md"
     }
   ]
 }
