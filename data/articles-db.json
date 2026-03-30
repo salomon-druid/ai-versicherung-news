@@ -1,13 +1,13 @@
 {
-  "generated": "2026-03-30T11:04:51.965728",
-  "count": 52,
+  "generated": "2026-03-30T13:04:04.275628",
+  "count": 57,
   "categories": {
     "versicherer": 12,
     "ki-digitalisierung": 9,
-    "makler": 5,
+    "makler": 8,
     "versicherungsumfeld": 16,
     "versicherungsprodukte": 5,
-    "risiken-schaeden": 5
+    "risiken-schaeden": 7
   },
   "articles": [
     {
@@ -199,6 +199,24 @@
       "file": "bizcover-ki-vergleichstool-makleraktien.md"
     },
     {
+      "slug": "branchenbeste-maklerhaeuser-2026-faz-institut",
+      "title": "Branchenbeste Maklerhäuser 2026: F.A.Z.-Institut kürt die digitalen Vorreiter",
+      "description": "ServiceValue und das F.A.Z.-Institut haben die Branchenbesten Maklerhäuser 2026 ausgezeichnet – basierend auf systematischer Analyse von mehreren hundert Millionen Social-Media-Datenpunkten.",
+      "pubDate": "2026-03-30",
+      "category": "makler",
+      "tags": [
+        "Maklerhäuser",
+        "Studie",
+        "F.A.Z.-Institut",
+        "ServiceValue",
+        "Branchenbeste"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "branchenbeste-maklerhaeuser-2026-faz-institut.md"
+    },
+    {
       "slug": "bundestag-altersvorsorgedepot-riester-reform",
       "title": "Bundestag beschließt Altersvorsorgedepot – Riester-Reform rückt näher",
       "description": "Der Bundestag hat die Reform der steuerlich geförderten Altersvorsorge beschlossen. Das neue Altersvorsorgedepot soll ab 2027 auch über einen staatlichen Fonds angeboten werden – die Versicherungsbranche übt Kritik.",
@@ -255,6 +273,25 @@
       "file": "corebridge-equitable-fusion-22-milliarden.md"
     },
     {
+      "slug": "cyber-versicherungen-praemien-sinken-security-indikator",
+      "title": "Cyber-Versicherungen: Prämien sinken – der Markt als ehrlichster Security-Indikator",
+      "description": "Globale Cyber-Versicherungsprämien sinken um 5 Prozent. Munich Re beziffert das Volumen auf 15,3 Milliarden Dollar. Experten sehen darin ein positives Signal für die Sicherheitsreife deutscher Unternehmen.",
+      "pubDate": "2026-03-30",
+      "category": "risiken-schaeden",
+      "tags": [
+        "Cyberversicherung",
+        "Prämien",
+        "Munich Re",
+        "Cyberangriffe",
+        "MFA",
+        "NIS2"
+      ],
+      "company": "Munich Re",
+      "companyDomain": "munichre.com",
+      "sourceCount": 2,
+      "file": "cyber-versicherungen-praemien-sinken-security-indikator.md"
+    },
+    {
       "slug": "cyberversicherung-schadenfrequenz-verdoppelt-2025",
       "title": "Cyberversicherung: Schadenfrequenz mehr als verdoppelt – Ransomware und Betrug dominieren",
       "description": "Der aktuelle Schadensreport 2025 des Cyberversicherers Stoïk zeigt eine dramatische Zunahme der Cybervorfälle. Die Schadenfrequenz hat sich innerhalb von zwei Jahren mehr als verdoppelt.",
@@ -290,6 +327,24 @@
       "companyDomain": "",
       "sourceCount": 1,
       "file": "cyberversicherung-schadenreport-2025-frequenz-verdoppelt.md"
+    },
+    {
+      "slug": "dach-region-versicherungsmarkt-ma-rekord-2025",
+      "title": "DACH-Region treibt Europas Versicherungs-M&A-Markt auf Rekordniveau",
+      "description": "789 Transaktionen im europäischen Versicherungs-M&A – ein Plus von 14 Prozent. Die DACH-Region legt sogar um 35 Prozent zu und treibt die Konsolidierung am Maklermarkt.",
+      "pubDate": "2026-03-30",
+      "category": "makler",
+      "tags": [
+        "M&A",
+        "Konsolidierung",
+        "Maklermarkt",
+        "DACH-Region",
+        "Transaktionen"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "dach-region-versicherungsmarkt-ma-rekord-2025.md"
     },
     {
       "slug": "deloitte-digitale-versicherer-service-defizite",
@@ -835,6 +890,24 @@
       "file": "stuttgarter-standardprodukt-maklermarkt-altersvorsorge.md"
     },
     {
+      "slug": "swiss-re-naturkatastrophen-schaeden-2026-148-milliarden",
+      "title": "Swiss Re warnt: Naturkatastrophenschäden 2026 auf 148 Milliarden Dollar",
+      "description": "Der Rückversicherer Swiss Re prognostiziert für 2026 versicherte Schäden durch Naturkatastrophen von rund 148 Milliarden Dollar – im Extremszenario sogar 320 Milliarden.",
+      "pubDate": "2026-03-30",
+      "category": "risiken-schaeden",
+      "tags": [
+        "Naturkatastrophen",
+        "Rückversicherung",
+        "Swiss Re",
+        "Klimawandel",
+        "Schäden"
+      ],
+      "company": "Swiss Re",
+      "companyDomain": "swissre.com",
+      "sourceCount": 2,
+      "file": "swiss-re-naturkatastrophen-schaeden-2026-148-milliarden.md"
+    },
+    {
       "slug": "talanx-gewinnziel-steigerung-2026",
       "title": "Talanx steigert Gewinnziel und will Prognose ein Jahr früher erreichen",
       "description": "Der HDI-Konzern Talanx peilt für 2026 einen Überschuss von rund 2,7 Milliarden Euro an – das ursprüngliche Ziel für 2027 soll damit ein Jahr früher übertroffen werden.",
@@ -888,6 +961,24 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "versicherungsbetrug-sechs-milliarden-schaden-gdv.md"
+    },
+    {
+      "slug": "versicherungsmakler-ki-ersetzt-fuenf-thesen-2026",
+      "title": "Werden Versicherungsmakler durch KI ersetzt? Fünf Thesen für 2026",
+      "description": "88 Prozent der Verbraucher bevorzugen menschliche Beratung statt KI – doch Künstliche Intelligenz verändert den Makleralltag grundlegend. Eine aktuelle Analyse zeigt, was Makler 2026 realistisch erwartet.",
+      "pubDate": "2026-03-30",
+      "category": "makler",
+      "tags": [
+        "Künstliche Intelligenz",
+        "KI",
+        "Makler",
+        "Digitalisierung",
+        "Beratung"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "versicherungsmakler-ki-ersetzt-fuenf-thesen-2026.md"
     },
     {
       "slug": "vsaag-aktuare-kritik-krisengesetz-versicherer",
