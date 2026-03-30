@@ -1,11 +1,11 @@
 {
-  "generated": "2026-03-30T09:05:25.680049",
-  "count": 47,
+  "generated": "2026-03-30T11:04:51.965728",
+  "count": 52,
   "categories": {
     "versicherer": 12,
     "ki-digitalisierung": 9,
     "makler": 5,
-    "versicherungsumfeld": 11,
+    "versicherungsumfeld": 16,
     "versicherungsprodukte": 5,
     "risiken-schaeden": 5
   },
@@ -123,6 +123,25 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "bafin-risiken-im-fokus-2026-versicherungsaufsicht.md"
+    },
+    {
+      "slug": "bafin-warnt-sechs-systemische-risiken-versicherer-2026",
+      "title": "BaFin warnt vor sechs systemischen Risiken: Aufsicht verschärft Fokus für Versicherer 2026",
+      "description": "Die BaFin hat ihren Bericht ‚Risiken im Fokus 2026",
+      "pubDate": "2026-03-30",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "BaFin",
+        "Aufsicht",
+        "Risikomanagement",
+        "Solvenzaufsicht",
+        "Cyber-Risiken",
+        "DORA"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "bafin-warnt-sechs-systemische-risiken-versicherer-2026.md"
     },
     {
       "slug": "bcg-studie-ki-adoption-versicherung-skaliert",
@@ -328,6 +347,44 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "deutsche-versicherer-verhandeln-ki-stellenabbau.md"
+    },
+    {
+      "slug": "dora-nach-einem-jahr-bafin-fordert-gelebte-resilienz-versicherer",
+      "title": "DORA nach einem Jahr: BaFin fordert gelebte Resilienz von Versicherern",
+      "description": "Ein Jahr nach Inkrafttreten von DORA verschiebt die BaFin den Aufsichtsfokus von Formalien hin zu messbarer Wirksamkeit. Versicherer müssen Exit-Strategien für kritische IT-Dienstleister vorweisen.",
+      "pubDate": "2026-03-30",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "DORA",
+        "IT-Resilienz",
+        "Cybersicherheit",
+        "BaFin",
+        "Drittparteien",
+        "Aufsicht"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "dora-nach-einem-jahr-bafin-fordert-gelebte-resilienz-versicherer.md"
+    },
+    {
+      "slug": "elementarpflichtversicherung-koalition-plant-naturgefahrenschutz",
+      "title": "Elementarpflichtversicherung: Koalition plant flächendeckenden Naturgefahrenschutz",
+      "description": "Union und SPD planen im Koalitionsvertrag eine verpflichtende Elementarschadenversicherung für Wohngebäude – mit Opt-Out-Möglichkeit und staatlicher Rückversicherungslösung.",
+      "pubDate": "2026-03-30",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Elementarschadenversicherung",
+        "Naturgefahren",
+        "Wohngebäudeversicherung",
+        "Koalitionsvertrag",
+        "Klimawandel",
+        "GDV"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "elementarpflichtversicherung-koalition-plant-naturgefahrenschutz.md"
     },
     {
       "slug": "elementarschadenversicherung-pflicht-koalitionsplaene",
@@ -552,6 +609,25 @@
       "file": "klingbeil-rentenreform-beitragsjahre-betriebsrente.md"
     },
     {
+      "slug": "lebensversicherung-2026-laufende-verzinsung-steigt-3-prozent",
+      "title": "Lebensversicherung 2026: Laufende Verzinsung steigt auf bis zu 3,5 Prozent",
+      "description": "Mehrere Lebensversicherer erhöhen 2026 die laufende Verzinsung – Ratingagentur Assekurata erwartet Durchschnitt von 2,6 bis 2,7 Prozent. Niedrigzinsphase endgültig überwunden.",
+      "pubDate": "2026-03-30",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Lebensversicherung",
+        "Verzinsung",
+        "Überschussbeteiligung",
+        "Altersvorsorge",
+        "Kapitalmarkt",
+        "Zinsen"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "lebensversicherung-2026-laufende-verzinsung-steigt-3-prozent.md"
+    },
+    {
       "slug": "m-a-rekord-dach-region-versicherungsmarkt-2025",
       "title": "M&A-Record: DACH-Region treibt europäischen Versicherungsmarkt an",
       "description": "Der europäische Versicherungs-M&A-Markt erreicht 789 Transaktionen – ein Plus von 14 Prozent. Die DACH-Region springt um 35 Prozent nach oben und wird zum Konsolidierungstreiber.",
@@ -719,6 +795,25 @@
       "companyDomain": "",
       "sourceCount": 1,
       "file": "rechenzentren-versicherungsbedarf-steigt-2030.md"
+    },
+    {
+      "slug": "rueckversicherungsmarkt-2026-weicher-markt-klimarisiken",
+      "title": "Rückversicherungsmarkt 2026: Weicher Markt trifft steigende Klimarisiken",
+      "description": "Der Rückversicherungsmarkt wechselt in eine weichere Phase mit sinkenden Preisen – doch klimabedingte Naturgefahren und geopolitische Risiken bleiben hoch. AON analysiert die Spartenentwicklung.",
+      "pubDate": "2026-03-30",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Rückversicherung",
+        "Klimawandel",
+        "Naturgefahren",
+        "AON",
+        "Prämienentwicklung",
+        "Versicherungsmarkt"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "rueckversicherungsmarkt-2026-weicher-markt-klimarisiken.md"
     },
     {
       "slug": "stuttgarter-standardprodukt-maklermarkt-altersvorsorge",
