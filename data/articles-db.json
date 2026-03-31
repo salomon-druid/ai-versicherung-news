@@ -1,13 +1,13 @@
 {
-  "generated": "2026-03-31T11:03:49.224560",
-  "count": 74,
+  "generated": "2026-03-31T13:02:44.847092",
+  "count": 79,
   "categories": {
     "versicherer": 15,
     "ki-digitalisierung": 15,
-    "makler": 8,
+    "makler": 12,
     "versicherungsumfeld": 22,
     "versicherungsprodukte": 7,
-    "risiken-schaeden": 7
+    "risiken-schaeden": 8
   },
   "articles": [
     {
@@ -309,6 +309,25 @@
       "companyDomain": "",
       "sourceCount": 1,
       "file": "bundestag-altersvorsorgedepot-riester-reform.md"
+    },
+    {
+      "slug": "bvk-kritik-altersvorsorgereform-2026-03-31",
+      "title": "BVK zum Altersvorsorgereformgesetz: „Ein Schlag ins Gesicht der Vermittler",
+      "description": "Der Bundesverband Deutscher Versicherungskaufleute kritisiert scharf die Verabschiedung des Altersvorsorgereformgesetzes. Besonders der geplante Staatsfonds stößt auf massive Ablehnung.",
+      "pubDate": "2026-03-31",
+      "category": "makler",
+      "tags": [
+        "Altersvorsorge",
+        "BVK",
+        "Politik",
+        "Vermittler",
+        "Staatsfonds",
+        "Reform"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "bvk-kritik-altersvorsorgereform-2026-03-31.md"
     },
     {
       "slug": "cmt-commercial-insurance-summit-2026",
@@ -890,6 +909,24 @@
       "file": "makler-champions-2026-bayerische-dominanz.md"
     },
     {
+      "slug": "maklermarkt-zukunft-versicherer-makler-2026-03-31",
+      "title": "Maklermarkt der Zukunft: Versicherer überschätzen sich selbst",
+      "description": "Eine Studie der Versicherungsforen Leipzig zeigt eine deutliche Kluft zwischen der Selbsteinschätzung der Versicherer und der Wahrnehmung durch Makler. Konsolidierung und Spezialisierung beschleunigen den Wandel.",
+      "pubDate": "2026-03-31",
+      "category": "makler",
+      "tags": [
+        "Maklermarkt",
+        "Studie",
+        "Konsolidierung",
+        "Digitalisierung",
+        "Maklerpools"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "maklermarkt-zukunft-versicherer-makler-2026-03-31.md"
+    },
+    {
       "slug": "munich-re-naturkatastrophen-bilanz-2025-rekordschaeden",
       "title": "Munich Re warnt: Naturkatastrophen-Schäden bleiben auf Rekordniveau",
       "description": "Die Naturkatastrophenbilanz 2025 zeigt versicherte Schäden von 108 Milliarden US-Dollar. Waldbrände und Schwergewitter prägen den Trend – Swiss Re prognostiziert weiter steigende Kosten für 2026.",
@@ -907,6 +944,25 @@
       "companyDomain": "",
       "sourceCount": 2,
       "file": "munich-re-naturkatastrophen-bilanz-2025-rekordschaeden.md"
+    },
+    {
+      "slug": "nettotarife-nische-versicherungsmarkt-2026-03-31",
+      "title": "Nettotarife bleiben Nische: Warum das Provisionsmodell nicht verschwindet",
+      "description": "Eine Studie von Universität Köln und FH Dortmund zeigt: Trotz wachsendem Angebot bleibt der Nettotarif ein Randphänomen. Die BaFin rückt das Modell stärker in den Fokus.",
+      "pubDate": "2026-03-31",
+      "category": "makler",
+      "tags": [
+        "Nettotarife",
+        "Vergütung",
+        "Provision",
+        "Makler",
+        "Regulierung",
+        "BaFin"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "nettotarife-nische-versicherungsmarkt-2026-03-31.md"
     },
     {
       "slug": "nuernberger-versicherung-turnaround-2025",
@@ -1038,6 +1094,24 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "rueckversicherungsmarkt-2026-weicher-markt-klimarisiken.md"
+    },
+    {
+      "slug": "schadenregulierung-hyperautomatisierung-2026-03-31",
+      "title": "Schadenregulierung in Minuten: Hyperautomatisierung verändert die Versicherungsbranche",
+      "description": "Vom Posteingang bis zur Auszahlung in Minuten statt Wochen – Hyperautomatisierung macht fragmentierte Schadenprozesse zu durchgängigen End-to-End-Strecken.",
+      "pubDate": "2026-03-31",
+      "category": "risiken-schaeden",
+      "tags": [
+        "Schadenregulierung",
+        "Hyperautomatisierung",
+        "Digitalisierung",
+        "KI",
+        "Prozesse"
+      ],
+      "company": "PPI AG",
+      "companyDomain": "ppi.de",
+      "sourceCount": 1,
+      "file": "schadenregulierung-hyperautomatisierung-2026-03-31.md"
     },
     {
       "slug": "solaris-ai-native-bank",
@@ -1184,6 +1258,25 @@
       "companyDomain": "",
       "sourceCount": 2,
       "file": "verdi-ki-tarifvertrag-versicherungen.md"
+    },
+    {
+      "slug": "verguetungssysteme-versicherungsberatung-2026-03-31",
+      "title": "Wie Vergütungssysteme die Versicherungsberatung steuern – und warum Transparenz fehlt",
+      "description": "Provisionen lenken nicht nur die Bezahlung, sondern auch die Beratung. Warum das bestehende System stabil bleibt und welche Alternativen es gibt.",
+      "pubDate": "2026-03-31",
+      "category": "makler",
+      "tags": [
+        "Vergütung",
+        "Provision",
+        "Honorar",
+        "Beratung",
+        "Transparenz",
+        "Makler"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 1,
+      "file": "verguetungssysteme-versicherungsberatung-2026-03-31.md"
     },
     {
       "slug": "verisk-insurance-conference-2026",
