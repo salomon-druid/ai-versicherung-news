@@ -1,11 +1,11 @@
 {
-  "generated": "2026-03-31T09:05:27.011467",
-  "count": 68,
+  "generated": "2026-03-31T11:03:49.224560",
+  "count": 74,
   "categories": {
     "versicherer": 15,
     "ki-digitalisierung": 15,
     "makler": 8,
-    "versicherungsumfeld": 16,
+    "versicherungsumfeld": 22,
     "versicherungsprodukte": 7,
     "risiken-schaeden": 7
   },
@@ -125,6 +125,25 @@
       "file": "altersvorsorgereform-vertrieb-kritik-makler.md"
     },
     {
+      "slug": "bafin-risiken-im-fokus-2026-systemische-risiken-versicherer",
+      "title": "BaFin Risiken im Fokus 2026: Sechs systemische Gefahren im Visier der Aufsicht",
+      "description": "Die BaFin hat ihre Prioritäten für 2026 veröffentlicht: Geopolitik, Cyber-Bedrohungen, Immobilienrisiken und Kostenkontrolle bei kapitalbildender Lebensversicherung stehen ganz oben auf der Agenda.",
+      "pubDate": "2026-03-31",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "BaFin",
+        "Aufsicht",
+        "Risikomanagement",
+        "Cybersicherheit",
+        "DORA",
+        "ESG"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "bafin-risiken-im-fokus-2026-systemische-risiken-versicherer.md"
+    },
+    {
       "slug": "bafin-risiken-im-fokus-2026-versicherungsaufsicht",
       "title": "BaFin verschaerft Versicherungsaufsicht 2026: Cyberrisiken und operative Resilienz im Fokus",
       "description": "Die BaFin hat mit dem Bericht Risiken im Fokus 2026 die Aufsichtsprioritaeten fuer das laufende Jahr veroeffentlicht. Versicherer muessen sich auf intensivere Pruefungen bei IT-Risiken, DORA-Compliance und Kostentransparenz einstellen.",
@@ -141,6 +160,26 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "bafin-risiken-im-fokus-2026-versicherungsaufsicht.md"
+    },
+    {
+      "slug": "bafin-strategie-2026-2029-dora-nachhaltigkeit-resilienz",
+      "title": "BaFin-Strategie 2026-2029: DORA, Nachhaltigkeit und operationelle Resilienz im Fokus",
+      "description": "Die BaFin hat ihre strategische Ausrichtung für 2026 bis 2029 definiert. Zehn Ziele setzen den Rahmen – von Finanzstabilität über Cyber-Resilienz bis zur Verankerung von Nachhaltigkeit in der Aufsicht.",
+      "pubDate": "2026-03-31",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "BaFin",
+        "Strategie",
+        "DORA",
+        "Nachhaltigkeit",
+        "Cyber",
+        "AML",
+        "Verbraucherschutz"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "bafin-strategie-2026-2029-dora-nachhaltigkeit-resilienz.md"
     },
     {
       "slug": "bafin-warnt-sechs-systemische-risiken-versicherer-2026",
@@ -478,6 +517,25 @@
       "file": "elementarpflichtversicherung-koalition-plant-naturgefahrenschutz.md"
     },
     {
+      "slug": "elementarpflichtversicherung-rueckversicherungsmarkt-gdv-elementar-re-2026",
+      "title": "Elementarpflichtversicherung 2026: Rückversicherungsmarkt weicht auf – GDV präsentiert Elementar-Re-Modell",
+      "description": "Während der Rückversicherungsmarkt in eine weichere Phase eintritt, diskutiert die Branche über die Einführung einer Elementarpflichtversicherung. Der GDV schlägt das Drei-Stufen-Modell „Elementar Re",
+      "pubDate": "2026-03-31",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Elementarschaden",
+        "Rückversicherung",
+        "GDV",
+        "Klimarisiken",
+        "Naturkatastrophen",
+        "Wohngebäudeversicherung"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "elementarpflichtversicherung-rueckversicherungsmarkt-gdv-elementar-re-2026.md"
+    },
+    {
       "slug": "elementarschadenversicherung-pflicht-koalitionsplaene",
       "title": "Elementarschadenversicherung: Koalitionspläne für Pflichtversicherung konkretisieren sich",
       "description": "Die schwarz-rote Koalition plant eine verpflichtende Elementarschadenversicherung. Rund die Hälfte aller Wohngebäude ist bisher nicht gegen Naturgefahren abgesichert – die Debatte gewinnt an Dynamik.",
@@ -663,6 +721,25 @@
       "companyDomain": "",
       "sourceCount": 1,
       "file": "gkv-mitgliederschwund-krankenkassen-zusatzbeitrag-2025.md"
+    },
+    {
+      "slug": "gkv-reform-2026-expertenkommission-66-massnahmen",
+      "title": "GKV-Reform 2026: Expertenkommission legt 66 Maßnahmen vor – bis zu 42 Milliarden Einsparpotenzial",
+      "description": "Die GKV-Kommission hat ihren Bericht mit 66 Vorschlägen vorgestellt. Ohne Reformen drohen Versicherten bis zu 680 Euro Mehrbelastung pro Jahr. Zentrale Vorschläge betreffen Mitversicherung und Bürgergeld-Empfänger.",
+      "pubDate": "2026-03-31",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "GKV",
+        "Krankenkassen",
+        "Reform",
+        "Beiträge",
+        "Gesundheitspolitik",
+        "Mitversicherung"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "gkv-reform-2026-expertenkommission-66-massnahmen.md"
     },
     {
       "slug": "gkv-reform-2026-finanzkommission-66-vorschlaege",
@@ -981,6 +1058,25 @@
       "file": "solaris-ai-native-bank.md"
     },
     {
+      "slug": "solvency-ii-reform-bmf-vsaag-entwurf-2026",
+      "title": "Solvency-II-Reform: BMF legt VSAAG-Entwurf vor – nationale Umsetzung startet",
+      "description": "Das Bundesfinanzministerium hat einen Referentenentwurf für das VSAAG veröffentlicht, das die Solvency-II-Reform und die IRRD in deutsches Recht überführen soll. Ab Januar 2027 gelten neue Regeln.",
+      "pubDate": "2026-03-31",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Solvency II",
+        "Regulierung",
+        "VSAAG",
+        "BMF",
+        "IRRD",
+        "Versicherungsaufsicht"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "solvency-ii-reform-bmf-vsaag-entwurf-2026.md"
+    },
+    {
       "slug": "stoik-cyberversicherung-rechtsschutz",
       "title": "Stoïk ergänzt Cyberversicherung um integrierten Rechtsschutz",
       "description": "Der Cyber-Assekuradeur Stoïk erweitert seine Cyberversicherung um einen rechtlichen Schutzbaustein und schafft damit ein integriertes Schutzsystem für Unternehmen nach Cyberangriffen.",
@@ -1163,6 +1259,25 @@
       "companyDomain": "",
       "sourceCount": 1,
       "file": "versicherungsmakler-ki-ersetzt-fuenf-thesen-2026.md"
+    },
+    {
+      "slug": "versicherungsmarkt-konsolidierung-makler-private-equity-2026",
+      "title": "Versicherungsmarkt 2026: Konsolidierungswelle, Private-Equity-Investitionen und Maklertransaktionen",
+      "description": "Der deutsche Versicherungsmarkt erlebt eine anhaltende Konsolidierungswelle. 2026 stehen weitere Transaktionen an – Maklerunternehmen stehen besonders im Fokus von Private-Equity-Investoren.",
+      "pubDate": "2026-03-31",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Makler",
+        "Konsolidierung",
+        "Private Equity",
+        "Transaktionen",
+        "IDD",
+        "Versicherungsmarkt"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "versicherungsmarkt-konsolidierung-makler-private-equity-2026.md"
     },
     {
       "slug": "vsaag-aktuare-kritik-krisengesetz-versicherer",
