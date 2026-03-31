@@ -1,9 +1,9 @@
 {
-  "generated": "2026-03-30T13:04:04.275628",
-  "count": 57,
+  "generated": "2026-03-31T07:03:48.908290",
+  "count": 63,
   "categories": {
     "versicherer": 12,
-    "ki-digitalisierung": 9,
+    "ki-digitalisierung": 15,
     "makler": 8,
     "versicherungsumfeld": 16,
     "versicherungsprodukte": 5,
@@ -197,6 +197,24 @@
       "companyDomain": "",
       "sourceCount": 2,
       "file": "bizcover-ki-vergleichstool-makleraktien.md"
+    },
+    {
+      "slug": "blockbrain-genai-governance-finanzbranche",
+      "title": "Blockbrain: 17,5 Millionen Euro für GenAI-Governance in der Finanzbranche",
+      "description": "Das Stuttgarter Startup Blockbrain schließt Series-A-Finanzierung ab und entwickelt steuerbare KI-Agenten für Banken und Versicherungen – DSGVO-konform und ohne Programmierung.",
+      "pubDate": "2026-03-31",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "GenAI",
+        "Governance",
+        "FinTech",
+        "Regulierung",
+        "EU AI Act"
+      ],
+      "company": "Blockbrain",
+      "companyDomain": "blockbrain.ai",
+      "sourceCount": 1,
+      "file": "blockbrain-genai-governance-finanzbranche.md"
     },
     {
       "slug": "branchenbeste-maklerhaeuser-2026-faz-institut",
@@ -628,6 +646,24 @@
       "file": "huk-coburg-rekordjahr-gewinnsprung-2025.md"
     },
     {
+      "slug": "infosys-stratus-uebernahme-versicherung",
+      "title": "Infosys übernimmt Stratus und stärkt KI-gestützte Versicherungstransformation",
+      "description": "Der IT-Dienstleister Infosys baut seine Position im Versicherungssektor aus und übernimmt den Spezialisten Stratus – im Fokus stehen KI-gestützte und cloud-basierte Transformationsprojekte für Schaden- und Unfallversicherer.",
+      "pubDate": "2026-03-31",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "KI",
+        "InsurTech",
+        "Transformation",
+        "Cloud",
+        "Guidewire"
+      ],
+      "company": "Infosys",
+      "companyDomain": "infosys.com",
+      "sourceCount": 1,
+      "file": "infosys-stratus-uebernahme-versicherung.md"
+    },
+    {
       "slug": "kfz-versicherer-profitabel-2026-beitraege-steigen",
       "title": "Kfz-Versicherer 2026 erneut profitabel – doch Beiträge steigen weiter",
       "description": "Die Schaden-Kosten-Quote in der Kfz-Versicherung fällt 2026 zum zweiten Mal unter 100 Prozent. Experten erwarten trotz Profitabilität weitere Beitragssteigerungen – getrieben durch den Iran-Krieg und steigende Reparaturkosten.",
@@ -871,6 +907,42 @@
       "file": "rueckversicherungsmarkt-2026-weicher-markt-klimarisiken.md"
     },
     {
+      "slug": "solaris-ai-native-bank",
+      "title": "Solaris transformiert sich zur ersten AI-native Bank Europas",
+      "description": "Die Berliner Banking-as-a-Service-Plankunft Solaris startet den strategischen Umbau zu Europas erster AI-native Bank – doch der Wandel kostet jeden fünften Arbeitsplatz.",
+      "pubDate": "2026-03-31",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "KI",
+        "Banking-as-a-Service",
+        "Digitalisierung",
+        "AI-native",
+        "Solaris"
+      ],
+      "company": "Solaris",
+      "companyDomain": "solarisgroup.com",
+      "sourceCount": 1,
+      "file": "solaris-ai-native-bank.md"
+    },
+    {
+      "slug": "stoik-cyberversicherung-rechtsschutz",
+      "title": "Stoïk ergänzt Cyberversicherung um integrierten Rechtsschutz",
+      "description": "Der Cyber-Assekuradeur Stoïk erweitert seine Cyberversicherung um einen rechtlichen Schutzbaustein und schafft damit ein integriertes Schutzsystem für Unternehmen nach Cyberangriffen.",
+      "pubDate": "2026-03-31",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "Cyberversicherung",
+        "InsurTech",
+        "Rechtsschutz",
+        "Cybersecurity",
+        "Stoïk"
+      ],
+      "company": "Stoïk",
+      "companyDomain": "stoik.com",
+      "sourceCount": 1,
+      "file": "stoik-cyberversicherung-rechtsschutz.md"
+    },
+    {
       "slug": "stuttgarter-standardprodukt-maklermarkt-altersvorsorge",
       "title": "Stuttgarter-Vorstandschef zum Standardprodukt: ",
       "description": "Das neue Standardprodukt in der geförderten Altersvorsorge dürfte Versicherungsmakler kaum ansprechen – zu eingeschränkt in Gestaltung und Vergütung, urteilt Stuttgarter-Chef Bader.",
@@ -924,6 +996,42 @@
       "companyDomain": "talanc.com",
       "sourceCount": 2,
       "file": "talanx-gewinnziel-steigerung-2026.md"
+    },
+    {
+      "slug": "twilio-voice-ai-banken-versicherungen",
+      "title": "Voice-AI: Banken und Versicherungen müssen Probleme lösen statt plaudern",
+      "description": "Twilio warnt: Voice-AI im Finanzsektor scheitert, wenn Sprachassistenten nur natürlich klingen, aber Kundenanliegen nicht tatsächlich lösen können. Mehr als zwei Drittel der Verbraucher bevorzugen KI-Agenten – wenn sie funktionieren.",
+      "pubDate": "2026-03-31",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "Voice-AI",
+        "Kundenservice",
+        "KI",
+        "Versicherung",
+        "Twilio"
+      ],
+      "company": "Twilio",
+      "companyDomain": "twilio.com",
+      "sourceCount": 1,
+      "file": "twilio-voice-ai-banken-versicherungen.md"
+    },
+    {
+      "slug": "verdi-ki-tarifvertrag-versicherungen",
+      "title": "Verdi verhandelt branchenweiten KI-Tarifvertrag für Versicherungen",
+      "description": "Nach dem Sozialplan bei Ergo will die Gewerkschaft ver.di jetzt einen allgemeinen Tarifvertrag für die KI-Transformation in der gesamten Versicherungsbranche durchsetzen – Verhandlungen mit dem AGV laufen.",
+      "pubDate": "2026-03-31",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "KI",
+        "Arbeitsmarkt",
+        "Verdi",
+        "Versicherung",
+        "Transformation"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "verdi-ki-tarifvertrag-versicherungen.md"
     },
     {
       "slug": "verisk-insurance-conference-2026",
