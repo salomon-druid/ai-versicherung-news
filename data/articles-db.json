@@ -1,12 +1,12 @@
 {
-  "generated": "2026-03-31T07:03:48.908290",
-  "count": 63,
+  "generated": "2026-03-31T09:05:27.011467",
+  "count": 68,
   "categories": {
-    "versicherer": 12,
+    "versicherer": 15,
     "ki-digitalisierung": 15,
     "makler": 8,
     "versicherungsumfeld": 16,
-    "versicherungsprodukte": 5,
+    "versicherungsprodukte": 7,
     "risiken-schaeden": 7
   },
   "articles": [
@@ -66,6 +66,24 @@
       "companyDomain": "allianz.com",
       "sourceCount": 3,
       "file": "allianz-ki-offensive-sprachbot-eric.md"
+    },
+    {
+      "slug": "allianz-rekordgewinn-dividende-2025",
+      "title": "Allianz erzielt erneut Rekordgewinn — Dividende steigt um elf Prozent",
+      "description": "Der Münchner Versicherungskonzern Allianz hat 2025 einen Nettogewinn von knapp 10,8 Milliarden Euro erzielt. Die Dividende soll kräftig auf 17,10 Euro je Aktie steigen. Besonders das Schaden- und Unfallgeschäft profitierte von niedrigen Naturkatastrophenschäden.",
+      "pubDate": "2026-03-31",
+      "category": "versicherer",
+      "tags": [
+        "Allianz",
+        "Rekordgewinn",
+        "Dividende",
+        "Quartalszahlen",
+        "Schadenversicherung"
+      ],
+      "company": "Allianz",
+      "companyDomain": "allianz.com",
+      "sourceCount": 2,
+      "file": "allianz-rekordgewinn-dividende-2025.md"
     },
     {
       "slug": "allianz-talanx-investition-stromnetz-amprion",
@@ -479,6 +497,25 @@
       "file": "elementarschadenversicherung-pflicht-koalitionsplaene.md"
     },
     {
+      "slug": "elementarschadenversicherung-pflicht-wohngebaeude-2026",
+      "title": "Elementarschadenversicherung: Pflicht für Wohngebäude rückt näher",
+      "description": "Union und SPD planen die Einführung einer Pflichtversicherung gegen Elementarschäden für alle Wohngebäude. Der GDV hat mit ‚Elementar Re",
+      "pubDate": "2026-03-31",
+      "category": "versicherungsprodukte",
+      "tags": [
+        "Elementarschadenversicherung",
+        "Wohngebäudeversicherung",
+        "Pflichtversicherung",
+        "GDV",
+        "Klimawandel",
+        "Rückversicherung"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "elementarschadenversicherung-pflicht-wohngebaeude-2026.md"
+    },
+    {
       "slug": "elementarschadenversicherung-pflichtversicherung-debatte-2026",
       "title": "Elementarschadenversicherung: Kommt die Pflichtversicherung 2026?",
       "description": "Die Bundesregierung prüft die Einführung einer Pflichtversicherung gegen Elementarschäden. Neue Analysen zeigen, was das für Hausbesitzer kosten könnte – und warum die Umsetzung komplexer ist als gedacht.",
@@ -626,6 +663,25 @@
       "companyDomain": "",
       "sourceCount": 1,
       "file": "gkv-mitgliederschwund-krankenkassen-zusatzbeitrag-2025.md"
+    },
+    {
+      "slug": "gkv-reform-2026-finanzkommission-66-vorschlaege",
+      "title": "GKV-Reform 2026: FinanzKommission legt 66 Sparvorschläge mit 42-Milliarden-Potenzial vor",
+      "description": "Die Expertenkommission für die Reform der gesetzlichen Krankenversicherung hat 66 Maßnahmen empfohlen, die bis zu 42,3 Milliarden Euro Einsparpotenzial bieten sollen — von der Abschaffung der kostenlosen Mitversicherung bis zu höheren Zuzahlungen.",
+      "pubDate": "2026-03-31",
+      "category": "versicherungsprodukte",
+      "tags": [
+        "GKV",
+        "Krankenversicherung",
+        "Reform",
+        "FinanzKommission",
+        "Familienversicherung",
+        "Beiträge"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "gkv-reform-2026-finanzkommission-66-vorschlaege.md"
     },
     {
       "slug": "huk-coburg-rekordjahr-gewinnsprung-2025",
@@ -1052,6 +1108,26 @@
       "file": "verisk-insurance-conference-2026.md"
     },
     {
+      "slug": "versicherer-verdi-ki-tarifrunde-2026",
+      "title": "Versicherer und ver.di ringen um KI-Jobs: Tarifrunde 2026 wird zum Präzedenzfall",
+      "description": "Deutsche Versicherer verhandeln mit der Gewerkschaft ver.di über einen branchenweiten Tarifvertrag zum KI-gestützten Stellenabbau. Das Ergo-Modell mit Beschäftigungssicherung bis 2030 soll Vorbild werden.",
+      "pubDate": "2026-03-31",
+      "category": "versicherer",
+      "tags": [
+        "KI",
+        "ver.di",
+        "Tarifrunde",
+        "ERGO",
+        "Stellenabbau",
+        "Digitalisierung",
+        "Arbeitsplätze"
+      ],
+      "company": "ERGO",
+      "companyDomain": "ergo.de",
+      "sourceCount": 3,
+      "file": "versicherer-verdi-ki-tarifrunde-2026.md"
+    },
+    {
       "slug": "versicherungsbetrug-sechs-milliarden-schaden-gdv",
       "title": "Versicherungsbetrug kostet Branche jährlich sechs Milliarden Euro",
       "description": "Der GDV schätzt den jährlichen Schaden durch Versicherungsbetrug auf über sechs Milliarden Euro. Zehn Prozent aller Schadensmeldungen weisen Auffälligkeiten auf. KI-gestützte Erkennung wird zum Schlüssel.",
@@ -1181,6 +1257,23 @@
       "companyDomain": "ww-ag.com",
       "sourceCount": 3,
       "file": "ww-gruppe-gewinnsprung-comeback-2025.md"
+    },
+    {
+      "slug": "zurich-gruppe-ersfeld-schadenbereich-2026",
+      "title": "Zurich Gruppe Deutschland: Sandra Ersfeld übernimmt Schadenbereich",
+      "description": "Zum 1. Mai 2026 übernimmt Sandra Ersfeld die Gesamtverantwortung für den Schaden-Bereich der Zurich Gruppe Deutschland. Sie folgt auf Markus Troche, der das Unternehmen auf eigenen Wunsch verlässt.",
+      "pubDate": "2026-03-31",
+      "category": "versicherer",
+      "tags": [
+        "Zurich",
+        "Personalie",
+        "Schadenmanagement",
+        "Geschäftsführung"
+      ],
+      "company": "Zurich Gruppe Deutschland",
+      "companyDomain": "zurich.de",
+      "sourceCount": 3,
+      "file": "zurich-gruppe-ersfeld-schadenbereich-2026.md"
     }
   ]
 }
