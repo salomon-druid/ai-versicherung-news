@@ -6,6 +6,7 @@ category: versicherungsumfeld
 tags: [Elementarschadenversicherung, Naturgefahren, Italien, Pflichtversicherung, Rückversicherung, Klimawandel]
 company: ""
 companyDomain: ""
+featured: true
 sources:
   - title: "Elementarpflichtversicherung: Rückversicherungsmarkt weicht auf – GDV präsentiert Elementar-Re-Modell"
     url: "https://klardenker.kpmg.de/financialservices-hub/das-sind-die-prioritaeten-fuer-versicherer-im-neuen-jahr/"
