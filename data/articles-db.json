@@ -1,9 +1,9 @@
 {
-  "generated": "2026-03-31T13:02:44.847092",
-  "count": 79,
+  "generated": "2026-04-01T07:03:01.607309",
+  "count": 84,
   "categories": {
     "versicherer": 15,
-    "ki-digitalisierung": 15,
+    "ki-digitalisierung": 20,
     "makler": 12,
     "versicherungsumfeld": 22,
     "versicherungsprodukte": 7,
@@ -125,6 +125,25 @@
       "file": "altersvorsorgereform-vertrieb-kritik-makler.md"
     },
     {
+      "slug": "aon-ki-unternehmensrisiken-platz-zwei",
+      "title": "Aon-Marktprognose: KI rückt auf Platz zwei der größten Unternehmensrisiken auf",
+      "description": "Die Aon-Marktprognose 2026 zeigt: Künstliche Intelligenz ist nicht nur Innovationsmotor, sondern inzwischen das zweitgrößte Unternehmensrisiko weltweit – mit weitreichenden Folgen für die Versicherungsbranche.",
+      "pubDate": "2026-04-01",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "Aon",
+        "Risikomanagement",
+        "KI-Risiken",
+        "EU AI Act",
+        "D&O",
+        "Haftung"
+      ],
+      "company": "Aon",
+      "companyDomain": "aon.com",
+      "sourceCount": 2,
+      "file": "aon-ki-unternehmensrisiken-platz-zwei.md"
+    },
+    {
       "slug": "bafin-risiken-im-fokus-2026-systemische-risiken-versicherer",
       "title": "BaFin Risiken im Fokus 2026: Sechs systemische Gefahren im Visier der Aufsicht",
       "description": "Die BaFin hat ihre Prioritäten für 2026 veröffentlicht: Geopolitik, Cyber-Bedrohungen, Immobilienrisiken und Kostenkontrolle bei kapitalbildender Lebensversicherung stehen ganz oben auf der Agenda.",
@@ -199,6 +218,25 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "bafin-warnt-sechs-systemische-risiken-versicherer-2026.md"
+    },
+    {
+      "slug": "bcg-ki-ausgaben-sachversicherung-2026",
+      "title": "BCG-Studie: KI-Ausgaben bei Sachversicherern verdreifachen sich 2026",
+      "description": "Eine neue BCG-Analyse zeigt, dass die KI-Investitionen in der Sachversicherung im Verhältnis zum Umsatz 2026 dreifach steigen – doch nur 38% der Versicherer erzielen bisher skalierten Nutzen.",
+      "pubDate": "2026-04-01",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "BCG",
+        "KI-Ausgaben",
+        "Sachversicherung",
+        "AI-First",
+        "Underwriting",
+        "Schadensregulierung"
+      ],
+      "company": "Boston Consulting Group",
+      "companyDomain": "bcg.com",
+      "sourceCount": 2,
+      "file": "bcg-ki-ausgaben-sachversicherung-2026.md"
     },
     {
       "slug": "bcg-studie-ki-adoption-versicherung-skaliert",
@@ -421,6 +459,25 @@
       "companyDomain": "",
       "sourceCount": 1,
       "file": "cyberversicherung-schadenreport-2025-frequenz-verdoppelt.md"
+    },
+    {
+      "slug": "cytora-autopilot-agentic-ai-underwriting",
+      "title": "Agentic AI: Cytora launcht Autopilot für automatisiertes Underwriting und Claims",
+      "description": "Das InsurTech-Unternehmen Cytora stellt „Autopilot",
+      "pubDate": "2026-04-01",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "Cytora",
+        "Agentic AI",
+        "Autopilot",
+        "Underwriting",
+        "InsurTech",
+        "Workflow-Automatisierung"
+      ],
+      "company": "Cytora",
+      "companyDomain": "cytora.com",
+      "sourceCount": 3,
+      "file": "cytora-autopilot-agentic-ai-underwriting.md"
     },
     {
       "slug": "dach-region-versicherungsmarkt-ma-rekord-2025",
@@ -832,6 +889,24 @@
       "companyDomain": "",
       "sourceCount": 2,
       "file": "kfz-versicherer-profitabel-2026-beitraege-steigen.md"
+    },
+    {
+      "slug": "ki-agenten-schadensregulierung-versicherung",
+      "title": "KI-Agenten revolutionieren die Schadensregulierung in der Versicherung",
+      "description": "Autonome KI-Agenten übernehmen zunehmend Aufgaben in der Schadensregulierung – von der automatischen Prüfung von Schadensmeldungen bis zur Bildanalyse und Kostenkalkulation. Die Branche sieht darin den nächsten großen Effizienzschub.",
+      "pubDate": "2026-04-01",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "KI-Agenten",
+        "Schadensregulierung",
+        "Agentic AI",
+        "Bildanalyse",
+        "Automatisierung"
+      ],
+      "company": "Box AI",
+      "companyDomain": "box.com",
+      "sourceCount": 2,
+      "file": "ki-agenten-schadensregulierung-versicherung.md"
     },
     {
       "slug": "klingbeil-rentenreform-beitragsjahre-betriebsrente",
@@ -1427,6 +1502,25 @@
       "companyDomain": "wefox.com",
       "sourceCount": 2,
       "file": "wefox-notfallfinanzierung-15-millionen.md"
+    },
+    {
+      "slug": "wendepunkt-2026-transformationsstrategie-versicherung",
+      "title": "Wendepunkt 2026: Warum Versicherer ihre Transformationsstrategie jetzt neu justieren müssen",
+      "description": "Das Versicherungstech-Magazin analysiert: 2026 ist kein Jahr wie jedes andere – Beitragswachstum kaschiert strukturelle Probleme nicht mehr. Versicherer müssen sich zwischen Utility-Provider und Ökosystem-Player entscheiden.",
+      "pubDate": "2026-04-01",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "Digitale Transformation",
+        "Kernsysteme",
+        "Legacy-IT",
+        "Strategie",
+        "DORA",
+        "Versicherungstechnologie"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 2,
+      "file": "wendepunkt-2026-transformationsstrategie-versicherung.md"
     },
     {
       "slug": "ww-gruppe-ergebniswende-kostendisziplin-2025",
