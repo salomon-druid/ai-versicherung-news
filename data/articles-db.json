@@ -1,12 +1,12 @@
 {
-  "generated": "2026-04-01T07:05:37.478669",
-  "count": 84,
+  "generated": "2026-04-01T09:05:11.613953",
+  "count": 89,
   "categories": {
-    "versicherer": 15,
+    "versicherer": 17,
     "ki-digitalisierung": 20,
     "makler": 12,
     "versicherungsumfeld": 22,
-    "versicherungsprodukte": 7,
+    "versicherungsprodukte": 10,
     "risiken-schaeden": 8
   },
   "articles": [
@@ -350,7 +350,7 @@
     },
     {
       "slug": "bvk-kritik-altersvorsorgereform-2026-03-31",
-      "title": "BVK zum Altersvorsorgereformgesetz: „Ein Schlag ins Gesicht der Vermittler",
+      "title": "BVK zum Altersvorsorgereformgesetz: Ein Schlag ins Gesicht der Vermittler",
       "description": "Der Bundesverband Deutscher Versicherungskaufleute kritisiert scharf die Verabschiedung des Altersvorsorgereformgesetzes. Besonders der geplante Staatsfonds stößt auf massive Ablehnung.",
       "pubDate": "2026-03-31",
       "category": "makler",
@@ -463,7 +463,7 @@
     {
       "slug": "cytora-autopilot-agentic-ai-underwriting",
       "title": "Agentic AI: Cytora launcht Autopilot für automatisiertes Underwriting und Claims",
-      "description": "Das InsurTech-Unternehmen Cytora stellt „Autopilot",
+      "description": "Das InsurTech-Unternehmen Cytora stellt Autopilot vor – eine Agentic-AI-Lösung, die Underwriting- und Claims-Workflows von der Submission bis zur Entscheidung vollständig automatisieren soll.",
       "pubDate": "2026-04-01",
       "category": "ki-digitalisierung",
       "tags": [
@@ -595,7 +595,7 @@
     {
       "slug": "elementarpflichtversicherung-rueckversicherungsmarkt-gdv-elementar-re-2026",
       "title": "Elementarpflichtversicherung 2026: Rückversicherungsmarkt weicht auf – GDV präsentiert Elementar-Re-Modell",
-      "description": "Während der Rückversicherungsmarkt in eine weichere Phase eintritt, diskutiert die Branche über die Einführung einer Elementarpflichtversicherung. Der GDV schlägt das Drei-Stufen-Modell „Elementar Re",
+      "description": "Während der Rückversicherungsmarkt in eine weichere Phase eintritt, diskutiert die Branche über die Einführung einer Elementarpflichtversicherung. Der GDV schlägt das Drei-Stufen-Modell Elementar Re vor.",
       "pubDate": "2026-03-31",
       "category": "versicherungsumfeld",
       "tags": [
@@ -610,6 +610,24 @@
       "companyDomain": "",
       "sourceCount": 2,
       "file": "elementarpflichtversicherung-rueckversicherungsmarkt-gdv-elementar-re-2026.md"
+    },
+    {
+      "slug": "elementarschadenversicherung-pflicht-koalition-2026",
+      "title": "Koalition plant Pflichtversicherung gegen Elementarschäden – Was Eigentümer wissen müssen",
+      "description": "Union und SPD planen eine flächendeckende Versicherungspflicht gegen Naturgefahren. Nur rund die Hälfte aller Haushalte ist bisher gegen Elementarschäden abgesichert.",
+      "pubDate": "2026-04-01",
+      "category": "versicherungsprodukte",
+      "tags": [
+        "Elementarschadenversicherung",
+        "Naturgefahren",
+        "Pflichtversicherung",
+        "Wohngebäudeversicherung",
+        "Klimarisiken"
+      ],
+      "company": "GDV",
+      "companyDomain": "gdv.de",
+      "sourceCount": 3,
+      "file": "elementarschadenversicherung-pflicht-koalition-2026.md"
     },
     {
       "slug": "elementarschadenversicherung-pflicht-koalitionsplaene",
@@ -667,6 +685,24 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "elementarschadenversicherung-pflichtversicherung-debatte-2026.md"
+    },
+    {
+      "slug": "ergo-automatenversicherung-relaunch-vending-markt",
+      "title": "ERGO relauncht Automatenversicherung für boomenden Vending-Markt",
+      "description": "Die ERGO hat ihre Automatenversicherung grundlegend überarbeitet und an den wachsenden Vending-Markt angepasst. Deutschlandweit sind über 620.000 Automaten im Einsatz.",
+      "pubDate": "2026-04-01",
+      "category": "versicherungsprodukte",
+      "tags": [
+        "ERGO",
+        "Automatenversicherung",
+        "Vending",
+        "Spezialversicherung",
+        "Produktrelaunch"
+      ],
+      "company": "ERGO",
+      "companyDomain": "ergo.de",
+      "sourceCount": 3,
+      "file": "ergo-automatenversicherung-relaunch-vending-markt.md"
     },
     {
       "slug": "eu-ai-act-versicherungen-ki-verordnung",
@@ -781,6 +817,24 @@
       "file": "gdv-versicherungswirtschaft-wachstum-2025-ausblick-2026.md"
     },
     {
+      "slug": "gdv-versicherungswirtschaft-wachstum-2026-ausblick",
+      "title": "GDV: Versicherungswirtschaft wächst 2025 kräftig um 6,6 Prozent – Ausblick auf 2026 gedämpft",
+      "description": "Die deutsche Versicherungswirtschaft erzielte 2025 ein starkes Beitragswachstum von 6,6 Prozent auf 254 Milliarden Euro. Für 2026 erwartet der GDV jedoch einen spürbaren Rückgang auf 4,7 Prozent.",
+      "pubDate": "2026-04-01",
+      "category": "versicherer",
+      "tags": [
+        "GDV",
+        "Beitragswachstum",
+        "Versicherungswirtschaft",
+        "Marktentwicklung",
+        "Konjunktur"
+      ],
+      "company": "GDV",
+      "companyDomain": "gdv.de",
+      "sourceCount": 3,
+      "file": "gdv-versicherungswirtschaft-wachstum-2026-ausblick.md"
+    },
+    {
       "slug": "gkv-mitgliederschwund-krankenkassen-zusatzbeitrag-2025",
       "title": "GKV-Mitgliederschwund 2025: Zwei Drittel der Krankenkassen verlieren Versicherte",
       "description": "60 von 93 gesetzlichen Krankenkassen verzeichneten 2025 Mitgliederverluste – getrieben durch kräftige Zusatzbeitragserhöhungen. Besonders betroffen: Barmer, IKKen und Knappschaft.",
@@ -889,6 +943,24 @@
       "companyDomain": "",
       "sourceCount": 2,
       "file": "kfz-versicherer-profitabel-2026-beitraege-steigen.md"
+    },
+    {
+      "slug": "kfz-versicherung-2026-beitraege-steigen-reparaturkosten",
+      "title": "KFZ-Versicherung 2026: Beiträge steigen weiter – Reparaturkosten treiben Preise in die Höhe",
+      "description": "Die Kfz-Versicherungsbeiträge steigen 2026 spürbar. Reparaturkosten, Ersatzteilpreise und Werkstattkosten treiben die Schadenssummen auf Rekordniveau. Finanztip-Umfrage: 76 Prozent der Vollkasko-Versicherten bekamen eine Erhöhung.",
+      "pubDate": "2026-04-01",
+      "category": "versicherungsprodukte",
+      "tags": [
+        "KFZ-Versicherung",
+        "Beitragsanpassung",
+        "Reparaturkosten",
+        "Typklassen",
+        "GDV"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "kfz-versicherung-2026-beitraege-steigen-reparaturkosten.md"
     },
     {
       "slug": "ki-agenten-schadensregulierung-versicherung",
@@ -1446,6 +1518,25 @@
       "companyDomain": "",
       "sourceCount": 2,
       "file": "versicherungsmarkt-konsolidierung-makler-private-equity-2026.md"
+    },
+    {
+      "slug": "versicherungstrends-2026-ki-klimarisiken-markt",
+      "title": "Versicherungstrends 2026: KI, Klimarisiken und datengetriebene Produkte prägen die Branche",
+      "description": "Von Agentic AI über parametrische Klimaversicherungen bis zur Cyberversicherung – die Versicherungsbranche steht 2026 vor tiefgreifenden Veränderungen. Guidewire-Experte Stephan Fanenbruck beleuchtet die wichtigsten Trends.",
+      "pubDate": "2026-04-01",
+      "category": "versicherer",
+      "tags": [
+        "KI",
+        "Klimarisiken",
+        "Cyberversicherung",
+        "Tierversicherung",
+        "Versicherungstrends",
+        "Guidewire"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "versicherungstrends-2026-ki-klimarisiken-markt.md"
     },
     {
       "slug": "vsaag-aktuare-kritik-krisengesetz-versicherer",
