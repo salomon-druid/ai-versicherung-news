@@ -1,13 +1,13 @@
 {
-  "generated": "2026-04-01T11:22:56.957454",
-  "count": 94,
+  "generated": "2026-04-01T13:03:44.586474",
+  "count": 99,
   "categories": {
     "versicherer": 17,
+    "risiken-schaeden": 11,
     "ki-digitalisierung": 20,
     "versicherungsumfeld": 27,
-    "makler": 12,
-    "versicherungsprodukte": 10,
-    "risiken-schaeden": 8
+    "makler": 14,
+    "versicherungsprodukte": 10
   },
   "articles": [
     {
@@ -28,6 +28,25 @@
       "companyDomain": "allianz.com",
       "sourceCount": 2,
       "file": "allianz-cambridge-mobile-telematics-investment-350-millionen.md"
+    },
+    {
+      "slug": "allianz-commercial-warnt-starkgewitter-severe-convective-storms",
+      "title": "Allianz Commercial warnt: Starkgewitter werden zur unterschätzten Gefahr",
+      "description": "Schwere konvektive Stürme verursachen Milliardenschäden – und gelten trotzdem als Secondary Perils. Ein KI-Forschungsprojekt soll helfen.",
+      "pubDate": "2026-04-01",
+      "category": "risiken-schaeden",
+      "tags": [
+        "Allianz",
+        "Starkgewitter",
+        "Naturgefahren",
+        "Klimawandel",
+        "Elementarschäden",
+        "KI"
+      ],
+      "company": "Allianz Commercial",
+      "companyDomain": "allianz.com",
+      "sourceCount": 2,
+      "file": "allianz-commercial-warnt-starkgewitter-severe-convective-storms.md"
     },
     {
       "slug": "allianz-jio-rueckversicherung-indien-start",
@@ -649,6 +668,24 @@
       "file": "dora-nach-einem-jahr-bafin-fordert-gelebte-resilienz-versicherer.md"
     },
     {
+      "slug": "dvag-prueft-einstieg-honorarberatung",
+      "title": "DVAG prüft Einstieg in die Honorarberatung – Wendepunkt für den Strukturvertrieb?",
+      "description": "Die Deutsche Vermögensberatung testet in Hessen erstmals honorarbasierte Beratungsmodelle und reagiert damit auf jahrelangen Druck von Verbraucherschützern.",
+      "pubDate": "2026-04-01",
+      "category": "makler",
+      "tags": [
+        "DVAG",
+        "Honorarberatung",
+        "Strukturvertrieb",
+        "Vergütung",
+        "Verbraucherschutz"
+      ],
+      "company": "Deutsche Vermögensberatung (DVAG)",
+      "companyDomain": "dvag.de",
+      "sourceCount": 1,
+      "file": "dvag-prueft-einstieg-honorarberatung.md"
+    },
+    {
       "slug": "elementarpflichtversicherung-koalition-plant-naturgefahrenschutz",
       "title": "Elementarpflichtversicherung: Koalition plant flächendeckenden Naturgefahrenschutz",
       "description": "Union und SPD planen im Koalitionsvertrag eine verpflichtende Elementarschadenversicherung für Wohngebäude – mit Opt-Out-Möglichkeit und staatlicher Rückversicherungslösung.",
@@ -1150,6 +1187,24 @@
       "file": "makler-champions-2026-bayerische-dominanz.md"
     },
     {
+      "slug": "makler-champions-2026-gewinner-stehen-fest",
+      "title": "Makler-Champions 2026: Die Gewinner im Service-Ranking stehen fest",
+      "description": "Zum 16. Mal zeichnen Versicherungsmagazin und ServiceValue die servicestärksten Versicherer aus Sicht von über 1.100 Maklerurteilen aus.",
+      "pubDate": "2026-04-01",
+      "category": "makler",
+      "tags": [
+        "Makler-Champions",
+        "Maklerbefragung",
+        "Servicequalität",
+        "Versicherungsvertrieb",
+        "Awards"
+      ],
+      "company": "Versicherungsmagazin / ServiceValue",
+      "companyDomain": "versicherungsmagazin.de",
+      "sourceCount": 1,
+      "file": "makler-champions-2026-gewinner-stehen-fest.md"
+    },
+    {
       "slug": "maklermarkt-zukunft-versicherer-makler-2026-03-31",
       "title": "Maklermarkt der Zukunft: Versicherer überschätzen sich selbst",
       "description": "Eine Studie der Versicherungsforen Leipzig zeigt eine deutliche Kluft zwischen der Selbsteinschätzung der Versicherer und der Wahrnehmung durch Makler. Konsolidierung und Spezialisierung beschleunigen den Wandel.",
@@ -1166,6 +1221,24 @@
       "companyDomain": "",
       "sourceCount": 1,
       "file": "maklermarkt-zukunft-versicherer-makler-2026-03-31.md"
+    },
+    {
+      "slug": "munich-re-cyber-risiken-2026-rekordniveau",
+      "title": "Munich Re warnt: Cyber-Risiken 2026 erreichen neues Rekordniveau",
+      "description": "Der Rückversicherer prognostiziert weltweite Cyberkriminalitätskosten von 14 Billionen Dollar bis 2028 – und fordert entschlossenes Risikomanagement.",
+      "pubDate": "2026-04-01",
+      "category": "risiken-schaeden",
+      "tags": [
+        "Cyberversicherung",
+        "Munich Re",
+        "Ransomware",
+        "Cyberangriffe",
+        "Rückversicherung"
+      ],
+      "company": "Munich Re",
+      "companyDomain": "munichre.com",
+      "sourceCount": 1,
+      "file": "munich-re-cyber-risiken-2026-rekordniveau.md"
     },
     {
       "slug": "munich-re-naturkatastrophen-bilanz-2025-rekordschaeden",
@@ -1353,6 +1426,24 @@
       "companyDomain": "ppi.de",
       "sourceCount": 1,
       "file": "schadenregulierung-hyperautomatisierung-2026-03-31.md"
+    },
+    {
+      "slug": "schadenregulierung-hyperautomatisierung-wettbewerbsvorteil",
+      "title": "Schadenregulierung in Minuten: Wie Hyperautomatisierung die Branche verändert",
+      "description": "PPI-Vorstand Dirk Weske zeigt auf: Versicherer, die jetzt nicht in Hyperautomatisierung investieren, riskieren den Anschluss im Schadenprozess.",
+      "pubDate": "2026-04-01",
+      "category": "risiken-schaeden",
+      "tags": [
+        "Schadenregulierung",
+        "Hyperautomatisierung",
+        "KI",
+        "Digitalisierung",
+        "Prozessoptimierung"
+      ],
+      "company": "PPI AG",
+      "companyDomain": "ppi.de",
+      "sourceCount": 1,
+      "file": "schadenregulierung-hyperautomatisierung-wettbewerbsvorteil.md"
     },
     {
       "slug": "solaris-ai-native-bank",
