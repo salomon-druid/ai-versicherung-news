@@ -1,11 +1,11 @@
 {
-  "generated": "2026-04-01T09:05:11.613953",
-  "count": 89,
+  "generated": "2026-04-01T11:22:56.957454",
+  "count": 94,
   "categories": {
     "versicherer": 17,
     "ki-digitalisierung": 20,
+    "versicherungsumfeld": 27,
     "makler": 12,
-    "versicherungsumfeld": 22,
     "versicherungsprodukte": 10,
     "risiken-schaeden": 8
   },
@@ -106,6 +106,25 @@
       "file": "allianz-talanx-investition-stromnetz-amprion.md"
     },
     {
+      "slug": "allianz-trade-insolvenzstudie-2026-firmenpleiten-versicherung",
+      "title": "Allianz Trade: Firmenpleiten steigen 2026 auf 24.500 – Auswirkungen auf den Versicherungsmarkt",
+      "description": "Der Kreditversicherer Allianz Trade prognostiziert für 2026 rund 24.500 Firmeninsolvenzen in Deutschland. Steigende Insolvenzen belasten auch die Versicherungswirtschaft – von der Kreditversicherung bis zur Sachversicherung.",
+      "pubDate": "2026-04-01",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Allianz Trade",
+        "Insolvenzen",
+        "Kreditversicherung",
+        "Wirtschaftsumfeld",
+        "Firmenpleiten",
+        "Versicherungsmarkt"
+      ],
+      "company": "Allianz Trade",
+      "companyDomain": "allianz-trade.de",
+      "sourceCount": 2,
+      "file": "allianz-trade-insolvenzstudie-2026-firmenpleiten-versicherung.md"
+    },
+    {
       "slug": "altersvorsorgereform-vertrieb-kritik-makler",
       "title": "Altersvorsorgereform: Verbände warnen – ",
       "description": "Die Reform der privaten Altersvorsorge spaltet die Branche. Der Kostendeckel von einem Prozent und ein staatlicher Anbieter sorgen für scharfe Kritik von Makler- und Vermittlerverbänden.",
@@ -181,6 +200,24 @@
       "file": "bafin-risiken-im-fokus-2026-versicherungsaufsicht.md"
     },
     {
+      "slug": "bafin-standortfoerdergesetz-entlastet-versicherer-2026",
+      "title": "Standortfördergesetz: BaFin entlastet Versicherer mit vier Entlastungsmaßnahmen",
+      "description": "Die BaFin setzt das Standortfördergesetz um und entlastet Versicherer bei der Vorlage von Versicherungsbedingungen, Beteiligungsmeldungen und Inhaberkontrollverfahren. Die Maßnahmen gelten ab sofort.",
+      "pubDate": "2026-04-01",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "BaFin",
+        "Standortfördergesetz",
+        "Entbürokratisierung",
+        "Versicherungsaufsicht",
+        "Regulierung"
+      ],
+      "company": "BaFin",
+      "companyDomain": "bafin.de",
+      "sourceCount": 2,
+      "file": "bafin-standortfoerdergesetz-entlastet-versicherer-2026.md"
+    },
+    {
       "slug": "bafin-strategie-2026-2029-dora-nachhaltigkeit-resilienz",
       "title": "BaFin-Strategie 2026-2029: DORA, Nachhaltigkeit und operationelle Resilienz im Fokus",
       "description": "Die BaFin hat ihre strategische Ausrichtung für 2026 bis 2029 definiert. Zehn Ziele setzen den Rahmen – von Finanzstabilität über Cyber-Resilienz bis zur Verankerung von Nachhaltigkeit in der Aufsicht.",
@@ -218,6 +255,25 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "bafin-warnt-sechs-systemische-risiken-versicherer-2026.md"
+    },
+    {
+      "slug": "bafin-wohlverhaltensaufsicht-price-walking-kfz-versicherung-2026",
+      "title": "BaFin Wohlverhaltensaufsicht: Price Walking und Kfz-Rabatte stehen jetzt im Visier",
+      "description": "Die BaFin weitet ihre Wohlverhaltensaufsicht auf die Schaden- und Unfallversicherung aus. Kfz-Rabattsysteme und sogenanntes Price Walking – wiederholte Prämienerhöhungen ohne Risikobezug – sollen geprüft werden.",
+      "pubDate": "2026-04-01",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "BaFin",
+        "Wohlverhaltensaufsicht",
+        "Price Walking",
+        "Kfz-Versicherung",
+        "Verbraucherschutz",
+        "Aufsicht"
+      ],
+      "company": "BaFin",
+      "companyDomain": "bafin.de",
+      "sourceCount": 3,
+      "file": "bafin-wohlverhaltensaufsicht-price-walking-kfz-versicherung-2026.md"
     },
     {
       "slug": "bcg-ki-ausgaben-sachversicherung-2026",
@@ -403,6 +459,25 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "corebridge-equitable-fusion-22-milliarden.md"
+    },
+    {
+      "slug": "csrd-vereinfachung-eu-nachhaltigkeitsberichterstattung-versicherer-2026",
+      "title": "CSRD-Vereinfachung: EU erleichtert Nachhaltigkeitsberichterstattung für Versicherer",
+      "description": "Die EU hat Richtlinie 2026/470 zur Vereinfachung der Nachhaltigkeitsberichterstattung verabschiedet. Höhere Schwellenwerte und weniger Meldepflichten entlasten Versicherungsunternehmen – doch Unsicherheit bleibt.",
+      "pubDate": "2026-04-01",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "CSRD",
+        "Nachhaltigkeitsberichterstattung",
+        "EU-Regulierung",
+        "ESG",
+        "Omnibus",
+        "Versicherungsaufsicht"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "csrd-vereinfachung-eu-nachhaltigkeitsberichterstattung-versicherer-2026.md"
     },
     {
       "slug": "cyber-versicherungen-praemien-sinken-security-indikator",
@@ -685,6 +760,25 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "elementarschadenversicherung-pflichtversicherung-debatte-2026.md"
+    },
+    {
+      "slug": "elementarschutz-italien-vorbild-deutsche-pflichtversicherung",
+      "title": "Elementarschutz: Italien als Vorbild für Deutschlands geplante Pflichtversicherung?",
+      "description": "Italien hat 2024 eine Pflichtversicherung gegen Naturgefahren für Unternehmen eingeführt – mit staatlichem Rückversicherungsfonds. Die Debatte in Deutschland orientiert sich zunehmend am italienischen Modell.",
+      "pubDate": "2026-04-01",
+      "category": "versicherungsumfeld",
+      "tags": [
+        "Elementarschadenversicherung",
+        "Naturgefahren",
+        "Italien",
+        "Pflichtversicherung",
+        "Rückversicherung",
+        "Klimawandel"
+      ],
+      "company": "",
+      "companyDomain": "",
+      "sourceCount": 3,
+      "file": "elementarschutz-italien-vorbild-deutsche-pflichtversicherung.md"
     },
     {
       "slug": "ergo-automatenversicherung-relaunch-vending-markt",
