@@ -1,0 +1,79 @@
+---
+// Newsletter signup component
+---
+
+<div class="bg-dark text-white rounded-xl p-8 my-8">
+  <div class="max-w-2xl mx-auto text-center">
+    <h3 class="text-xl font-bold mb-2">Täglich kuratierte Versicherungsnews</h3>
+    <p class="text-white/70 text-sm mb-6">
+      Erhalten Sie die wichtigsten KI- und Versicherungsnews direkt in Ihren Posteingang. 
+      Kostenlos, jeden Morgen, keine Spam.
+    </p>
+    
+    <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <input
+        type="email"
+        name="email"
+        placeholder="ihre@email.de"
+        required
+        class="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+      />
+      <button
+        type="submit"
+        class="px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white font-medium rounded-lg transition-colors"
+      >
+        Kostenlos abonnieren
+      </button>
+    </form>
+    
+    <p class="text-white/50 text-xs mt-4">
+      Kein Spam. Jederzeit abmeldbar. Datenschutz konform.
+    </p>
+  </div>
+</div>
+
+<script>
+  const form = document.getElementById('newsletter-form');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = form.querySelector('input[name="email"]').value;
+      
+      // Show loading state
+      const button = form.querySelector('button');
+      const originalText = button.textContent;
+      button.textContent = 'Wird angemeldet...';
+      button.disabled = true;
+      
+      try {
+        // TODO: Replace with actual API endpoint
+        const response = await fetch('/api/newsletter/subscribe', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email }),
+        });
+        
+        if (response.ok) {
+          // Show success message
+          form.innerHTML = `
+            <div class="text-center">
+              <div class="text-primary-400 text-lg font-medium mb-2">✓ Erfolgreich angemeldet!</div>
+              <p class="text-white/70 text-sm">Bitte bestätigen Sie Ihre E-Mail-Adresse.</p>
+            </div>
+          `;
+        } else {
+          throw new Error('Subscription failed');
+        }
+      } catch (error) {
+        // Show error message
+        button.textContent = 'Fehler - nochmal versuchen';
+        button.disabled = false;
+        setTimeout(() => {
+          button.textContent = originalText;
+        }, 2000);
+      }
+    });
+  }
+</script>

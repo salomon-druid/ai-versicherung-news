@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import NewsCard from '../components/NewsCard.astro';
 import SmallNewsCard from '../components/SmallNewsCard.astro';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
 import { getCollection } from 'astro:content';
 
 const allNews = await getCollection('news');
@@ -217,29 +218,8 @@ const allTags = [...new Set(allNews.flatMap(n => n.data.tags || []))].slice(0, 1
 
   <!-- Newsletter CTA -->
   <section class="bg-dark py-14 mt-4">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-primary-500/20 rounded-full mb-6">
-        <span class="text-primary-400 text-sm font-medium">📬 Newsletter</span>
-      </div>
-      <h2 class="text-3xl font-extrabold text-white mb-3">Keine News verpassen</h2>
-      <p class="text-white/60 mb-8 text-lg">
-        Die wichtigsten Versicherungs-News direkt in dein Postfach.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-        <input
-          type="email"
-          placeholder="deine@email.de"
-          class="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-primary-500"
-        />
-        <button
-          type="button"
-          onclick="alert('Danke für dein Interesse! Der Newsletter wird bald verfügbar sein.')"
-          class="px-6 py-3 bg-gold text-dark font-bold rounded-lg hover:bg-gold/90 transition-colors"
-        >
-          Anmelden
-        </button>
-      </div>
-      <p class="text-white/30 text-xs mt-4">Kein Spam. Jederzeit abmeldbar.</p>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <NewsletterSignup />
     </div>
   </section>
 </BaseLayout>
