@@ -1,11 +1,11 @@
 ---
-title: "BVK zum Altersvorsorgereformgesetz: „Ein Schlag ins Gesicht der Vermittler""
+title: "BVK zum Altersvorsorgereformgesetz: Ein Schlag ins Gesicht der Vermittler"
 description: "Der Bundesverband Deutscher Versicherungskaufleute kritisiert scharf die Verabschiedung des Altersvorsorgereformgesetzes. Besonders der geplante Staatsfonds stößt auf massive Ablehnung."
 pubDate: 2026-03-31
 category: makler
 tags: [Altersvorsorge, BVK, Politik, Vermittler, Staatsfonds, Reform]
 sources:
-  - title: "Vermittlerverband kritisiert Bundesregierung: „Blanke Provokation""
+  - title: "Vermittlerverband kritisiert Bundesregierung: Blanke Provokation"
     url: "https://www.versicherungsbote.de/id/4949089/Vermittlerverband-kritisiert-Bundesregierung-Blanke-Provokation/"
     outlet: "Versicherungsbote"
     date: "30.03.2026"

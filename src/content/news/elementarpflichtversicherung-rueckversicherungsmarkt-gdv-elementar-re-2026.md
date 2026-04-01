@@ -1,6 +1,6 @@
 ---
 title: "Elementarpflichtversicherung 2026: Rückversicherungsmarkt weicht auf – GDV präsentiert Elementar-Re-Modell"
-description: "Während der Rückversicherungsmarkt in eine weichere Phase eintritt, diskutiert die Branche über die Einführung einer Elementarpflichtversicherung. Der GDV schlägt das Drei-Stufen-Modell „Elementar Re" vor."
+description: "Während der Rückversicherungsmarkt in eine weichere Phase eintritt, diskutiert die Branche über die Einführung einer Elementarpflichtversicherung. Der GDV schlägt das Drei-Stufen-Modell Elementar Re vor."
 pubDate: 2026-03-31
 category: versicherungsumfeld
 tags: [Elementarschaden, Rückversicherung, GDV, Klimarisiken, Naturkatastrophen, Wohngebäudeversicherung]

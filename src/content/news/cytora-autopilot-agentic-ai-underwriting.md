@@ -1,6 +1,6 @@
 ---
 title: "Agentic AI: Cytora launcht Autopilot für automatisiertes Underwriting und Claims"
-description: "Das InsurTech-Unternehmen Cytora stellt „Autopilot" vor – eine Agentic-AI-Lösung, die Underwriting- und Claims-Workflows von der Submission bis zur Entscheidung vollständig automatisieren soll."
+description: "Das InsurTech-Unternehmen Cytora stellt Autopilot vor – eine Agentic-AI-Lösung, die Underwriting- und Claims-Workflows von der Submission bis zur Entscheidung vollständig automatisieren soll."
 pubDate: 2026-04-01
 category: ki-digitalisierung
 tags: [Cytora, Agentic AI, Autopilot, Underwriting, InsurTech, Workflow-Automatisierung]
