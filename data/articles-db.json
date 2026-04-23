@@ -1,10 +1,10 @@
 {
-  "generated": "2026-04-01T13:03:44.586474",
-  "count": 99,
+  "generated": "2026-04-23T15:13:34.271849",
+  "count": 104,
   "categories": {
     "versicherer": 17,
     "risiken-schaeden": 11,
-    "ki-digitalisierung": 20,
+    "ki-digitalisierung": 25,
     "versicherungsumfeld": 27,
     "makler": 14,
     "versicherungsprodukte": 10
@@ -142,6 +142,24 @@
       "companyDomain": "allianz-trade.de",
       "sourceCount": 2,
       "file": "allianz-trade-insolvenzstudie-2026-firmenpleiten-versicherung.md"
+    },
+    {
+      "slug": "allianz-turkey-nettle-ai-risk-engineering",
+      "title": "Allianz Turkey nutzt Nettle AI, um Risikoingenieurberichte zu beschleunigen",
+      "description": "Allianz Turkey setzt auf Nettle KI, um Inspektionsprozesse zu automatisieren und strukturierte Reports in Echtzeit zu erstellen.",
+      "pubDate": "2026-04-23",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "KI",
+        "Risk Engineering",
+        "Allianz Turkey",
+        "Nettle",
+        "Automatisierung"
+      ],
+      "company": "Allianz Turkey",
+      "companyDomain": "allianz.com.tr",
+      "sourceCount": 1,
+      "file": "allianz-turkey-nettle-ai-risk-engineering.md"
     },
     {
       "slug": "altersvorsorgereform-vertrieb-kritik-makler",
@@ -1058,6 +1076,24 @@
       "file": "infosys-stratus-uebernahme-versicherung.md"
     },
     {
+      "slug": "ing-mga-versicherung-modell-mit-qover",
+      "title": "ING startet MGA-Versicherungsmodell mit Qover",
+      "description": "ING wird Managing General Agent und nutzt Qovers Orchestrierungs‑Plattform, um Kundinnen und Kunden im Versicherungsgeschäft direkt zu bedienen.",
+      "pubDate": "2026-04-23",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "ING",
+        "Qover",
+        "MGA",
+        "Versicherungsmodell",
+        "Embeddte Versicherung"
+      ],
+      "company": "ING",
+      "companyDomain": "ing.com",
+      "sourceCount": 1,
+      "file": "ing-mga-versicherung-modell-mit-qover.md"
+    },
+    {
       "slug": "kfz-versicherer-profitabel-2026-beitraege-steigen",
       "title": "Kfz-Versicherer 2026 erneut profitabel – doch Beiträge steigen weiter",
       "description": "Die Schaden-Kosten-Quote in der Kfz-Versicherung fällt 2026 zum zweiten Mal unter 100 Prozent. Experten erwarten trotz Profitabilität weitere Beitragssteigerungen – getrieben durch den Iran-Krieg und steigende Reparaturkosten.",
@@ -1483,6 +1519,24 @@
       "file": "solvency-ii-reform-bmf-vsaag-entwurf-2026.md"
     },
     {
+      "slug": "soundhound-erwirbt-liveperson-fuer-konzernkunde",
+      "title": "SoundHound erwirbt LivePerson für konzernweite KI-Engagement-Lösung",
+      "description": "SoundHound AI übernimmt LivePerson, um ein omnichannel-konversatives KI-Engagement-Portal für Unternehmen zu schaffen.",
+      "pubDate": "2026-04-23",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "KI",
+        "Akquisition",
+        "Conversational AI",
+        "LivePerson",
+        "SoundHound"
+      ],
+      "company": "SoundHound AI",
+      "companyDomain": "soundhound.com",
+      "sourceCount": 1,
+      "file": "soundhound-erwirbt-liveperson-fuer-konzernkunde.md"
+    },
+    {
       "slug": "stoik-cyberversicherung-rechtsschutz",
       "title": "Stoïk ergänzt Cyberversicherung um integrierten Rechtsschutz",
       "description": "Der Cyber-Assekuradeur Stoïk erweitert seine Cyberversicherung um einen rechtlichen Schutzbaustein und schafft damit ein integriertes Schutzsystem für Unternehmen nach Cyberangriffen.",
@@ -1554,6 +1608,24 @@
       "companyDomain": "talanc.com",
       "sourceCount": 2,
       "file": "talanx-gewinnziel-steigerung-2026.md"
+    },
+    {
+      "slug": "tokio-marine-deploys-eis-claimpulse-for-travel-insurance-claims",
+      "title": "Tokio Marine setzt EIS ClaimPulse für Reiseversicherungsansprüche ein",
+      "description": "EIS setzt ClaimPulse-Technologie ein, um den digitalen Schadensmeldeprozess für Reiseversicherungen zu automatisieren und zu vereinfachen.",
+      "pubDate": "2026-04-23",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "KI",
+        "Versicherung",
+        "Reiseversicherung",
+        "ClaimPulse",
+        "Automatisierung"
+      ],
+      "company": "EIS",
+      "companyDomain": "e-insurance.com",
+      "sourceCount": 1,
+      "file": "tokio-marine-deploys-eis-claimpulse-for-travel-insurance-claims.md"
     },
     {
       "slug": "twilio-voice-ai-banken-versicherungen",
@@ -1722,6 +1794,22 @@
       "companyDomain": "",
       "sourceCount": 3,
       "file": "versicherungstrends-2026-ki-klimarisiken-markt.md"
+    },
+    {
+      "slug": "vertafore-ai-innovation-at-accelerate-2026",
+      "title": "Vertafore beschleunigt KI-Entwicklungen bei Accelerate 2026",
+      "description": "Vertafore setzt KI-Anwendungen in den Versicherungsprozessen ein, um Effizienz zu steigern und manuelle Arbeit zu reduzieren.",
+      "pubDate": "2026-04-23",
+      "category": "ki-digitalisierung",
+      "tags": [
+        "KI",
+        "InsurTech",
+        "Digitalisierung"
+      ],
+      "company": "Vertafore",
+      "companyDomain": "vertafore.com",
+      "sourceCount": 1,
+      "file": "vertafore-ai-innovation-at-accelerate-2026.md"
     },
     {
       "slug": "vsaag-aktuare-kritik-krisengesetz-versicherer",
